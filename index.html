@@ -187,6 +187,34 @@
     </div>
   </div>
 
+  <!-- Zero-latency inline toggle handler to guarantee instant response on any device -->
+  <script>
+    (function() {
+      var btn = document.getElementById("mobile-menu-toggle");
+      var drawer = document.getElementById("mobile-nav-drawer");
+      if (!btn || !drawer) return;
+      btn.addEventListener("click", function(e) {
+        if (window.__navInitialized) return;
+        var isOpen = drawer.classList.contains("open");
+        if (isOpen) {
+          btn.classList.remove("active");
+          btn.setAttribute("aria-expanded", "false");
+          drawer.classList.remove("open");
+          drawer.setAttribute("aria-hidden", "true");
+          document.body.classList.remove("mobile-menu-open");
+          document.body.style.overflow = "";
+        } else {
+          btn.classList.add("active");
+          btn.setAttribute("aria-expanded", "true");
+          drawer.classList.add("open");
+          drawer.setAttribute("aria-hidden", "false");
+          document.body.classList.add("mobile-menu-open");
+          document.body.style.overflow = "hidden";
+        }
+      });
+    })();
+  </script>
+
   <main id="main-content">
 
     <!-- 1. HERO SECTION (STATE-OF-THE-ART INDUSTRIAL COMMAND) -->

@@ -21,7 +21,8 @@ import {
   GALLERY_ITEMS,
   VIDEOS,
   DOWNLOADS,
-  MD_MESSAGE
+  MD_MESSAGE,
+  CAREERS
 } from './data.js';
 
 import {

@@ -10,7 +10,7 @@ import json
 import time
 import cgi
 import mimetypes
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 PORT = 8000
 WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -272,7 +272,7 @@ class RevaCMSRequestHandler(SimpleHTTPRequestHandler):
 
 def run(port=PORT):
     server_address = ('', port)
-    httpd = HTTPServer(server_address, RevaCMSRequestHandler)
+    httpd = ThreadingHTTPServer(server_address, RevaCMSRequestHandler)
     print(f"Reva Phoenix CMS Server running on http://localhost:{port}/")
     print(f"Admin Panel: http://localhost:{port}/admin.html")
     httpd.serve_forever()

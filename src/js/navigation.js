@@ -1,10 +1,13 @@
-import { scrollToTarget } from './smooth-scroll.js';
+import { scrollToTarget, pauseScroll, resumeScroll } from './smooth-scroll.js';
 
 /**
  * Navigation, Sticky Header, Scroll Spy & Mobile Drawer
  */
 
 export function initNavigation() {
+  if (window.__navInitialized) return;
+  window.__navInitialized = true;
+
   const header = document.querySelector(".site-header");
   const mobileBtn = document.getElementById("mobile-menu-toggle");
   const mobileDrawer = document.getElementById("mobile-nav-drawer");
@@ -22,7 +25,8 @@ export function initNavigation() {
 
   // 2. Mobile Drawer Toggle
   if (mobileBtn && mobileDrawer) {
-    mobileBtn.addEventListener("click", () => {
+    mobileBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
       const isOpen = mobileDrawer.classList.contains("open");
       if (isOpen) {
         closeMobileMenu();
@@ -31,33 +35,55 @@ export function initNavigation() {
       }
     });
 
-    // Close mobile menu on clicking any navigation link
+    // Close mobile menu on clicking any navigation link or action button
     mobileDrawer.querySelectorAll(".mobile-nav-link, .btn").forEach(link => {
       link.addEventListener("click", () => {
         closeMobileMenu();
       });
     });
+
+    // Close on Escape key press
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && mobileDrawer.classList.contains("open")) {
+        closeMobileMenu();
+      }
+    });
+
+    // Auto-close when viewport expands back to desktop view
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1100 && mobileDrawer.classList.contains("open")) {
+        closeMobileMenu();
+      }
+    });
   }
 
   function openMobileMenu() {
     mobileBtn?.classList.add("active");
+    mobileBtn?.setAttribute("aria-expanded", "true");
     mobileDrawer?.classList.add("open");
+    mobileDrawer?.setAttribute("aria-hidden", "false");
+    document.body.classList.add("mobile-menu-open");
     document.body.style.overflow = "hidden";
+    pauseScroll();
 
     // GSAP stagger on mobile links if available
     if (typeof gsap !== "undefined") {
       gsap.fromTo(
         ".mobile-nav-link",
         { opacity: 0, x: -25 },
-        { opacity: 1, x: 0, stagger: 0.08, duration: 0.5, ease: "power2.out" }
+        { opacity: 1, x: 0, stagger: 0.05, duration: 0.45, ease: "power2.out" }
       );
     }
   }
 
   function closeMobileMenu() {
     mobileBtn?.classList.remove("active");
+    mobileBtn?.setAttribute("aria-expanded", "false");
     mobileDrawer?.classList.remove("open");
+    mobileDrawer?.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("mobile-menu-open");
     document.body.style.overflow = "";
+    resumeScroll();
   }
 
   // 3. Scroll Spy for Active Navigation Links

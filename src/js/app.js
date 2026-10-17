@@ -8,20 +8,20 @@ import { initAnimations } from './animations.js';
 import { initNavigation } from './navigation.js';
 import { initModals, showToast } from './modals.js';
 import { initSmoothScroll, scrollToTarget } from './smooth-scroll.js';
-import { submitContactInquiry } from './supabase-client.js';
-import { recordContactInquiryInFirestore } from './firebase-firestore.js';
 
-document.addEventListener("DOMContentLoaded", () => {
+function bootApp() {
+  if (window.__appInitialized) return;
+  window.__appInitialized = true;
   console.log("Initializing Reva Phoenix Industrial Redesign...");
 
-  // 1. Initialize Lenis Smooth Inertia Scroll (synchronized with GSAP)
+  // 1. Initialize Navigation immediately (fastest interactivity for header/drawer)
+  initNavigation();
+
+  // 2. Initialize Lenis Smooth Inertia Scroll (synchronized with GSAP)
   initSmoothScroll();
 
-  // 2. Render dynamic content
+  // 3. Render dynamic content
   renderAllComponents();
-
-  // 3. Initialize Navigation & Sticky header
-  initNavigation();
 
   // 4. Initialize Modals & Dialogs
   initModals();
@@ -47,7 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 450);
     }
   }
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", bootApp);
+} else {
+  bootApp();
+}
 
 /**
  * Main Contact Form Validation & Submission
@@ -96,6 +102,9 @@ function initContactForm() {
     }
 
     try {
+      const { submitContactInquiry } = await import('./supabase-client.js');
+      const { recordContactInquiryInFirestore } = await import('./firebase-firestore.js');
+
       await submitContactInquiry({
         name,
         company,

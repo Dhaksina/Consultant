@@ -1,0 +1,291 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040404;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-primary);
+}
+
+::selection {
+  background-color: var(--orange-primary);
+  color: #000000;
+}
+
+/* Base Links & Typography */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  outline: none;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.section {
+  padding: var(--section-pad-y) 0;
+  position: relative;
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent 0%, var(--border-subtle) 25%, var(--border-subtle) 75%, transparent 100%);
+}
+
+/* Technical Industrial Grid Background (Removed) */
+.tech-grid-bg {
+  display: none !important;
+  background-image: none !important;
+}
+
+/* Editorial Typography System */
+.display-title {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: clamp(2.75rem, 7.5vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.subtitle-mono {
+  font-family: var(--font-mono);
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.subtitle-mono::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--orange-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--orange-glow);
+}
+
+.subtitle-mono.orange {
+  color: var(--orange-primary) !important;
+}
+
+.subtitle-mono.blue::before {
+  background-color: var(--blue-primary);
+  box-shadow: 0 0 10px var(--blue-glow);
+}
+
+/* Editorial Word Accents */
+.word-white {
+  color: var(--text-primary);
+}
+
+.word-blue {
+  color: var(--blue-primary);
+  text-shadow: 0 0 25px rgba(22, 131, 255, 0.2);
+}
+
+.word-orange {
+  color: #F47A3C !important;
+  text-shadow: 0 0 25px rgba(244, 122, 60, 0.25);
+}
+
+.word-muted {
+  color: var(--text-secondary);
+}
+
+/* Button Components */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1.1rem 2.2rem;
+  border-radius: 2px;
+  transition: all var(--transition-med);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-orange {
+  background-color: var(--orange-primary);
+  color: #000000;
+  box-shadow: 0 4px 20px var(--orange-glow);
+}
+
+.btn-primary-orange:hover {
+  background-color: var(--orange-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(244, 122, 60, 0.45);
+  color: #000000;
+}
+
+.btn-secondary-blue {
+  background-color: transparent;
+  color: var(--blue-light);
+  border: 1px solid var(--blue-border);
+}
+
+.btn-secondary-blue:hover {
+  background-color: rgba(22, 131, 255, 0.1);
+  border-color: var(--blue-light);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--blue-glow);
+}
+
+.btn .arrow-icon {
+  transition: transform var(--transition-med);
+  font-size: 1.1em;
+}
+
+.btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.btn-sm {
+  padding: 0.75rem 1.4rem;
+  font-size: 0.8rem;
+}
+
+/* Badge System */
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  color: var(--text-secondary);
+}
+
+.tech-badge.orange {
+  border-color: var(--orange-border);
+  color: var(--orange-primary);
+  background: rgba(244, 122, 60, 0.06);
+}
+
+.tech-badge.blue {
+  border-color: var(--blue-border);
+  color: var(--blue-light);
+  background: rgba(22, 131, 255, 0.06);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

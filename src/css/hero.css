@@ -1,0 +1,510 @@
+/* ============================================================
+   HERO SECTION - STATE-OF-THE-ART INDUSTRIAL COMMAND (GSAP READY)
+   ============================================================ */
+
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 84px);
+  display: flex;
+  align-items: center;
+  padding: clamp(2rem, 3.5vw, 4rem) 0 clamp(2rem, 3vw, 3.5rem);
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Background grid removed for clean luxury dark aesthetic */
+.hero-bg-grid {
+  display: none !important;
+}
+
+/* Ambient Volumetric Lighting Glows */
+.hero-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.45;
+  transition: opacity 0.5s ease;
+}
+
+.orb-orange {
+  width: clamp(380px, 42vw, 620px);
+  height: clamp(380px, 42vw, 620px);
+  background: radial-gradient(circle, rgba(245, 182, 66, 0.3) 0%, rgba(244, 122, 60, 0.08) 50%, transparent 75%);
+  right: -5%;
+  top: 5%;
+}
+
+.orb-blue {
+  width: clamp(320px, 35vw, 520px);
+  height: clamp(320px, 35vw, 520px);
+  background: radial-gradient(circle, rgba(22, 131, 255, 0.2) 0%, rgba(22, 131, 255, 0.03) 60%, transparent 75%);
+  left: -8%;
+  bottom: 0%;
+}
+
+/* Main Hero Grid Layout */
+.hero-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
+}
+
+/* Left: Typography Content */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Sleek Tech Kicker Badge */
+.hero-tech-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-bottom: 1.5rem;
+  width: fit-content;
+  transition: border-color 0.3s ease, transform 0.25s ease;
+}
+
+.hero-tech-kicker:hover {
+  border-color: rgba(244, 122, 60, 0.4);
+  transform: translateY(-1px);
+}
+
+.kicker-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F47A3C;
+  box-shadow: 0 0 10px #F47A3C, 0 0 20px rgba(244, 122, 60, 0.6);
+  flex-shrink: 0;
+  animation: kickerPulse 2.2s infinite ease-in-out;
+}
+
+@keyframes kickerPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+.kicker-text {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.kicker-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(244, 122, 60, 0.16);
+  color: #F47A3C;
+  border: 1px solid rgba(244, 122, 60, 0.3);
+}
+
+/* Hero Typography */
+.hero-brand-title {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: clamp(1.85rem, 3.2vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 1.15rem;
+}
+
+.hero-title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.title-gradient {
+  background: linear-gradient(135deg, #FFFFFF 15%, #F47A3C 65%, #ffa674 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  text-shadow: 0 0 40px rgba(244, 122, 60, 0.25);
+}
+
+/* Domain Pillars Ribbon */
+.hero-tagline-split {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: clamp(0.95rem, 1.4vw, 1.35rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.4rem, 0.9vw, 0.85rem);
+  align-items: center;
+}
+
+.word-white { color: #FFFFFF; }
+.word-blue { color: var(--blue-primary); }
+.word-orange { color: var(--orange-primary); }
+
+/* Paragraph */
+.hero-desc {
+  font-size: clamp(0.95rem, 1.1vw, 1.12rem);
+  color: #B3B7BE;
+  max-width: 680px;
+  line-height: 1.65;
+  margin-bottom: 1.85rem;
+  font-weight: 400;
+}
+
+.hero-desc strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Hero CTAs */
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+}
+
+/* Quick Metrics Bar */
+.hero-quick-metrics {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.2vw, 2.2rem);
+  margin-top: 2.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+
+.hero-metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-metric-val {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: clamp(1.3rem, 1.8vw, 1.65rem);
+  color: #FFFFFF;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-metric-lbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.hero-metric-sep {
+  width: 1px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================================
+   RIGHT COLUMN: FLOATING 25 YEARS ANNIVERSARY SEAL (TRANSPARENT)
+   ============================================================ */
+
+.hero-showcase-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Golden Volumetric Ambient Halo Behind the Seal */
+.hero-emblem-halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(250px, 28vw, 360px);
+  height: clamp(250px, 28vw, 360px);
+  background: radial-gradient(circle, rgba(245, 182, 66, 0.28) 0%, rgba(244, 122, 60, 0.12) 45%, rgba(22, 131, 255, 0.05) 65%, transparent 75%);
+  border-radius: 50%;
+  filter: blur(45px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Emblem Container: Clean, zero-box, zero-border */
+.hero-emblem-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+}
+
+/* Image Wrapper */
+.hero-emblem-img-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 25 Years Golden Medal Image - Reduced Elegant Scale */
+.hero-emblem-img {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+  filter: 
+    drop-shadow(0 15px 35px rgba(0, 0, 0, 0.95)) 
+    drop-shadow(0 0 30px rgba(245, 182, 66, 0.4))
+    drop-shadow(0 0 60px rgba(244, 122, 60, 0.2));
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+  animation: emblemFloat 6s ease-in-out infinite;
+}
+
+@keyframes emblemFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.5deg);
+  }
+}
+
+.hero-emblem-card:hover .hero-emblem-img {
+  transform: translateY(-14px) scale(1.03);
+  filter: 
+    drop-shadow(0 25px 55px rgba(0, 0, 0, 0.98)) 
+    drop-shadow(0 0 55px rgba(245, 182, 66, 0.6))
+    drop-shadow(0 0 95px rgba(244, 122, 60, 0.35));
+}
+
+/* Floating Glass HUD Badges */
+.hud-badge {
+  position: absolute;
+  z-index: 5;
+  background: rgba(10, 14, 22, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hud-badge:hover {
+  border-color: rgba(244, 122, 60, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8), 0 0 20px rgba(244, 122, 60, 0.25);
+}
+
+/* Top Badge */
+.hud-badge-top {
+  top: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 1rem;
+  white-space: nowrap;
+}
+
+.hud-status-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00E599;
+  box-shadow: 0 0 10px #00E599, 0 0 16px rgba(0, 229, 153, 0.6);
+  animation: pulseDot 2s ease-in-out infinite;
+}
+
+.hud-badge-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+/* Bottom Left HUD Badge */
+.hud-badge-bottom-left {
+  bottom: 0rem;
+  left: -0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.5rem 0.85rem;
+  max-width: 220px;
+}
+
+.hud-icon-wrap {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.hud-stat-highlight {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.78rem;
+  color: #F47A3C;
+  letter-spacing: 0.04em;
+}
+
+.hud-sub-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+/* Bottom Right HUD Badge */
+.hud-badge-bottom-right {
+  bottom: 0rem;
+  right: -0.5rem;
+  padding: 0.5rem 0.85rem;
+  text-align: right;
+  border-color: rgba(22, 131, 255, 0.35);
+  max-width: 220px;
+}
+
+.hud-mono-tag {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #55a8ff;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.15rem;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1080px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-tech-kicker {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-tagline-split {
+    justify-content: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-quick-metrics {
+    justify-content: center;
+  }
+
+  .hero-showcase-wrapper {
+    max-width: 480px;
+  }
+
+  .hud-badge-bottom-left {
+    left: 0;
+  }
+
+  .hud-badge-bottom-right {
+    right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .hero-brand-title {
+    font-size: clamp(1.35rem, 6.2vw, 1.95rem);
+  }
+
+  .hero-emblem-img {
+    max-width: 280px;
+  }
+
+  .hud-badge-bottom-right {
+    display: none;
+  }
+
+  .hud-badge-bottom-left {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .hud-badge-top {
+    position: static;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+
+  .hero-emblem-card {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .hero-quick-metrics {
+    gap: 1rem;
+  }
+
+  .hero-metric-sep {
+    display: none;
+  }
+}

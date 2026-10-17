@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Gradients -->
+    <linearGradient id="goldOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8a84e"/>
+      <stop offset="25%" stop-color="#fdf3b0"/>
+      <stop offset="50%" stop-color="#b88229"/>
+      <stop offset="75%" stop-color="#fae98f"/>
+      <stop offset="100%" stop-color="#aa7523"/>
+    </linearGradient>
+
+    <radialGradient id="goldPlate" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fff6c2"/>
+      <stop offset="40%" stop-color="#eec874"/>
+      <stop offset="75%" stop-color="#d7a13d"/>
+      <stop offset="100%" stop-color="#b67e20"/>
+    </radialGradient>
+
+    <linearGradient id="beveledEdge" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#784e0e"/>
+      <stop offset="30%" stop-color="#d39f37"/>
+      <stop offset="70%" stop-color="#fff2a8"/>
+      <stop offset="100%" stop-color="#8b5b12"/>
+    </linearGradient>
+
+    <linearGradient id="ribbonLeftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d89f28"/>
+      <stop offset="35%" stop-color="#ffea6c"/>
+      <stop offset="70%" stop-color="#c78c18"/>
+      <stop offset="100%" stop-color="#92600a"/>
+    </linearGradient>
+
+    <linearGradient id="ribbonRightGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d89f28"/>
+      <stop offset="35%" stop-color="#ffea6c"/>
+      <stop offset="70%" stop-color="#c78c18"/>
+      <stop offset="100%" stop-color="#92600a"/>
+    </linearGradient>
+
+    <radialGradient id="innerCream" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fbf6ea"/>
+      <stop offset="100%" stop-color="#ece2ca"/>
+    </radialGradient>
+
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#000000" flood-opacity="0.75"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="35" flood-color="#d4a028" flood-opacity="0.4"/>
+    </filter>
+
+    <filter id="subtleInner" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+
+    <!-- Path for circular text (Radius 252, centered at 500,480) -->
+    <!-- Start at bottom (500, 732) and go clockwise -->
+    <path id="textArcPath" d="M 500,732 A 252,252 0 1,1 499.9,732" fill="none"/>
+  </defs>
+
+  <g filter="url(#dropShadow)">
+    <!-- 1. RIBBONS AT THE BOTTOM -->
+    <!-- Left Ribbon Tail -->
+    <path d="M 495, 700 L 230, 920 L 335, 1070 L 405, 960 L 490, 1060 L 495, 750 Z" 
+          fill="url(#ribbonLeftGrad)" stroke="#9e6c13" stroke-width="1.5" />
+    <path d="M 495, 700 L 230, 920 L 335, 1070 L 405, 960 L 490, 1060 L 495, 750 Z" 
+          fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+
+    <!-- Right Ribbon Tail (Symmetric) -->
+    <path d="M 505, 700 L 770, 920 L 665, 1070 L 595, 960 L 510, 1060 L 505, 750 Z" 
+          fill="url(#ribbonRightGrad)" stroke="#9e6c13" stroke-width="1.5" />
+    <path d="M 505, 700 L 770, 920 L 665, 1070 L 595, 960 L 510, 1060 L 505, 750 Z" 
+          fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+
+    <!-- 2. OUTER METALLIC GOLD RIMS -->
+    <!-- Outer Rim -->
+    <circle cx="500" cy="480" r="370" fill="url(#goldOuter)" stroke="#8b5b12" stroke-width="2"/>
+
+    <!-- Beveled Edge -->
+    <circle cx="500" cy="480" r="352" fill="url(#beveledEdge)" />
+
+    <!-- Gold Face Plate -->
+    <circle cx="500" cy="480" r="338" fill="url(#goldPlate)" stroke="#c28e28" stroke-width="1"/>
+
+    <!-- 3. THE 36 GOLD STARS -->
+    <g id="starsGroup">
+    <polygon points="820.5,480.0 815.1,482.2 814.6,488.1 810.8,483.6 805.1,485.0 808.2,480.0 805.1,475.0 810.8,476.4 814.6,471.9 815.1,477.8" fill="#cf9d34" />
+    <polygon points="815.6,535.7 809.9,536.9 808.4,542.6 805.5,537.5 799.6,537.9 803.5,533.5 801.4,528.1 806.7,530.4 811.3,526.7 810.7,532.5" fill="#cf9d34" />
+    <polygon points="801.2,589.6 795.3,589.9 792.9,595.2 790.8,589.7 785.0,589.1 789.6,585.4 788.4,579.7 793.3,582.9 798.4,580.0 796.8,585.7" fill="#cf9d34" />
+    <polygon points="777.6,640.2 771.7,639.5 768.4,644.3 767.4,638.5 761.7,636.9 766.9,634.1 766.7,628.2 771.0,632.3 776.5,630.3 774.0,635.6" fill="#cf9d34" />
+    <polygon points="745.5,686.0 739.9,684.2 735.8,688.4 735.8,682.6 730.5,680.0 736.1,678.1 736.9,672.3 740.4,677.0 746.2,676.0 742.8,680.8" fill="#cf9d34" />
+    <polygon points="706.0,725.5 700.8,722.8 696.0,726.2 697.0,720.4 692.3,716.9 698.1,716.1 700.0,710.5 702.6,715.8 708.4,715.8 704.2,719.9" fill="#cf9d34" />
+    <polygon points="660.2,757.6 655.6,754.0 650.3,756.5 652.3,751.0 648.2,746.7 654.1,746.9 656.9,741.7 658.5,747.4 664.3,748.4 659.5,751.7" fill="#cf9d34" />
+    <polygon points="609.6,781.2 605.7,776.8 600.0,778.4 602.9,773.3 599.7,768.4 605.4,769.6 609.1,765.0 609.7,770.8 615.2,772.9 609.9,775.3" fill="#cf9d34" />
+    <polygon points="555.7,795.6 552.5,790.7 546.7,791.3 550.4,786.7 548.1,781.4 553.5,783.5 557.9,779.6 557.5,785.5 562.6,788.4 556.9,789.9" fill="#cf9d34" />
+    <polygon points="500.0,800.5 497.8,795.1 491.9,794.6 496.4,790.8 495.0,785.1 500.0,788.2 505.0,785.1 503.6,790.8 508.1,794.6 502.2,795.1" fill="#cf9d34" />
+    <polygon points="444.3,795.6 443.1,789.9 437.4,788.4 442.5,785.5 442.1,779.6 446.5,783.5 451.9,781.4 449.6,786.7 453.3,791.3 447.5,790.7" fill="#cf9d34" />
+    <polygon points="390.4,781.2 390.1,775.3 384.8,772.9 390.3,770.8 390.9,765.0 394.6,769.6 400.3,768.4 397.1,773.3 400.0,778.4 394.3,776.8" fill="#cf9d34" />
+    <polygon points="339.8,757.6 340.5,751.7 335.7,748.4 341.5,747.4 343.1,741.7 345.9,746.9 351.8,746.7 347.7,751.0 349.7,756.5 344.4,754.0" fill="#cf9d34" />
+    <polygon points="294.0,725.5 295.8,719.9 291.6,715.8 297.4,715.8 300.0,710.5 301.9,716.1 307.7,716.9 303.0,720.4 304.0,726.2 299.2,722.8" fill="#cf9d34" />
+    <polygon points="254.5,686.0 257.2,680.8 253.8,676.0 259.6,677.0 263.1,672.3 263.9,678.1 269.5,680.0 264.2,682.6 264.2,688.4 260.1,684.2" fill="#cf9d34" />
+    <polygon points="222.4,640.2 226.0,635.6 223.5,630.3 229.0,632.3 233.3,628.2 233.1,634.1 238.3,636.9 232.6,638.5 231.6,644.3 228.3,639.5" fill="#cf9d34" />
+    <polygon points="198.8,589.6 203.2,585.7 201.6,580.0 206.7,582.9 211.6,579.7 210.4,585.4 215.0,589.1 209.2,589.7 207.1,595.2 204.7,589.9" fill="#cf9d34" />
+    <polygon points="184.4,535.7 189.3,532.5 188.7,526.7 193.3,530.4 198.6,528.1 196.5,533.5 200.4,537.9 194.5,537.5 191.6,542.6 190.1,536.9" fill="#cf9d34" />
+    <polygon points="179.5,480.0 184.9,477.8 185.4,471.9 189.2,476.4 194.9,475.0 191.8,480.0 194.9,485.0 189.2,483.6 185.4,488.1 184.9,482.2" fill="#cf9d34" />
+    <polygon points="184.4,424.3 190.1,423.1 191.6,417.4 194.5,422.5 200.4,422.1 196.5,426.5 198.6,431.9 193.3,429.6 188.7,433.3 189.3,427.5" fill="#cf9d34" />
+    <polygon points="198.8,370.4 204.7,370.1 207.1,364.8 209.2,370.3 215.0,370.9 210.4,374.6 211.6,380.3 206.7,377.1 201.6,380.0 203.2,374.3" fill="#cf9d34" />
+    <polygon points="222.4,319.8 228.3,320.5 231.6,315.7 232.6,321.5 238.3,323.1 233.1,325.9 233.3,331.8 229.0,327.7 223.5,329.7 226.0,324.4" fill="#cf9d34" />
+    <polygon points="254.5,274.0 260.1,275.8 264.2,271.6 264.2,277.4 269.5,280.0 263.9,281.9 263.1,287.7 259.6,283.0 253.8,284.0 257.2,279.2" fill="#cf9d34" />
+    <polygon points="294.0,234.5 299.2,237.2 304.0,233.8 303.0,239.6 307.7,243.1 301.9,243.9 300.0,249.5 297.4,244.2 291.6,244.2 295.8,240.1" fill="#cf9d34" />
+    <polygon points="339.7,202.4 344.4,206.0 349.7,203.5 347.7,209.0 351.8,213.3 345.9,213.1 343.1,218.3 341.5,212.6 335.7,211.6 340.5,208.3" fill="#cf9d34" />
+    <polygon points="390.4,178.8 394.3,183.2 400.0,181.6 397.1,186.7 400.3,191.6 394.6,190.4 390.9,195.0 390.3,189.2 384.8,187.1 390.1,184.7" fill="#cf9d34" />
+    <polygon points="444.3,164.4 447.5,169.3 453.3,168.7 449.6,173.3 451.9,178.6 446.5,176.5 442.1,180.4 442.5,174.5 437.4,171.6 443.1,170.1" fill="#cf9d34" />
+    <polygon points="500.0,159.5 502.2,164.9 508.1,165.4 503.6,169.2 505.0,174.9 500.0,171.8 495.0,174.9 496.4,169.2 491.9,165.4 497.8,164.9" fill="#cf9d34" />
+    <polygon points="555.7,164.4 556.9,170.1 562.6,171.6 557.5,174.5 557.9,180.4 553.5,176.5 548.1,178.6 550.4,173.3 546.7,168.7 552.5,169.3" fill="#cf9d34" />
+    <polygon points="609.6,178.8 609.9,184.7 615.2,187.1 609.7,189.2 609.1,195.0 605.4,190.4 599.7,191.6 602.9,186.7 600.0,181.6 605.7,183.2" fill="#cf9d34" />
+    <polygon points="660.2,202.4 659.5,208.3 664.3,211.6 658.5,212.6 656.9,218.3 654.1,213.1 648.2,213.3 652.3,209.0 650.3,203.5 655.6,206.0" fill="#cf9d34" />
+    <polygon points="706.0,234.5 704.2,240.1 708.4,244.2 702.6,244.2 700.0,249.5 698.1,243.9 692.3,243.1 697.0,239.6 696.0,233.8 700.8,237.2" fill="#cf9d34" />
+    <polygon points="745.5,274.0 742.8,279.2 746.2,284.0 740.4,283.0 736.9,287.7 736.1,281.9 730.5,280.0 735.8,277.4 735.8,271.6 739.9,275.8" fill="#cf9d34" />
+    <polygon points="777.6,319.7 774.0,324.4 776.5,329.7 771.0,327.7 766.7,331.8 766.9,325.9 761.7,323.1 767.4,321.5 768.4,315.7 771.7,320.5" fill="#cf9d34" />
+    <polygon points="801.2,370.4 796.8,374.3 798.4,380.0 793.3,377.1 788.4,380.3 789.6,374.6 785.0,370.9 790.8,370.3 792.9,364.8 795.3,370.1" fill="#cf9d34" />
+    <polygon points="815.6,424.3 810.7,427.5 811.3,433.3 806.7,429.6 801.4,431.9 803.5,426.5 799.6,422.1 805.5,422.5 808.4,417.4 809.9,423.1" fill="#cf9d34" />
+    </g>
+
+    <!-- 4. CIRCULAR TEXT TRACK -->
+    <circle cx="500" cy="480" r="292" fill="none" stroke="#b37c1d" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="500" cy="480" r="212" fill="none" stroke="#b37c1d" stroke-width="1.5" opacity="0.5"/>
+
+    <text font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="800" font-size="24" fill="#111111" letter-spacing="3.5">
+      <textPath href="#textArcPath" startOffset="50%" text-anchor="middle">
+        ★ REVA PHOENIX LABS &amp; CONSULTANTS PVT. LTD. ★
+      </textPath>
+    </text>
+
+    <!-- 5. INNER WHITE MEDALLION -->
+    <!-- Thin outer border of white medallion -->
+    <circle cx="500" cy="480" r="198" fill="#111111" opacity="0.9" />
+    <circle cx="500" cy="480" r="195" fill="url(#innerCream)" />
+
+    <!-- Diagonal Glass Shine / Reflection -->
+    <path d="M 362, 342 A 195,195 0 0,1 695, 480 L 500, 480 Z" fill="#ffffff" opacity="0.38" />
+
+    <!-- Thin inner concentric line -->
+    <circle cx="500" cy="480" r="190" fill="none" stroke="#111111" stroke-width="1.8" opacity="0.85" />
+
+    <!-- 6. CENTER CONTENT: '25' AND 'YEARS' -->
+    <!-- Number 25 -->
+    <text x="500" y="468" 
+          font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" 
+          font-weight="900" 
+          font-size="140" 
+          fill="#111111" 
+          text-anchor="middle" 
+          letter-spacing="-2">25</text>
+
+    <!-- Subtle divider shadow under 25 -->
+    <path d="M 410, 486 Q 500, 492 590, 486 Q 500, 481 410, 486" fill="#888888" opacity="0.4" />
+
+    <!-- Word YEARS -->
+    <text x="500" y="530" 
+          font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" 
+          font-weight="900" 
+          font-size="36" 
+          fill="#111111" 
+          text-anchor="middle" 
+          letter-spacing="5">YEARS</text>
+  </g>
+</svg>

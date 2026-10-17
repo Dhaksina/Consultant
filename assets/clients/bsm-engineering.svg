@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bsmBlueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38b6ff"/>
+      <stop offset="50%" stop-color="#0080d0"/>
+      <stop offset="100%" stop-color="#005599"/>
+    </linearGradient>
+    <linearGradient id="bsmRedGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b56"/>
+      <stop offset="100%" stop-color="#d61a35"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 0)">
+    <!-- Globe Emblem -->
+    <g transform="translate(48, 60)" filter="url(#subtleGlow)">
+      <!-- Outer Globe Ring -->
+      <circle cx="0" cy="0" r="38" fill="none" stroke="#0077c8" stroke-width="3.5"/>
+      <!-- Longitude Ellipses -->
+      <ellipse cx="0" cy="0" rx="26" ry="38" fill="none" stroke="#0088dd" stroke-width="2.2" opacity="0.85"/>
+      <ellipse cx="0" cy="0" rx="14" ry="38" fill="none" stroke="#0099ee" stroke-width="2" opacity="0.7"/>
+      <line x1="0" y1="-38" x2="0" y2="38" stroke="#00aaff" stroke-width="2" opacity="0.75"/>
+      <!-- Latitude Lines -->
+      <path d="M -33 -19 Q 0 -9 33 -19" fill="none" stroke="#0088dd" stroke-width="2" opacity="0.8"/>
+      <line x1="-38" y1="0" x2="38" y2="0" stroke="#0088dd" stroke-width="2.5" opacity="0.9"/>
+      <path d="M -33 19 Q 0 9 33 19" fill="none" stroke="#0088dd" stroke-width="2" opacity="0.8"/>
+      
+      <!-- Central Engineering Core / Gear Accent in Red -->
+      <circle cx="0" cy="0" r="13" fill="url(#bsmRedGrad)" stroke="#ffffff" stroke-width="1.8"/>
+      <path d="M -4 -17 L 4 -17 L 2 -13 L -2 -13 Z
+               M -4 17 L 4 17 L 2 13 L -2 13 Z
+               M -17 -4 L -17 4 L -13 2 L -13 -2 Z
+               M 17 -4 L 17 4 L 13 2 L 13 -2 Z" fill="#d61a35"/>
+      <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+    </g>
+
+    <!-- Typography: BSM (Italic, Bold, Modern) -->
+    <text x="108" y="66" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Montserrat', sans-serif" 
+          font-weight="900" 
+          font-style="italic" 
+          font-size="58" 
+          fill="url(#bsmBlueGrad)" 
+          letter-spacing="2px"
+          filter="url(#subtleGlow)">BSM</text>
+
+    <!-- Typography: engineering (Red, Geometric, Spaced) -->
+    <text x="110" y="93" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Montserrat', sans-serif" 
+          font-weight="800" 
+          font-style="italic"
+          font-size="20" 
+          fill="url(#bsmRedGrad)" 
+          letter-spacing="3.2px"
+          filter="url(#subtleGlow)">engineering</text>
+  </g>
+</svg>

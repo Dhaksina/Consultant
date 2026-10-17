@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/" />
+  <title>REVA PHOENIX — Media &amp; Asset Management Admin Panel</title>
+  
+  <link rel="icon" type="image/png" href="/assets/logo/reva-phoenix-logo.png" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Critical Inline Styles to guarantee beautiful render without FOUC -->
+  <style>
+    :root {
+      --admin-bg-base: #07090c;
+      --admin-bg-card: #11151f;
+      --admin-border: rgba(255, 255, 255, 0.08);
+      --orange-primary: #F47A3C;
+      --blue-primary: #0070F3;
+      --text-main: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background-color: var(--admin-bg-base);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .admin-login-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      background: radial-gradient(circle at 50% 30%, rgba(244, 122, 60, 0.12) 0%, rgba(0, 112, 243, 0.06) 45%, #07090c 85%);
+    }
+    .login-card {
+      width: 100%;
+      max-width: 440px;
+      background: var(--admin-bg-card);
+      border: 1px solid var(--admin-border);
+      border-radius: 12px;
+      padding: 2.5rem 2.25rem;
+      box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    }
+    .login-brand { text-align: center; margin-bottom: 2rem; }
+    .login-logo {
+      max-width: 190px;
+      max-height: 52px;
+      width: auto;
+      height: 48px;
+      object-fit: contain;
+      margin-bottom: 1.25rem;
+      display: inline-block;
+    }
+    .login-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+    }
+    .login-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-top: 0.35rem;
+    }
+    .login-form { display: flex; flex-direction: column; gap: 1.25rem; }
+    .form-field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .field-label { font-size: 0.82rem; font-weight: 600; color: #d1d5db; }
+    .input-with-icon { position: relative; display: flex; align-items: center; }
+    .field-icon { position: absolute; left: 12px; font-size: 0.95rem; pointer-events: none; }
+    .admin-input {
+      width: 100%;
+      background: #0e121a;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.9rem;
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .admin-input:focus {
+      border-color: var(--orange-primary);
+      box-shadow: 0 0 0 3px rgba(244, 122, 60, 0.15);
+    }
+    .input-action-btn {
+      position: absolute;
+      right: 10px;
+      background: none;
+      border: none;
+      color: #9ca3af;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .login-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+    .remember-label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+    .admin-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .admin-btn-primary {
+      background: var(--orange-primary);
+      color: #fff;
+    }
+    .admin-btn-primary:hover {
+      background: #f58850;
+      box-shadow: 0 4px 16px rgba(244, 122, 60, 0.35);
+    }
+    .admin-btn-block { width: 100%; }
+    .login-footer { margin-top: 1.5rem; text-align: center; }
+    .login-back-link {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+    .login-back-link:hover { color: #fff; }
+    .login-error {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      color: #f87171;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      margin-bottom: 1rem;
+    }
+    .auth-tabs {
+      display: flex;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      padding: 3px;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .auth-tab-btn {
+      flex: 1;
+      padding: 0.6rem 0.8rem;
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .auth-tab-btn.active {
+      background: var(--orange-primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(244, 122, 60, 0.35);
+    }
+    .auth-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(255, 152, 0, 0.12);
+      color: #ffb74d;
+      border: 1px solid rgba(255, 152, 0, 0.25);
+    }
+    .auth-badge-pill.supabase {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.25);
+    }
+    .forgot-link {
+      background: none;
+      border: none;
+      color: var(--orange-primary);
+      font-size: 0.78rem;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0;
+    }
+    .forgot-link:hover { color: #f58850; }
+    .user-profile-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .user-profile-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .user-avatar-circle {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #F47A3C, #0070F3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .user-details {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .user-email-text {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .user-uid-text {
+      font-size: 0.68rem;
+      color: #9ca3af;
+      font-family: var(--font-mono, monospace);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .status-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/admin/css/admin.css" />
+</head>
+<body class="admin-body">
+
+  <!-- ==============================================================
+       1. SECURE FIREBASE LOGIN & REGISTRATION SCREEN
+       ============================================================== -->
+  <div id="admin-login-screen" class="admin-login-wrapper">
+    <div class="login-card">
+      <div class="login-brand">
+        <img src="/assets/logo/reva-phoenix-logo.png" alt="Reva Phoenix Logo" class="login-logo" style="max-width: 190px; max-height: 52px; width: auto; height: 48px; object-fit: contain; margin-bottom: 1.25rem; display: inline-block;" />
+        <h1 class="login-title">REVA PHOENIX</h1>
+        <div class="login-subtitle">Media &amp; Asset Management Admin Panel</div>
+      </div>
+
+      <!-- Auth Mode Tabs: Sign In vs Sign Up -->
+      <div class="auth-tabs" id="auth-tabs-bar">
+        <button type="button" class="auth-tab-btn active" id="tab-btn-signin" data-mode="signin">Sign In</button>
+        <button type="button" class="auth-tab-btn" id="tab-btn-signup" data-mode="signup">Create Admin</button>
+      </div>
+
+      <div id="login-error-alert" class="login-error" style="display: none;"></div>
+      <div id="login-success-alert" class="login-error" style="display: none; background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.35); color: #34d399;"></div>
+
+      <form id="admin-login-form" class="login-form">
+        <div class="form-field">
+          <label class="field-label" for="login-username" id="label-login-email">Admin Email / Username</label>
+          <div class="input-with-icon">
+            <span class="field-icon">✉️</span>
+            <input type="text" id="login-username" class="admin-input" placeholder="admin@revaphoenix.com" autocomplete="username" required autofocus />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="field-label" for="login-password">Password</label>
+          <div class="input-with-icon">
+            <span class="field-icon">🔒</span>
+            <input type="password" id="login-password" class="admin-input" placeholder="••••••••" autocomplete="current-password" required />
+            <button type="button" id="toggle-password-btn" class="input-action-btn" title="Toggle password visibility">👁</button>
+          </div>
+        </div>
+
+        <!-- Confirm password field (shown in Sign Up mode only) -->
+        <div class="form-field" id="confirm-password-container" style="display: none;">
+          <label class="field-label" for="login-confirm-password">Confirm Password</label>
+          <div class="input-with-icon">
+            <span class="field-icon">🔐</span>
+            <input type="password" id="login-confirm-password" class="admin-input" placeholder="••••••••" autocomplete="new-password" />
+          </div>
+        </div>
+
+        <div class="login-options" id="signin-options-row">
+          <label class="remember-label">
+            <input type="checkbox" id="login-remember" />
+            <span>Remember login</span>
+          </label>
+          <button type="button" class="forgot-link" id="btn-forgot-password">Forgot password?</button>
+        </div>
+
+        <button type="submit" id="btn-submit-auth" class="admin-btn admin-btn-primary admin-btn-block">
+          <span id="btn-submit-text">Sign In with Firebase</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </form>
+
+      <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 8px;">
+        <span class="auth-badge-pill">🔥 Firebase Auth</span>
+        <span class="auth-badge-pill supabase">⚡ Supabase DB</span>
+      </div>
+
+      <div class="login-footer">
+        <a href="/" target="_blank" class="login-back-link">← Return to Public Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================
+       1B. MODAL: FORGOT PASSWORD RESET
+       ============================================================== -->
+  <div id="modal-forgot-password" class="admin-modal-overlay" style="display: none;">
+    <div class="admin-modal-box small">
+      <div class="admin-modal-header">
+        <h3 class="admin-modal-title">Reset Admin Password</h3>
+        <button class="admin-modal-close" id="close-forgot-modal">&times;</button>
+      </div>
+      <div class="delete-modal-body" style="text-align: left; padding: 1.5rem;">
+        <p style="font-size: 0.85rem; color: #d1d5db; margin-bottom: 1rem;">
+          Enter your registered admin email address. We will dispatch a password reset link directly through Firebase Authentication.
+        </p>
+        <div class="form-field">
+          <label class="field-label" for="forgot-email-input">Admin Email</label>
+          <input type="email" id="forgot-email-input" class="admin-input" placeholder="admin@revaphoenix.com" />
+        </div>
+        <div id="forgot-status-msg" style="margin-top: 0.75rem; font-size: 0.8rem; display: none;"></div>
+      </div>
+      <div class="admin-modal-footer">
+        <button type="button" class="admin-btn admin-btn-ghost" id="cancel-forgot-btn">Cancel</button>
+        <button type="button" class="admin-btn admin-btn-primary" id="send-reset-btn">Send Reset Link</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================
+       2. AUTHENTICATED ADMIN DASHBOARD APPLICATION
+       ============================================================== -->
+  <div id="admin-app" class="admin-layout" style="display: none;">
+
+    <!-- Left Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand">
+          <img src="/assets/logo/reva-phoenix-logo.png" alt="Reva Logo" class="sidebar-logo" style="max-width: 36px; max-height: 36px; object-fit: contain;" />
+          <div class="sidebar-brand-text">
+            <span class="brand-title">REVA PHOENIX</span>
+            <span class="brand-tag">MEDIA ADMIN</span>
+          </div>
+        </div>
+        <button id="sidebar-toggle-btn" class="sidebar-toggle-icon" title="Toggle Sidebar">◀</button>
+      </div>
+
+      <!-- Quick Search Filter -->
+      <div class="sidebar-search-box">
+        <input type="text" id="section-search-input" class="sidebar-search-input" placeholder="Filter sections... (Ctrl+K)" />
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <div class="nav-group-label">MEDIA MANAGEMENT</div>
+        <button class="nav-item active" data-tab="images">
+          <span class="nav-icon">🖼️</span>
+          <span class="nav-label">Website Images</span>
+          <span class="nav-pill pill-live" id="badge-images-count">Live</span>
+        </button>
+        <button class="nav-item" data-tab="brochures">
+          <span class="nav-icon">📑</span>
+          <span class="nav-label">Brochures (PDF)</span>
+          <span class="nav-pill" id="badge-brochures-count">PDF</span>
+        </button>
+        <button class="nav-item" data-tab="certificates">
+          <span class="nav-icon">📜</span>
+          <span class="nav-label">Certificates</span>
+          <span class="nav-pill" id="badge-certs-count">Accredited</span>
+        </button>
+        <button class="nav-item" data-tab="videos">
+          <span class="nav-icon">🎥</span>
+          <span class="nav-label">Videos &amp; Media</span>
+          <span class="nav-pill" id="badge-videos-count">4</span>
+        </button>
+
+        <div class="nav-group-label">ASSETS &amp; STORAGE</div>
+        <button class="nav-item" data-tab="media">
+          <span class="nav-icon">📁</span>
+          <span class="nav-label">Media Library</span>
+          <span class="nav-pill" id="badge-media-count">All</span>
+        </button>
+        <button class="nav-item" data-tab="backup">
+          <span class="nav-icon">💾</span>
+          <span class="nav-label">Backup &amp; Sync</span>
+        </button>
+      </nav>
+
+      <!-- Sidebar Footer with Active Firebase & Supabase User Identity -->
+      <div class="sidebar-footer">
+        <div class="user-profile-card">
+          <div class="user-profile-header">
+            <div class="user-avatar-circle" id="user-avatar-initials">A</div>
+            <div class="user-details">
+              <span class="user-email-text" id="user-display-email">admin@revaphoenix.com</span>
+              <span class="user-uid-text" id="user-display-uid" title="Firebase UID">UID: local-admin</span>
+            </div>
+          </div>
+          <div class="status-badges-row">
+            <span class="auth-badge-pill" id="badge-auth-status">● Firebase</span>
+            <span class="auth-badge-pill supabase" id="badge-db-status">● Supabase</span>
+          </div>
+        </div>
+
+        <div class="sidebar-actions-row">
+          <a href="../" target="_blank" class="sidebar-mini-btn" title="Open Public Website in new tab">
+            🌐 Live Site ↗
+          </a>
+          <button id="admin-logout-btn" class="sidebar-mini-btn logout" title="Log out of CMS">
+            🚪 Exit
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="admin-main">
+
+      <!-- Topbar Header -->
+      <header class="admin-topbar">
+        <div class="topbar-left">
+          <button id="mobile-sidebar-toggle" class="mobile-menu-trigger" aria-label="Open Navigation">☰</button>
+          <div class="breadcrumb-container">
+            <span class="breadcrumb-root">Admin CMS</span>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current" id="current-section-breadcrumb">Dashboard Overview</span>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <div id="save-status-indicator" class="status-indicator-badge synced">
+            <span class="status-dot"></span>
+            <span class="status-text">All Changes Saved</span>
+          </div>
+
+          <button id="btn-live-preview" class="admin-btn admin-btn-secondary" title="Preview changes live">
+            <span>👁 Preview Live</span>
+          </button>
+
+          <button id="btn-discard-changes" class="admin-btn admin-btn-ghost" title="Discard unsaved changes">
+            <span>↺ Discard</span>
+          </button>
+
+          <button id="btn-save-all" class="admin-btn admin-btn-primary" title="Save changes (Ctrl+S)">
+            <span>💾 Save Changes</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Dynamic Panes Container -->
+      <main class="admin-content-scroll" id="admin-tab-panes">
+        <!-- Content will be rendered dynamically by admin-app.js -->
+        <div class="loading-state">
+          <div class="loading-spinner"></div>
+          <div class="loading-text">Loading Reva Phoenix Content Store...</div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==============================================================
+       3. MODAL: MEDIA PICKER & UPLOADER
+       ============================================================== -->
+  <div id="modal-media-picker" class="admin-modal-overlay" style="display: none;">
+    <div class="admin-modal-box large">
+      <div class="admin-modal-header">
+        <div>
+          <h3 class="admin-modal-title">Media Library &amp; Image Uploader</h3>
+          <p class="admin-modal-sub">Select an existing asset or upload a new high-resolution image.</p>
+        </div>
+        <button class="admin-modal-close" id="close-media-modal">&times;</button>
+      </div>
+
+      <div class="media-modal-body">
+        <!-- Upload Dropzone -->
+        <div class="upload-dropzone" id="media-dropzone">
+          <input type="file" id="media-file-input" accept="image/png, image/jpeg, image/jpg, image/webp, image/svg+xml" style="display: none;" />
+          <div class="dropzone-icon">☁️</div>
+          <div class="dropzone-text">Drag &amp; drop an image here or <button type="button" class="upload-link-btn" id="btn-browse-file">browse files</button></div>
+          <div class="dropzone-hint">Supports PNG, JPG, JPEG, WEBP, SVG (Max 10MB)</div>
+        </div>
+
+        <!-- Filter / Search -->
+        <div class="media-filter-bar">
+          <input type="text" id="media-search-input" class="admin-input-sm" placeholder="Search images by name or category..." />
+          <div class="media-tags-filter" id="media-category-pills">
+            <button class="media-tag-pill active" data-tag="all">All</button>
+            <button class="media-tag-pill" data-tag="Brand">Brand</button>
+            <button class="media-tag-pill" data-tag="About">About</button>
+            <button class="media-tag-pill" data-tag="Services">Services</button>
+            <button class="media-tag-pill" data-tag="API">API</button>
+            <button class="media-tag-pill" data-tag="Infrastructure">Infrastructure</button>
+            <button class="media-tag-pill" data-tag="Gallery">Gallery</button>
+            <button class="media-tag-pill" data-tag="Industries">Industries</button>
+            <button class="media-tag-pill" data-tag="Uploads">Uploads</button>
+          </div>
+        </div>
+
+        <!-- Grid of Media Items -->
+        <div class="media-picker-grid" id="media-picker-grid-container">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <div class="admin-modal-footer">
+        <div class="selected-media-info" id="selected-media-preview-bar">No image selected</div>
+        <div class="modal-footer-btns">
+          <button type="button" class="admin-btn admin-btn-ghost" id="cancel-media-select">Cancel</button>
+          <button type="button" class="admin-btn admin-btn-primary" id="confirm-media-select" disabled>Use Selected Image</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================
+       4. MODAL: DELETE CONFIRMATION
+       ============================================================== -->
+  <div id="modal-delete-confirm" class="admin-modal-overlay" style="display: none;">
+    <div class="admin-modal-box small">
+      <div class="admin-modal-header danger">
+        <h3 class="admin-modal-title">Confirm Deletion</h3>
+        <button class="admin-modal-close" id="close-delete-modal">&times;</button>
+      </div>
+      <div class="delete-modal-body">
+        <div class="warning-icon">⚠️</div>
+        <p class="delete-warning-text" id="delete-modal-message">
+          Are you sure you want to delete this item?
+        </p>
+        <p class="delete-warning-sub">This action will be finalized when you click "Save Changes".</p>
+      </div>
+      <div class="admin-modal-footer">
+        <button type="button" class="admin-btn admin-btn-ghost" id="cancel-delete-btn">Cancel</button>
+        <button type="button" class="admin-btn admin-btn-danger" id="confirm-delete-btn">Yes, Delete Item</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================
+       5. MODAL: LIVE PREVIEW DRAWER / MODAL
+       ============================================================== -->
+  <div id="modal-live-preview" class="admin-modal-overlay preview-overlay" style="display: none;">
+    <div class="preview-modal-frame">
+      <div class="preview-header">
+        <div class="preview-title-box">
+          <span class="preview-live-dot"></span>
+          <span class="preview-title">Live Preview (localhost:8000)</span>
+        </div>
+        <div class="preview-device-switch">
+          <button class="preview-size-btn active" data-width="100%">🖥️ Desktop</button>
+          <button class="preview-size-btn" data-width="1024px">💻 Tablet</button>
+          <button class="preview-size-btn" data-width="430px">📱 Mobile</button>
+        </div>
+        <div class="preview-actions">
+          <a href="/" target="_blank" class="admin-btn admin-btn-xs admin-btn-secondary">Open In New Tab ↗</a>
+          <button class="admin-modal-close" id="close-preview-modal">&times;</button>
+        </div>
+      </div>
+      <div class="preview-body">
+        <iframe id="preview-iframe" src="/?preview=true" class="preview-frame" title="Live Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================
+       6. GLOBAL TOAST NOTIFICATION
+       ============================================================== -->
+  <div id="admin-toast" class="admin-toast" style="display: none;">
+    <span class="admin-toast-icon">✔</span>
+    <span class="admin-toast-msg" id="admin-toast-text">Content successfully updated!</span>
+  </div>
+
+  <!-- Admin Application Script (ES Module) -->
+  <script type="module" src="/admin/js/admin-app.js"></script>
+</body>
+</html>

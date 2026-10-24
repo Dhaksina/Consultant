@@ -539,10 +539,10 @@
         </div>
 
         <div class="gallery-cta-wrap" id="gallery-explore-cta">
-          <a href="https://revaphoenix.com/event-gallery/" target="_blank" rel="noopener noreferrer" class="gallery-explore-btn" title="Explore Complete Corporate Event Gallery (63 Archival Photos)">
-            <span>EXPLORE COMPLETE CORPORATE GALLERY (63 ARCHIVAL PHOTOS)</span>
+          <button type="button" class="gallery-explore-btn" id="open-corporate-gallery-btn" title="Explore Complete Corporate Event Gallery (69 Real Archival Events)">
+            <span>EXPLORE COMPLETE CORPORATE GALLERY (69 ARCHIVAL EVENTS)</span>
             <span class="arrow-icon">→</span>
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -939,6 +939,37 @@
         <h3 class="modal-title" id="modal-text-title">Leadership Message</h3>
       </div>
       <div id="modal-text-body" data-lenis-prevent></div>
+  </div>
+
+  <!-- CORPORATE ARCHIVAL GALLERY MODAL (IN-APP BROWSER) -->
+  <div class="modal-overlay" id="modal-corporate-gallery" role="dialog" aria-modal="true" aria-labelledby="cgm-modal-title" data-lenis-prevent>
+    <div class="modal-container extra-large" data-lenis-prevent>
+      <button class="modal-close-btn" aria-label="Close corporate gallery">&times;</button>
+      <div class="cgm-header">
+        <div class="modal-tag">Archival Event Browser</div>
+        <h3 class="modal-title" id="cgm-modal-title">Corporate Training & Audit Gallery</h3>
+        <p class="cgm-subtitle">Comprehensive archive of 69 corporate programs, API workshops, vendor audits, and global certifications across India, UAE, Saudi Arabia, and Oman.</p>
+      </div>
+
+      <!-- Toolbar: Categories + Search + Results Count -->
+      <div class="cgm-toolbar">
+        <div class="cgm-categories">
+          <button type="button" class="cgm-filter-btn active" data-cat="all">All Events (69)</button>
+          <button type="button" class="cgm-filter-btn" data-cat="API Training">API Training</button>
+          <button type="button" class="cgm-filter-btn" data-cat="Auditing & Compliance">Auditing & Compliance</button>
+          <button type="button" class="cgm-filter-btn" data-cat="Global Programs">Global Programs</button>
+          <button type="button" class="cgm-filter-btn" data-cat="Manufacturing & Engineering">Manufacturing & QA</button>
+        </div>
+        <div class="cgm-search-box">
+          <input type="text" id="cgm-search-input" class="cgm-search-input" placeholder="Search events, clients, locations..." />
+          <span class="cgm-results-count" id="cgm-results-count">Showing 69 Events</span>
+        </div>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="cgm-events-grid" id="cgm-events-grid" data-lenis-prevent>
+        <!-- Populated dynamically by corporate-gallery-modal.js -->
+      </div>
     </div>
   </div>
 

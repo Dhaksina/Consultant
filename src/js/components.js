@@ -1069,7 +1069,7 @@ function renderGallery(cms) {
     });
   });
 
-  // Ensure bottom Gallery Explore CTA button exists
+  // Ensure bottom Gallery Explore CTA button exists (opens full 69-event archival browser in-app)
   let ctaWrap = document.getElementById("gallery-explore-cta");
   if (!ctaWrap) {
     ctaWrap = document.createElement("div");
@@ -1078,13 +1078,22 @@ function renderGallery(cms) {
     container.after(ctaWrap);
   }
 
-  const galleryUrl = cms.portfolio?.eventGalleryUrl || "https://revaphoenix.com/event-gallery/";
   ctaWrap.innerHTML = `
-    <a href="${galleryUrl}" target="_blank" rel="noopener noreferrer" class="gallery-explore-btn" title="Explore Complete Corporate Event Gallery (63 Archival Photos)">
-      <span>EXPLORE COMPLETE CORPORATE GALLERY (63 ARCHIVAL PHOTOS)</span>
+    <button type="button" class="gallery-explore-btn" id="open-corporate-gallery-btn" title="Explore Complete Corporate Event Gallery (69 Real Archival Events)">
+      <span>EXPLORE COMPLETE CORPORATE GALLERY (69 ARCHIVAL EVENTS)</span>
       <span class="arrow-icon">→</span>
-    </a>
+    </button>
   `;
+
+  const exploreBtn = ctaWrap.querySelector("#open-corporate-gallery-btn");
+  if (exploreBtn) {
+    exploreBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (typeof window.openCorporateGalleryModal === "function") {
+        window.openCorporateGalleryModal();
+      }
+    });
+  }
 }
 
 /**

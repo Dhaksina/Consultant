@@ -7,6 +7,7 @@ import { renderAllComponents } from './components.js';
 import { initAnimations } from './animations.js';
 import { initNavigation } from './navigation.js';
 import { initModals, showToast } from './modals.js';
+import { initCorporateGalleryModal, openCorporateGalleryModal } from './corporate-gallery-modal.js';
 import { initSmoothScroll, scrollToTarget } from './smooth-scroll.js';
 
 function bootApp() {
@@ -25,6 +26,10 @@ function bootApp() {
 
   // 4. Initialize Modals & Dialogs
   initModals();
+
+  // 4b. Initialize Corporate Archival Gallery Modal & Browser
+  initCorporateGalleryModal();
+  window.openCorporateGalleryModal = openCorporateGalleryModal;
 
   // 5. Initialize GSAP & ScrollTrigger Animations
   initAnimations();

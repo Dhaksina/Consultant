@@ -8,7 +8,7 @@
     "founderInspiration": "Smt. Revathi Venkatesan, Founder Director, Cancer warrior & Survivor and the inspiration behind this Organization",
     "primaryColor": "#F47A3C",
     "secondaryColor": "#0070F3",
-    "lastUpdated": "2026-10-24T11:15:08.342Z"
+    "lastUpdated": "2026-10-24T11:20:50.047Z"
   },
   "seo": {
     "pageTitle": "Reva Phoenix Labs & Consultants | Consulting Division – Industrial Quality, API & IMS Engineering",
@@ -261,7 +261,7 @@
   "statistics": [
     {
       "label": "Customers Worldwide",
-      "value": 1000,
+      "value": 2500,
       "suffix": "+",
       "subtext": "Across major multinational manufacturing & oil & gas leaders"
     },
@@ -274,7 +274,7 @@
     {
       "label": "Years Domain Expertise",
       "value": 25,
-      "suffix": "",
+      "suffix": "+",
       "subtext": "Continuous leadership in industrial quality & engineering"
     },
     {
@@ -439,7 +439,7 @@
         "id": "api-q1-training",
         "code": "API SPEC Q1 TRAINING",
         "badge": "Auditor Masterclass",
-        "image": "assets/services/training-classroom.jpg",
+        "image": "assets/uploads/Gemini_Generated_Image_iqhko4iqhko4iqhk_1792840554.png",
         "title": "API Spec Q1 10th Edition Internal Auditor Training",
         "edition": "Internal Auditor Course",
         "pillars": [
@@ -466,7 +466,7 @@
         "id": "api-q1-consultancy",
         "code": "API SPEC Q1 CONSULTANCY",
         "badge": "100% Success Rate",
-        "image": "assets/api/api-spec-q1-inspection.jpg",
+        "image": "assets/uploads/Gemini_Generated_Image_205y7z205y7z205y_1792840610.png",
         "title": "Turnkey API Spec Q1 10th Edition Consulting & Licensing",
         "edition": "Turnkey Implementation",
         "pillars": [
@@ -493,7 +493,7 @@
         "id": "api-q2-about",
         "code": "ABOUT API SPEC Q2",
         "badge": "Upstream Services",
-        "image": "assets/industries/oil-and-gas-facility.jpg",
+        "image": "assets/uploads/Gemini_Generated_Image_ruc2kzruc2kzruc2_1792840683.png",
         "title": "API Spec Q2 Quality Standard for Service Organizations",
         "edition": "2nd Edition Standard",
         "pillars": [
@@ -520,7 +520,7 @@
         "id": "api-q2-training",
         "code": "API SPEC Q2 TRAINING",
         "badge": "Field Competency",
-        "image": "assets/gallery/training-session-group.jpg",
+        "image": "assets/uploads/Gemini_Generated_Image_9gmjai9gmjai9gmj_1792840744.png",
         "title": "API Spec Q2 2nd Edition Service Quality Training",
         "edition": "Service Lead Auditor",
         "pillars": [
@@ -547,7 +547,7 @@
         "id": "api-q2-consultancy",
         "code": "API SPEC Q2 CONSULTANCY",
         "badge": "Turnkey QMS",
-        "image": "assets/industries/oil-and-gas-facility.jpg",
+        "image": "assets/uploads/Gemini_Generated_Image_uhmzrtuhmzrtuhmz1_1792840784.png",
         "title": "API Spec Q2 Turnkey Implementation & Registration Consulting",
         "edition": "Turnkey Service QMS",
         "pillars": [
@@ -574,7 +574,7 @@
         "id": "api-monogram",
         "code": "API MONOGRAM",
         "badge": "Global Authority",
-        "image": "assets/api/api-monogram-spec.jpg",
+        "image": "assets/uploads/Gemini_Generated_Image_urefjrurefjruref_1792840841.png",
         "title": "API Monogram Product Licensing & Design Packages",
         "edition": "Licensing & Product Specs",
         "pillars": [
@@ -2516,6 +2516,62 @@
     "sac": "998313"
   },
   "mediaLibrary": [
+    {
+      "name": "Gemini_Generated_Image_urefjrurefjruref.png",
+      "url": "assets/uploads/Gemini_Generated_Image_urefjrurefjruref_1792840841.png",
+      "type": "image/png",
+      "size": "8409 KB",
+      "uploadedAt": "2026-10-24T11:20:41.289Z",
+      "tag": "Images"
+    },
+    {
+      "name": "Gemini_Generated_Image_uhmzrtuhmzrtuhmz (1).png",
+      "url": "assets/uploads/Gemini_Generated_Image_uhmzrtuhmzrtuhmz1_1792840784.png",
+      "type": "image/png",
+      "size": "8267 KB",
+      "uploadedAt": "2026-10-24T11:19:44.997Z",
+      "tag": "Images"
+    },
+    {
+      "name": "Gemini_Generated_Image_9gmjai9gmjai9gmj.png",
+      "url": "assets/uploads/Gemini_Generated_Image_9gmjai9gmjai9gmj_1792840744.png",
+      "type": "image/png",
+      "size": "7653 KB",
+      "uploadedAt": "2026-10-24T11:19:04.953Z",
+      "tag": "Images"
+    },
+    {
+      "name": "Gemini_Generated_Image_izl10sizl10sizl1.png",
+      "url": "assets/uploads/Gemini_Generated_Image_izl10sizl10sizl1_1792840734.png",
+      "type": "image/png",
+      "size": "8596 KB",
+      "uploadedAt": "2026-10-24T11:18:54.670Z",
+      "tag": "Images"
+    },
+    {
+      "name": "Gemini_Generated_Image_ruc2kzruc2kzruc2.png",
+      "url": "assets/uploads/Gemini_Generated_Image_ruc2kzruc2kzruc2_1792840683.png",
+      "type": "image/png",
+      "size": "8321 KB",
+      "uploadedAt": "2026-10-24T11:18:03.699Z",
+      "tag": "Images"
+    },
+    {
+      "name": "Gemini_Generated_Image_205y7z205y7z205y.png",
+      "url": "assets/uploads/Gemini_Generated_Image_205y7z205y7z205y_1792840610.png",
+      "type": "image/png",
+      "size": "8429 KB",
+      "uploadedAt": "2026-10-24T11:16:50.480Z",
+      "tag": "Images"
+    },
+    {
+      "name": "Gemini_Generated_Image_iqhko4iqhko4iqhk.png",
+      "url": "assets/uploads/Gemini_Generated_Image_iqhko4iqhko4iqhk_1792840554.png",
+      "type": "image/png",
+      "size": "8011 KB",
+      "uploadedAt": "2026-10-24T11:15:54.183Z",
+      "tag": "Images"
+    },
     {
       "name": "Gemini_Generated_Image_wbx8j2wbx8j2wbx8.png",
       "url": "assets/uploads/Gemini_Generated_Image_wbx8j2wbx8j2wbx8_1792840508.png",

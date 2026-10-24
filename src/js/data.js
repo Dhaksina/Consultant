@@ -91,25 +91,25 @@ export const ABOUT_DATA = {
 
 export const STATISTICS = [
   {
-    value: 500,
+    value: 2500,
     suffix: "+",
     label: "Customers Worldwide",
     subtext: "Across major multinational manufacturing & oil & gas leaders"
   },
   {
-    value: 40,
+    value: 50,
     suffix: "+",
     label: "Countries Served",
     subtext: "Across India, the Middle East, Asia & the US"
   },
   {
     value: 25,
-    suffix: "",
+    suffix: "+",
     label: "Years Domain Expertise",
     subtext: "Continuous leadership in industrial quality & engineering"
   },
   {
-    value: 100,
+    value: 95,
     suffix: "%",
     label: "Success Rate",
     subtext: "For committed management system & certification projects"

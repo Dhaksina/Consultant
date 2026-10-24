@@ -9,24 +9,28 @@ import { pauseScroll, resumeScroll } from './smooth-scroll.js';
 
 let activeCategory = 'all';
 let searchQuery = '';
+let isEventsRendered = false;
 
 export function initCorporateGalleryModal() {
   const modal = document.getElementById('modal-corporate-gallery');
   if (!modal) return;
 
-  // Bind all explore buttons on the page to open this modal
-  document.querySelectorAll('.gallery-explore-btn, #open-corporate-gallery-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  // Global document delegation for any explore button (handles static and dynamically rendered buttons)
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.gallery-explore-btn, #open-corporate-gallery-btn');
+    if (btn) {
       e.preventDefault();
-      e.stopPropagation();
       openCorporateGalleryModal();
-    });
+    }
   });
 
   // Close button
   const closeBtn = modal.querySelector('.modal-close-btn');
   if (closeBtn) {
-    closeBtn.addEventListener('click', closeCorporateGalleryModal);
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeCorporateGalleryModal();
+    });
   }
 
   // Backdrop click
@@ -62,15 +66,47 @@ export function initCorporateGalleryModal() {
     });
   }
 
+  // Single delegated click listener on events grid
+  const grid = document.getElementById('cgm-events-grid');
+  if (grid) {
+    grid.addEventListener('click', (e) => {
+      // Check if mini thumbnail clicked
+      const mini = e.target.closest('.cgm-mini-thumb');
+      if (mini) {
+        e.stopPropagation();
+        const fullSrc = mini.getAttribute('data-full-src');
+        const title = mini.getAttribute('data-title');
+        openLightbox(fullSrc, title);
+        return;
+      }
+
+      // Check if event card clicked
+      const card = e.target.closest('.cgm-event-card');
+      if (card) {
+        const id = parseInt(card.getAttribute('data-event-id'), 10);
+        const ev = CORPORATE_GALLERY_EVENTS.find(x => x.id === id);
+        if (ev) {
+          openLightbox(ev.thumbnail, ev.title);
+        }
+      }
+    });
+  }
+
   // Initial render
   renderGalleryEvents();
 }
 
 export function openCorporateGalleryModal() {
   const modal = document.getElementById('modal-corporate-gallery');
-  if (!modal) return;
+  if (!modal) {
+    console.error('modal-corporate-gallery element not found in DOM');
+    return;
+  }
 
-  renderGalleryEvents();
+  if (!isEventsRendered) {
+    renderGalleryEvents();
+  }
+
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
   pauseScroll();
@@ -149,24 +185,5 @@ function renderGalleryEvents() {
     `;
   }).join('');
 
-  // Attach lightbox click handlers
-  grid.querySelectorAll('.cgm-event-card').forEach(card => {
-    card.addEventListener('click', (e) => {
-      // Check if clicked a specific mini thumbnail
-      const mini = e.target.closest('.cgm-mini-thumb');
-      if (mini) {
-        e.stopPropagation();
-        const fullSrc = mini.getAttribute('data-full-src');
-        const title = mini.getAttribute('data-title');
-        openLightbox(fullSrc, title);
-        return;
-      }
-
-      const id = parseInt(card.getAttribute('data-event-id'), 10);
-      const ev = CORPORATE_GALLERY_EVENTS.find(x => x.id === id);
-      if (ev) {
-        openLightbox(ev.thumbnail, ev.title);
-      }
-    });
-  });
+  isEventsRendered = true;
 }

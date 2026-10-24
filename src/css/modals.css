@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.88);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,9 +20,14 @@
   transition: opacity 0.3s var(--ease-editorial), visibility 0.3s;
 }
 
+.modal-overlay.lightbox-modal {
+  z-index: 10200;
+}
+
 .modal-overlay.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .modal-container {

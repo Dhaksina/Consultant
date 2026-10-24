@@ -1113,84 +1113,48 @@ export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=Reva+Phoenix+
 
 export const TESTIMONIALS = [
   {
-    quote: "I have attended IMS internal audit certification. It was great experience to gain knowledge. Great owner that cares about their consulting company's Business excellence process, metrics, Executive management program process. They provide great and excellent consulting service and knowledge transfer.",
-    author: "VINODH KUMAR",
-    initials: "VK",
-    company: "Manufacturing Operations Division",
+    quote: "Very good training in my life never before.Very very good session from 05/10/26 to 10/10/26 of API Speq Q1 and API 5L 47th edition and essential normative refrance",
+    author: "NIKHIL GOSWAMI",
+    initials: "NG",
+    company: "Sandeep Gauswami · Man Industries India Limited",
     rating: 5.0,
-    tag: "IMS INTERNAL AUDIT & CONSULTING",
+    tag: "API SPEQ Q1 & API 5L 47TH EDITION",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "API requirement is well explained. From this training we got clear idea on API standards. This is beneficial to me and my organization. Training went on well and appreciated the trainer for taking entire team along with him and responded to all queries.",
-    author: "KOLI PADMANABHAN",
-    initials: "KP",
-    company: "Oil & Gas Industrial Valves",
+    quote: "Dr. Mani sir is one of the best faculty.",
+    author: "JAGARAPU CHANDRASEKHAR",
+    initials: "JC",
+    company: "Lead Auditor & Quality Engineering Programs",
     rating: 5.0,
-    tag: "API SPECIFICATION TRAINING",
+    tag: "EXCELLENCE IN QUALITY TRAINING",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "The training program for understanding API specifications was a class apart and made us know where we stand and what needs to be done. The consulting and training program was informative, interactive, and well appreciated by our management team.",
-    author: "SURESH BABU",
-    initials: "SB",
-    company: "Precision Flow Control Engineering",
+    quote: "Training is very good, explained clearly API Q1 Clauses with practical examples. Thanks",
+    author: "MANGESH KAMBALE",
+    initials: "MK",
+    company: "Quality Assurance & Compliance",
     rating: 5.0,
-    tag: "API AUDITING & IMPLEMENTATION",
+    tag: "API Q1 CLAUSES WITH PRACTICAL EXAMPLES",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "As I came through my journey, I had seen the most vibrant auditor / mentor with ultimate knowledge and a great inspirational attitude which made me thinking big and achieving in a least possible time. Thanks for the influence and unimaginable opportunities provided to excel.",
-    author: "BALAJI VENKAT",
-    initials: "BV",
-    company: "Corporate Quality Systems Lead",
+    quote: "Clear and practical API Q1 training by Manikandan Sir. Improved understanding of audit requirements.",
+    author: "MOHAN SINGH",
+    initials: "MS",
+    company: "Local Guide · 56 reviews",
     rating: 5.0,
-    tag: "EXECUTIVE AUDIT MENTORSHIP",
+    tag: "API Q1 AUDIT REQUIREMENTS",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "I attended training for INTERNAL AUDITOR COURSE for API Q1 9th edition, 5DP, 5CT & 5L spec & ISO 9001:2015. It was an intensive 4-day training course & I enjoyed it lot & learned a lot. Outstanding corporate quality consulting program.",
-    author: "FAISAL KARIM",
-    initials: "FK",
-    company: "Petroleum & Tubular Equipment",
+    quote: "Training provided by Dr. Manikandan Venkatesan Sir help me to upgrade my knowledge and enhanced my understanding how to interpret specification and co related to others",
+    author: "MOHAMMAD ALI KHAN",
+    initials: "MA",
+    company: "4 reviews · Technical Standards",
     rating: 5.0,
-    tag: "API Q1, 5CT, 5L & ISO 9001:2015",
-    googleReviewUrl: GOOGLE_REVIEWS_URL
-  },
-  {
-    quote: "Great learning experience, Dr. Manikandan is very seasoned and experienced professional trainer, really enjoyed the training with his practical examples and in-depth knowledge on API specifications, quality management systems, and compliance standards.",
-    author: "KESAVARAM K.",
-    initials: "KK",
-    company: "API & Flow Control Engineering",
-    rating: 5.0,
-    tag: "API SPEC Q1 & QUALITY CONSULTING",
-    googleReviewUrl: GOOGLE_REVIEWS_URL
-  },
-  {
-    quote: "As a quality month celebration, our team really enjoyed the internal auditor training session conducted by Mr. Manikandan Venkatesan. Really impressed by the way of teaching, guidance, and practical consulting knowledge transfer. Excellent learning!",
-    author: "JOANNA FOXX",
-    initials: "JF",
-    company: "Acetech Group of Companies",
-    rating: 5.0,
-    tag: "CORPORATE QUALITY TRAINING",
-    googleReviewUrl: GOOGLE_REVIEWS_URL
-  },
-  {
-    quote: "Very good interactive session. Dr. Manikandan Venkatesan has in-depth knowledge on various consulting subjects and helps the industrial teams connect the dots of the process and achieve seamless compliance.",
-    author: "JAYANTH VENKATESH",
-    initials: "JV",
-    company: "Engineering Process Advisory",
-    rating: 5.0,
-    tag: "PROCESS MAPPING & ADVISORY",
-    googleReviewUrl: GOOGLE_REVIEWS_URL
-  },
-  {
-    quote: "The consulting and training was excellent. The explanation part for each ISO and API clause was wonderful by adding real-world industry case studies. It gave our team actionable tools to implement immediate quality improvements.",
-    author: "PRAFUL NEEMA",
-    initials: "PN",
-    company: "Supply Chain & Quality Assurance",
-    rating: 5.0,
-    tag: "QUALITY MANAGEMENT & CLAUSE ANALYSIS",
+    tag: "SPECIFICATION INTERPRETATION & API Q1",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   }
 ];

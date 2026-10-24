@@ -1218,7 +1218,7 @@ export const EVENT_GALLERY_URL = "https://revaphoenix.com/event-gallery/";
 export const GALLERY_ITEMS = [
   { id: 1, src: "assets/gallery/training-session-group.jpg", title: "API Spec Q1 / Q2 Master Training Cohort", category: "Training" },
   { id: 2, src: "assets/services/training-classroom.jpg", title: "Certified Internal Auditor Masterclass Interactive Training Suite", category: "Workshop" },
-  { id: 3, src: "assets/gallery/gallery-event-2.jpg", title: "Industrial Workshop on Shop Floor Excellence", category: "Excellence" },
+  { id: 3, src: "assets/api/api-spec-q1-inspection.jpg", title: "API Spec Q1 Quality Inspection & Technical Audit", category: "Technical Audit" },
   { id: 4, src: "assets/services/auditing-precision.jpg", title: "On-Site API Spec Q1 Compliance Audit & Quality Appraisal", category: "Audit" },
   { id: 5, src: "assets/ims/integrated-management-systems.jpg", title: "ISO 9001, 14001 & 45001 Integrated Implementation Symposium", category: "Symposium" },
   { id: 6, src: "assets/services/consulting-engineering.jpg", title: "Strategic Engineering Advisory & Lead Auditor Session", category: "Masterclass" }

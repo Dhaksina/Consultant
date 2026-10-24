@@ -2179,55 +2179,27 @@
       },
       {
         "id": 8,
-        "src": "assets/about/dr-manikandan-venkatesan-md.jpg",
-        "title": "MD Dr. Manikandan Venkatesan Chairing Lead Auditor Technical Delegation",
-        "category": "Customer Visits",
-        "date": "Leadership Summit"
-      },
-      {
-        "id": 9,
         "src": "assets/industries/aerospace-precision.jpg",
         "title": "Aerospace Component Manufacturing Client Inspection Delegation",
         "category": "Customer Visits",
         "date": "Industry Visit"
       },
       {
-        "id": 10,
-        "src": "assets/logo/reva-phoenix-25-years-official.png",
-        "title": "25 Years of Excellence in Global Quality & Technical Consulting",
-        "category": "Awards & Appreciation",
-        "date": "Jubilee Milestone"
-      },
-      {
-        "id": 11,
-        "src": "assets/about/dr-manikandan-venkatesan-md-alt.jpg",
-        "title": "Keynote Address at National Petroleum Quality Conclave",
-        "category": "Awards & Appreciation",
-        "date": "Distinguished Speaker"
-      },
-      {
-        "id": 12,
+        "id": 9,
         "src": "assets/industries/business-excellence.jpg",
         "title": "Corporate Quality Trophy for Outstanding Oil & Gas Consultancy",
         "category": "Awards & Appreciation",
         "date": "Excellence Trophy"
       },
       {
-        "id": 13,
-        "src": "assets/gallery/gallery-event-2.jpg",
-        "title": "Industrial Workshop on Shop Floor Quality Excellence",
-        "category": "Conclaves & Seminars",
-        "date": "Shop Floor Workshop"
-      },
-      {
-        "id": 14,
+        "id": 10,
         "src": "assets/services/training-classroom.jpg",
         "title": "Certified Internal Auditor Masterclass Interactive Training Suite",
         "category": "Conclaves & Seminars",
         "date": "Auditor Training"
       },
       {
-        "id": 15,
+        "id": 11,
         "src": "assets/ims/integrated-management-systems.jpg",
         "title": "ISO 9001, 14001 & 45001 Integrated Implementation Symposium",
         "category": "Conclaves & Seminars",

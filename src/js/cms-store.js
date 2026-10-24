@@ -260,7 +260,7 @@ export const DEFAULT_CMS_DATA = {
     departments: [
       COMPANY_INFO.contacts.enquiry,
       COMPANY_INFO.contacts.feedback,
-      COMPANY_INFO.contacts.collection,
+      COMPANY_INFO.contacts.technical,
       COMPANY_INFO.contacts.accounts
     ],
     socials: COMPANY_INFO.socials,

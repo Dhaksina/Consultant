@@ -39,10 +39,10 @@ export const COMPANY_INFO = {
       phone: "+91 99405 64261",
       email: "mani.venkatesh@revaphoenix.com"
     },
-    collection: {
-      title: "Collection & Delivery",
-      phone: "+91 98402 96996",
-      email: "reception@revaphoenix.com"
+    technical: {
+      title: "Technical",
+      phone: "+91-99403 48159",
+      email: "director@revaphoenix.com"
     },
     accounts: {
       title: "Accounts & Invoice",

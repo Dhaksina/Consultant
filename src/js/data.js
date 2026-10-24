@@ -1109,76 +1109,89 @@ export const CLIENTS = [
   { name: "SRA Systems Limited", location: "Chennai, India", logo: "assets/clients/sra-systems.png" }
 ];
 
+export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews";
+
 export const TESTIMONIALS = [
   {
-    quote: "API requirement is well explained. From this training we got clear idea on the latest edition. This is beneficial to me and my organization. Training went on well and appreciated the trainer for taking the entire team along with him and responding to all queries.",
-    author: "Koli Padmanabhan",
-    company: "Manufacturing Engineering Lead",
-    rating: 5,
-    tag: "API Training"
+    quote: "One of the best calibration lab with advanced technology. Customer service is really good. Lab and office area 5S well maintained. Workmanship and customer focus are upto the mark. Keep it up all and All the best to the team!",
+    author: "ANBU SEKAR",
+    initials: "AS",
+    company: "Emerson Process Management",
+    rating: 5.0,
+    tag: "INSTRUMENTATION & PROCESS CALIBRATION",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "The training program for understanding the API 25th edition was a class apart and also made us understand where we stand and what needs to be done. The program was informative, interactive, and well appreciated by our management.",
-    author: "Suresh Babu",
-    company: "Quality Assurance Specialist",
-    rating: 5,
-    tag: "API Standards"
+    quote: "Well equipped testing and calibration center with availability of both offsite and on-site equipment calibration as per customer requirements, at reasonable price. NABL certified test reports was given. Excellent customer handling team for their immediate response.",
+    author: "RAHINI S.",
+    initials: "RS",
+    company: "Manufacturing & Industrial Testing",
+    rating: 4.9,
+    tag: "ON-SITE & PERMANENT LAB CALIBRATION",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "I have attended IMS internal audit certification. It was great experience to gain knowledge. Great owners that care about their consulting company's Business excellence process, metrics, and Executive management programs. They provide excellent consulting service and knowledge transfer.",
-    author: "Vinodh Kumar",
-    company: "Operations & IMS Coordinator",
-    rating: 5,
-    tag: "IMS Certification"
+    quote: "One of the Best and Biggest Metrology Lab in the City... High Class Calibrating Equipments are used for Calibration... Excellent 3C 5S Practices being followed... They are striving to Exceed Customer Expectations!",
+    author: "MUTHU KUMAR",
+    initials: "MK",
+    company: "Metrology Infrastructure Auditor",
+    rating: 5.0,
+    tag: "PRECISION DIMENSIONAL CALIBRATION",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "The training was excellent. The explanation part for each clause was wonderful by adding real industrial stories and examples. It reached right to the mind. I have learned principles that I will apply to improve purchase and supply chain departments.",
-    author: "Praful Neema",
-    company: "Supply Chain & Procurement Head",
-    rating: 5,
-    tag: "Process Optimization"
+    quote: "The calibration of Reva team service is wonderful and special thanks for the coordination and support from Ms. Manasi, operations executive. Prompt delivery and high metrological accuracy across all equipment.",
+    author: "VIJAYAKUMAR KANDHASAMY",
+    initials: "VK",
+    company: "Industrial Operations Division",
+    rating: 5.0,
+    tag: "THERMAL & ELECTROTECHNICAL TESTING",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "In my professional journey, Dr. Mani Venkatesan is the most vibrant mentor with ultimate knowledge and an inspirational attitude that made me think big and achieve milestones in the shortest time. Thanks for the immense opportunities provided to excel.",
-    author: "Balaji Venkat",
-    company: "Senior Quality Manager",
-    rating: 5,
-    tag: "Consulting Mentorship"
+    quote: "Training session was very good and much informative. He was very patient to explain all our queries effectively. I was wondering on seeing your Laboratory with neat and clean way. Going forward will always suggest your lab for training and testing. Awaiting to meet you again to gain more knowledge.",
+    author: "KARTHICK S.",
+    initials: "KS",
+    company: "Engineering & Quality Assurance",
+    rating: 5.0,
+    tag: "LABORATORY CALIBRATION & TRAINING",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "Very good interactive session. Mani Venkatesan has in-depth knowledge across various subjects and helped our cross-functional teams connect the dots of the process with clarity and measurable KPIs.",
-    author: "Jayanth Venkatesh",
-    company: "Process Engineering Director",
-    rating: 5,
-    tag: "Executive Workshop"
+    quote: "I visited JRPM for training purpose on dimensional calibration. I was trained by Mr. Karthick Ganapathy, his explanation has a high level of clarity and easily understandable. Lab and office area 5S maintenance is extremely good. Outstanding experience.",
+    author: "THEJASHWINI C.",
+    initials: "TC",
+    company: "Aerospace & Precision Metrology",
+    rating: 4.9,
+    tag: "DIMENSIONAL METROLOGY & CMM",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "I attended training conducted by Mr. Manikandan; he has vast knowledge and total command over the subject. From his training delivery, we can infer the deep, thorough preparation and world-class mastery behind it.",
-    author: "Karthik P",
-    company: "Technical Services Lead",
-    rating: 5,
-    tag: "Auditor Training"
+    quote: "Great learning experience, Dr. Manikandan is very seasoned and experienced professional trainer, really enjoyed the training with his practical examples and in-depth knowledge on API specifications, pressure calibration, and ISO/IEC 17025 standards.",
+    author: "KESAVARAM K.",
+    initials: "KK",
+    company: "API & Flow Control Engineering",
+    rating: 4.8,
+    tag: "API SPEC Q1 & PRESSURE STANDARDS",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "I have attended training for INTERNAL AUDITOR COURSE for API Q1 9th edition, 5DP, 5CT & 5L spec & ISO 9001-2015. It was a rigorous 4-day training course and I enjoyed it immensely while mastering the specs.",
-    author: "Faisal Karim",
-    company: "Petroleum Quality Inspector",
-    rating: 5,
-    tag: "Oil & Gas API Q1"
+    quote: "We had a very good experience in the calibration training course as per ISO/IEC 17025. Overall it was like a technical institution for the knowledge seekers. Highly recommend Reva Phoenix for calibration standards and compliance.",
+    author: "GOKUL KRISHNAN",
+    initials: "GK",
+    company: "Quality Management Systems",
+    rating: 4.9,
+    tag: "ISO/IEC 17025 COMPLIANCE",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "We had a wonderful learning experience. The knowledge sharing and deliverance was remarkable. We never had a trainer with this caliber of practical insight in our career. Truly a Master Trainer.",
-    author: "Vijay Raghav",
-    company: "Engineering Operations Lead",
-    rating: 5,
-    tag: "Masterclass"
-  },
-  {
-    quote: "As part of our quality month celebration, our Acetech team really enjoyed the internal auditor training session conducted by Mr. Manikandan Venkatesan. Impressed by the teaching methodology, guidance, and practical knowledge transfer.",
-    author: "Joanna Foxx",
-    company: "Acetech Quality Team",
-    rating: 5,
-    tag: "Corporate Audit"
+    quote: "Excellent Laboratory for Calibration and Testing. Metrological Calibration Laboratory is one of the best in Chennai. Strict 5S standards, high-precision reference calibrators, and very professional team. Great experience during calibration!",
+    author: "MUTHU GANESAN",
+    initials: "MG",
+    company: "Mechanical & Metrology Testing",
+    rating: 4.9,
+    tag: "NABL ACCREDITED CALIBRATION",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   }
 ];
 

@@ -17,6 +17,7 @@ import {
   INDUSTRIES,
   CLIENTS,
   TESTIMONIALS,
+  GOOGLE_REVIEWS_URL,
   INFRASTRUCTURE_DATA,
   GALLERY_ITEMS,
   VIDEOS,
@@ -213,6 +214,7 @@ export const DEFAULT_CMS_DATA = {
     testimonialsTitleLine2: "PARTNERS SAY",
     testimonialsDescription: "Authentic, unedited feedback from quality managers, technical leads, and corporate executives trained and mentored by Reva Phoenix.",
     testimonials: TESTIMONIALS,
+    googleReviewsUrl: GOOGLE_REVIEWS_URL,
 
     downloadsSubtitle: "Official Publications",
     downloadsTitleLine1: "VERIFIED",
@@ -343,26 +345,36 @@ function deepMerge(target, source) {
   return output;
 }
 
+function ensureGoogleReviews(data) {
+  if (!data) return data;
+  if (!data.portfolio) data.portfolio = {};
+  data.portfolio.googleReviewsUrl = GOOGLE_REVIEWS_URL;
+  if (!data.portfolio.testimonials || !data.portfolio.testimonials[0]?.googleReviewUrl) {
+    data.portfolio.testimonials = TESTIMONIALS;
+  }
+  return data;
+}
+
 /**
  * Synchronous getter: gets data from memory, localStorage, or defaults
  */
 export function getCmsData() {
   if (cachedCmsData) {
-    return cachedCmsData;
+    return ensureGoogleReviews(cachedCmsData);
   }
 
   try {
     const raw = localStorage.getItem(CMS_STORAGE_KEY);
     if (raw) {
       const parsed = JSON.parse(raw);
-      cachedCmsData = deepMerge(DEFAULT_CMS_DATA, parsed);
+      cachedCmsData = ensureGoogleReviews(deepMerge(DEFAULT_CMS_DATA, parsed));
       return cachedCmsData;
     }
   } catch (err) {
     console.error("Error reading CMS data from localStorage:", err);
   }
 
-  cachedCmsData = JSON.parse(JSON.stringify(DEFAULT_CMS_DATA));
+  cachedCmsData = ensureGoogleReviews(JSON.parse(JSON.stringify(DEFAULT_CMS_DATA)));
   return cachedCmsData;
 }
 
@@ -375,7 +387,7 @@ export async function initCmsData() {
     const supabaseData = await fetchCmsContent();
     if (supabaseData && Object.keys(supabaseData).length > 0) {
       console.log("[Supabase] Loaded active CMS dataset from cloud database.");
-      cachedCmsData = deepMerge(DEFAULT_CMS_DATA, supabaseData);
+      cachedCmsData = ensureGoogleReviews(deepMerge(DEFAULT_CMS_DATA, supabaseData));
       localStorage.setItem(CMS_STORAGE_KEY, JSON.stringify(cachedCmsData));
       return cachedCmsData;
     }
@@ -389,7 +401,7 @@ export async function initCmsData() {
     if (res.ok) {
       const serverData = await res.json();
       if (serverData && Object.keys(serverData).length > 0) {
-        cachedCmsData = deepMerge(DEFAULT_CMS_DATA, serverData);
+        cachedCmsData = ensureGoogleReviews(deepMerge(DEFAULT_CMS_DATA, serverData));
         localStorage.setItem(CMS_STORAGE_KEY, JSON.stringify(cachedCmsData));
         return cachedCmsData;
       }

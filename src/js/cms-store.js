@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v8';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v9';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -366,6 +366,16 @@ function ensureGoogleReviews(data) {
   if (isMissingConsultingReviews || isCalibrationReview || !data.portfolio.testimonials[0]?.googleReviewUrl) {
     data.portfolio.testimonials = TESTIMONIALS;
   }
+
+  // Ensure statistics metrics are always fresh (2500+ and 25+)
+  if (data.statistics && Array.isArray(data.statistics)) {
+    if (data.statistics[0] && (data.statistics[0].value === 1000 || data.statistics[0].value !== 2500)) {
+      data.statistics = STATISTICS;
+    }
+  } else {
+    data.statistics = STATISTICS;
+  }
+
   return data;
 }
 
@@ -382,6 +392,7 @@ export function getCmsData() {
     localStorage.removeItem('reva_phoenix_cms_store_v5');
     localStorage.removeItem('reva_phoenix_cms_store_v6');
     localStorage.removeItem('reva_phoenix_cms_store_v7');
+    localStorage.removeItem('reva_phoenix_cms_store_v8');
   } catch (e) {}
 
   try {

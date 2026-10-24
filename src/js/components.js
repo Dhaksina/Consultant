@@ -1079,8 +1079,8 @@ function renderGallery(cms) {
   }
 
   ctaWrap.innerHTML = `
-    <button type="button" class="gallery-explore-btn" id="open-corporate-gallery-btn" title="Explore Complete Corporate Event Gallery (69 Real Archival Events)">
-      <span>EXPLORE COMPLETE CORPORATE GALLERY (69 ARCHIVAL EVENTS)</span>
+    <button type="button" class="gallery-explore-btn" id="open-corporate-gallery-btn" title="Explore Complete Corporate Event Gallery">
+      <span>EXPLORE COMPLETE CORPORATE GALLERY</span>
       <span class="arrow-icon">→</span>
     </button>
   `;

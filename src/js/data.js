@@ -251,7 +251,7 @@ export const API_SERVICES = {
       title: "API Auditing, Second-Party & Mock Assessments",
       badge: "Audit Precision",
       overview: "Reva Phoenix Labs & Consultants Pvt. Ltd. Consulting Division offers best-in-class second party & mock assessment services preparing organizations for final API Certification and annual surveillance audits. Our comprehensive product, process, and system audit methodology imparts robustness to your quality management systems.",
-      image: "assets/services/auditing-precision.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_izl10sizl10sizl1_1792845980.png",
       pillars: [
         { name: "Mock API Audits", desc: "Rigorous pre-assessment simulating official API audits to uncover hidden variances and ensure auditor approval." },
         { name: "Supplier Audits", desc: "Independent second-party and third-party supplier audits assessing technical capacity, systems, and contractual conformance." },
@@ -266,7 +266,7 @@ export const API_SERVICES = {
       title: "API Spec Q1 10th Edition Quality Management Standard",
       badge: "Manufacturing Standard",
       overview: "API Spec Q1 outlines the highest quality management standard for companies manufacturing equipment and components used in the petroleum and natural gas industries. The 10th Edition promotes the integration of a process approach, emphasizing prevention of nonconformities, contingency planning, risk assessment, and minimizing variation and waste.",
-      image: "assets/api/api-spec-q1-inspection.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_wbx8j2wbx8j2wbx8_1792840508.png",
       pillars: [
         { name: "10th Edition Framework", desc: "Aligned with the requirements of ISO 9001:2015 while retaining stringent petroleum-specific realization mandates." },
         { name: "Risk Assessment", desc: "Systematic identification of contingency planning, risk assessments, and mitigation controls across realization." },
@@ -281,7 +281,7 @@ export const API_SERVICES = {
       title: "API Spec Q1 10th Edition Internal Auditor Training",
       badge: "Auditor Masterclass",
       overview: "Comprehensive professional training course delivered by certified master auditors. Equips engineers, quality managers, and shop-floor leads with in-depth clause interpretations, audit checklist preparation, live non-conformance evaluation, and practical industrial case studies.",
-      image: "assets/services/training-classroom.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_iqhko4iqhko4iqhk_1792840554.png",
       pillars: [
         { name: "Clause Breakdown", desc: "Detailed breakdown of 10th Edition sections including Management of Change, Supplier Control, and Realization." },
         { name: "Audit Execution", desc: "Hands-on techniques for objective evidence gathering, non-conformance reporting, and root-cause analysis." },
@@ -296,7 +296,7 @@ export const API_SERVICES = {
       title: "Turnkey API Spec Q1 10th Edition Consulting & Licensing",
       badge: "100% Success Rate",
       overview: "Reva Phoenix offers a one-stop solution for API Certification and API Monogram programs. Serving 500+ clients across 40 countries, our specialists manage every stage from initial gap analysis and Level 1–4 documentation development to mock audit closure and API auditor defense.",
-      image: "assets/api/api-spec-q1-inspection.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_205y7z205y7z205y_1792840610.png",
       pillars: [
         { name: "Baseline Gap Analysis", desc: "Comprehensive assessment of current shop-floor procedures against every 10th Edition requirement." },
         { name: "4-Level Documentation", desc: "Custom Quality Manuals, SOPs, Work Instructions, and Controlled Inspection Formats tailored to your culture." },
@@ -311,7 +311,7 @@ export const API_SERVICES = {
       title: "API Spec Q2 Quality Standard for Service Organizations",
       badge: "Upstream Services",
       overview: "API Spec Q2 from the American Petroleum Institute is the premier international quality management system standard designed specifically for oil and gas service supply organizations. It covers critical service execution, risk management, personnel competence, and contingency planning for upstream operations.",
-      image: "assets/industries/oil-and-gas-facility.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_ruc2kzruc2kzruc2_1792840683.png",
       pillars: [
         { name: "Service Execution Plans", desc: "Structured controls for onshore and offshore well-site operations, drilling services, and equipment handling." },
         { name: "Critical Maintenance", desc: "Rigorous preventive maintenance and calibration schedules for mission-critical service tools." },
@@ -326,7 +326,7 @@ export const API_SERVICES = {
       title: "API Spec Q2 2nd Edition Service Quality Training",
       badge: "Field Competency",
       overview: "Specialized training program for upstream oilfield service suppliers, rig contractors, and service engineers. Explores service risk assessments, service design controls, supply chain evaluation, and evidence-driven compliance across field operations and offshore platforms.",
-      image: "assets/gallery/training-session-group.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_9gmjai9gmjai9gmj_1792840744.png",
       pillars: [
         { name: "Upstream Service Mapping", desc: "Translating field service operations into structured, verifiable Q2-compliant processes." },
         { name: "Data & Evidence Capture", desc: "Evidence-based compliance tracking required by Super Majors and leading operators." },
@@ -341,7 +341,7 @@ export const API_SERVICES = {
       title: "API Spec Q2 Turnkey Implementation & Registration Consulting",
       badge: "Turnkey QMS",
       overview: "Turnkey consulting guiding service entities through complete API Spec Q2 registration. Our standard experts review Level 1 to 4 documentation, map service delivery workflows, implement preventative equipment maintenance protocols, and conduct internal audits to ensure flawless certification.",
-      image: "assets/industries/oil-and-gas-facility.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_uhmzrtuhmzrtuhmz1_1792840784.png",
       pillars: [
         { name: "Service Scoping & Review", desc: "Detailed review of existing field records, logs, and procedures to establish custom project scopes." },
         { name: "Customized Documentation", desc: "Creation of service quality plans, inspection checklists, and equipment maintenance protocols." },
@@ -356,7 +356,7 @@ export const API_SERVICES = {
       title: "API Monogram Product Licensing & Design Packages",
       badge: "Global Authority",
       overview: "Voluntary licensing program certifying that equipment conforms to official API Product Specifications. Reva Phoenix assists manufacturers in qualifying for Monogram licenses across API 5B, 5CT, 6A, 6D, 7-1, 11B, 16A and more, including full API design packages, proof testing, and NC closures.",
-      image: "assets/api/api-monogram-spec.jpg",
+      image: "assets/uploads/Gemini_Generated_Image_urefjrurefjruref_1792840841.png",
       pillars: [
         { name: "Product Spec Coverage", desc: "Consulting for API 5B, 5CT, 6A, 6D, 7-1, 11B, 16A, 16C, 600, 602, and casing/tubing standards." },
         { name: "API Design Packages", desc: "Preparation of complete Design Review Packages, design calculations, drawings, and FMEA reports." },

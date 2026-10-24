@@ -52,9 +52,11 @@ export const COMPANY_INFO = {
   },
   labDivisionUrl: "https://www.revacalibration.com/",
   socials: {
-    linkedin: "https://www.linkedin.com/company/reva-phoenix-consulting/",
-    youtube: "https://www.youtube.com/@revaphoenix",
+    instagram: "https://www.instagram.com/revaphoenix/",
     facebook: "https://www.facebook.com/revaphoenix/",
+    youtube: "https://www.youtube.com/@revaphoenix",
+    linkedin: "https://www.linkedin.com/company/reva-phoenix-consulting/",
+    twitter: "https://twitter.com/revaphoenix",
     whatsapp: "https://wa.me/919940564261"
   }
 };

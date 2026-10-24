@@ -113,7 +113,6 @@ export const DEFAULT_CMS_DATA = {
         isDropdown: true,
         dropdownItems: [
           { label: "Our Clients", link: "#clients" },
-          { label: "Infrastructure", link: "#infrastructure" },
           { label: "Event Gallery", link: "#gallery" },
           { label: "Video Center", link: "#videos" },
           { label: "Testimonials", link: "#testimonials" },
@@ -190,7 +189,7 @@ export const DEFAULT_CMS_DATA = {
     infrastructureSubtitle: "Facility & Technology",
     infrastructureTitleLine1: "WORLD CLASS",
     infrastructureTitleLine2: "INFRASTRUCTURE",
-    infrastructureDescription: "Operating from the Reva Phoenix Complex in Chennai with <strong>20+ integrated calibration laboratories</strong> under one roof — India's largest integrated calibration facility.",
+    infrastructureDescription: "Operating from the Reva Phoenix Complex in Chennai with <strong>35+ integrated calibration laboratories</strong> under one roof — India's largest integrated calibration facility.",
     infrastructureLabLinkText: "Visit Calibration Division ↗",
     infrastructureLabLinkUrl: "https://www.revacalibration.com/",
     infrastructureFeatures: INFRASTRUCTURE_DATA.features,

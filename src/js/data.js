@@ -1197,10 +1197,10 @@ export const TESTIMONIALS = [
 
 export const INFRASTRUCTURE_DATA = {
   title: "STATE-OF-THE-ART INFRASTRUCTURE",
-  subtitle: "20+ Accredited Laboratories Under One Roof & Headquarters",
+  subtitle: "35+ Accredited Laboratories Under One Roof & Headquarters",
   description: "Reva Phoenix operates from its dedicated complex in Chennai, Tamilnadu, housing India's largest integrated calibration and metrology facility alongside corporate training auditoriums.",
   features: [
-    { title: "20+ Integrated Calibration Labs", desc: "Thermal, Mechanical, Electro-Technical, Dimensional, Pressure, Mass, Fluid Flow, and API Gauge laboratories." },
+    { title: "35+ Integrated Calibration Labs", desc: "Thermal, Mechanical, Electro-Technical, Dimensional, Pressure, Mass, Fluid Flow, and API Gauge laboratories." },
     { title: "API Gauge Center of Excellence", desc: "Dedicated high-accuracy inspection instruments for API Spec 5B, Spec 5CT, Spec 7-2, and Spec 11B thread gauges." },
     { title: "Modern Audio-Visual Auditoriums", desc: "Fully equipped executive training rooms supporting hybrid onsite and live global masterclasses." },
     { title: "Controlled Environmental Enclosures", desc: "Precision temperature and humidity regulated testing suites meeting stringent ISO/IEC 17025 standards." }
@@ -1287,7 +1287,7 @@ export const CAREERS = [
     qualification: "B.E / B.Tech in Mechanical, Mechatronics, EEE, ECE, ICE or equivalent",
     location: "Chennai / PAN India & Middle East",
     responsibilities: [
-      "Technical Calibration & Testing at our 20+ NABL accredited laboratories",
+      "Technical Calibration & Testing at our 35+ NABL accredited laboratories",
       "Handling high-precision thermal, mechanical, dimensional, and API gauge calibrations",
       "Calculation of measurement uncertainty and preparing test reports compliant with ISO/IEC 17025",
       "Customer technical coordination and continuous laboratory quality adherence"
@@ -1300,7 +1300,7 @@ export const CAREERS = [
     qualification: "B.E / B.Tech in Mechanical, Automobile, Mechatronics, EEE, ECE, ICE",
     location: "Chennai HQ",
     responsibilities: [
-      "Rigorous hands-on training across all 20+ laboratory divisions on a job rotation basis",
+      "Rigorous hands-on training across all 35+ laboratory divisions on a job rotation basis",
       "Learning standard operating procedures for calibration and measurement equipment",
       "Assisting senior engineers during technical documentation and calibration audits",
       "High level of commitment and professional conduct in laboratory operations"

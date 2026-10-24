@@ -650,7 +650,7 @@ function renderImagesTab() {
           <span class="media-section-icon">🔬</span>
           <div>
             <div class="media-section-heading">World Class Infrastructure</div>
-            <div class="media-section-sub">Operating 20+ calibration &amp; inspection laboratories</div>
+            <div class="media-section-sub">Operating 35+ calibration &amp; inspection laboratories</div>
           </div>
         </div>
         <span class="tech-badge blue">Section: Infrastructure</span>

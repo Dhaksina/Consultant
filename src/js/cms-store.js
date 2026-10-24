@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v7';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v8';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -357,7 +357,13 @@ function ensureGoogleReviews(data) {
     t.author === 'ANBU SEKAR' || t.author === 'RAHINI S.' || t.company?.includes('Emerson Process') || t.company?.includes('Metrology Infrastructure')
   );
 
-  if (!data.portfolio.testimonials || !data.portfolio.testimonials[0]?.googleReviewUrl || isCalibrationReview) {
+  // Ensure all 9 verified consulting reviews are loaded (including Vivek Gahlot, Aniket Behera, Gurpreet Singh, Jobansingh Malhi)
+  const isMissingConsultingReviews = !Array.isArray(data.portfolio.testimonials) || 
+    data.portfolio.testimonials.length < TESTIMONIALS.length ||
+    !data.portfolio.testimonials.some(t => t.author === 'VIVEK GAHLOT') ||
+    !data.portfolio.testimonials.some(t => t.author === 'JOBANSINGH MALHI');
+
+  if (isMissingConsultingReviews || isCalibrationReview || !data.portfolio.testimonials[0]?.googleReviewUrl) {
     data.portfolio.testimonials = TESTIMONIALS;
   }
   return data;
@@ -375,6 +381,7 @@ export function getCmsData() {
   try {
     localStorage.removeItem('reva_phoenix_cms_store_v5');
     localStorage.removeItem('reva_phoenix_cms_store_v6');
+    localStorage.removeItem('reva_phoenix_cms_store_v7');
   } catch (e) {}
 
   try {

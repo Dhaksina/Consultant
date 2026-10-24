@@ -2536,17 +2536,17 @@
 
 .gallery-item {
   position: relative;
-  border-radius: 2px;
+  border-radius: 4px;
   overflow: hidden;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/10;
   cursor: pointer;
 }
 
 .gallery-item:first-child {
-  grid-column: span 2;
-  aspect-ratio: 16/9;
+  grid-column: span 1;
+  aspect-ratio: 16/10;
 }
 
 .gallery-thumb {
@@ -3056,9 +3056,8 @@
 .career-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.25rem;
   margin-bottom: 1rem;
 }
 
@@ -3067,12 +3066,27 @@
   font-size: 1.3rem;
   font-weight: 800;
   color: #FFFFFF;
+  flex: 1 1 auto;
 }
 
 .career-tags {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  .career-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .career-tags {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
 }
 
 .career-requirements {

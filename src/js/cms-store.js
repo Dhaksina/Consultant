@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v10';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v11';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -386,6 +386,17 @@ function ensureGoogleReviews(data) {
     });
   }
 
+  // Ensure contact departments are fresh (Technical: +91-99403 48159 / director@revaphoenix.com)
+  if (data.contact && Array.isArray(data.contact.departments)) {
+    data.contact.departments.forEach(dept => {
+      if (dept && (dept.title === 'Collection & Delivery' || dept.email === 'reception@revaphoenix.com')) {
+        dept.title = 'Technical';
+        dept.phone = '+91-99403 48159';
+        dept.email = 'director@revaphoenix.com';
+      }
+    });
+  }
+
   return data;
 }
 
@@ -404,6 +415,7 @@ export function getCmsData() {
     localStorage.removeItem('reva_phoenix_cms_store_v7');
     localStorage.removeItem('reva_phoenix_cms_store_v8');
     localStorage.removeItem('reva_phoenix_cms_store_v9');
+    localStorage.removeItem('reva_phoenix_cms_store_v10');
   } catch (e) {}
 
   try {

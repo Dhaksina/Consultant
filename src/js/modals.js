@@ -10,6 +10,8 @@ import { recordQuoteRequestInFirestore } from './firebase-firestore.js';
 
 // DOM Modal elements
 let lightboxModal, videoModal, pdfModal, quoteModal, textModal, toastElement;
+let currentLightboxPlaylist = [];
+let currentLightboxIndex = 0;
 
 export function initModals() {
   lightboxModal = document.getElementById("modal-lightbox");
@@ -25,6 +27,35 @@ export function initModals() {
       closeAllModals();
     });
   });
+
+  // Lightbox Next / Previous navigation buttons
+  const lightboxNextBtn = document.getElementById("lightbox-next");
+  if (lightboxNextBtn) {
+    lightboxNextBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      nextLightboxImage();
+    });
+  }
+
+  const lightboxPrevBtn = document.getElementById("lightbox-prev");
+  if (lightboxPrevBtn) {
+    lightboxPrevBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      prevLightboxImage();
+    });
+  }
+
+  // Lightbox Image click to advance to next image
+  const lightboxImg = document.getElementById("lightbox-image");
+  if (lightboxImg) {
+    lightboxImg.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      nextLightboxImage();
+    });
+  }
 
   // Prevent Lenis smooth-scroll from intercepting modal wheel and touch gestures
   document.querySelectorAll(".modal-overlay, .modal-container, .mobile-drawer").forEach(el => {
@@ -46,10 +77,21 @@ export function initModals() {
     });
   });
 
-  // Close on Escape key
+  // Keyboard navigation: Escape to close, ArrowRight for next, ArrowLeft for prev
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       closeAllModals();
+      return;
+    }
+
+    if (lightboxModal && lightboxModal.classList.contains("active")) {
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        nextLightboxImage();
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        prevLightboxImage();
+      }
     }
   });
 
@@ -146,13 +188,65 @@ export function closeAllModals() {
   resumeScroll();
 }
 
-export function openLightbox(src, title) {
-  if (!lightboxModal) return;
+function updateLightboxView() {
+  if (!currentLightboxPlaylist || currentLightboxPlaylist.length === 0) return;
+
+  const item = currentLightboxPlaylist[currentLightboxIndex];
+  if (!item) return;
+
   const imgEl = document.getElementById("lightbox-image");
   const titleEl = document.getElementById("lightbox-caption-text");
+  const counterEl = document.getElementById("lightbox-counter");
+  const prevBtn = document.getElementById("lightbox-prev");
+  const nextBtn = document.getElementById("lightbox-next");
 
-  if (imgEl) imgEl.src = src;
-  if (titleEl) titleEl.innerText = title;
+  if (imgEl) {
+    imgEl.src = item.src;
+    imgEl.alt = item.title || "Fullscreen Lightbox";
+  }
+  if (titleEl) {
+    titleEl.innerText = item.title || "";
+  }
+  if (counterEl) {
+    counterEl.innerText = `${currentLightboxIndex + 1} / ${currentLightboxPlaylist.length}`;
+    counterEl.style.display = currentLightboxPlaylist.length > 1 ? "inline-block" : "none";
+  }
+  if (prevBtn) {
+    prevBtn.style.display = currentLightboxPlaylist.length > 1 ? "flex" : "none";
+  }
+  if (nextBtn) {
+    nextBtn.style.display = currentLightboxPlaylist.length > 1 ? "flex" : "none";
+  }
+}
+
+export function nextLightboxImage() {
+  if (!currentLightboxPlaylist || currentLightboxPlaylist.length <= 1) return;
+  currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxPlaylist.length;
+  updateLightboxView();
+}
+
+export function prevLightboxImage() {
+  if (!currentLightboxPlaylist || currentLightboxPlaylist.length <= 1) return;
+  currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxPlaylist.length) % currentLightboxPlaylist.length;
+  updateLightboxView();
+}
+
+export function openLightbox(src, title, playlist = null, startIndex = 0) {
+  if (!lightboxModal) lightboxModal = document.getElementById("modal-lightbox");
+  if (!lightboxModal) return;
+
+  if (Array.isArray(playlist) && playlist.length > 0) {
+    currentLightboxPlaylist = playlist;
+    currentLightboxIndex = (startIndex >= 0 && startIndex < playlist.length) ? startIndex : 0;
+  } else if (src) {
+    currentLightboxPlaylist = [{ src, title: title || "" }];
+    currentLightboxIndex = 0;
+  } else {
+    currentLightboxPlaylist = [];
+    currentLightboxIndex = 0;
+  }
+
+  updateLightboxView();
 
   lightboxModal.classList.add("active");
   document.body.style.overflow = "hidden";

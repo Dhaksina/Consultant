@@ -851,11 +851,27 @@
     <div class="modal-container" data-lenis-prevent>
       <button class="modal-close-btn" aria-label="Close lightbox">&times;</button>
       <div class="lightbox-img-box">
-        <img id="lightbox-image" src="" alt="Fullscreen Lightbox" class="lightbox-full-img" />
+        <button type="button" class="lightbox-nav-btn lightbox-prev-btn" id="lightbox-prev" aria-label="Previous Image" title="Previous Image (← Left Arrow)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <img id="lightbox-image" src="" alt="Fullscreen Lightbox" class="lightbox-full-img" title="Click image to view next" />
+        <button type="button" class="lightbox-nav-btn lightbox-next-btn" id="lightbox-next" aria-label="Next Image" title="Next Image (→ Right Arrow)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
       </div>
       <div class="lightbox-caption-box">
-        <span class="lightbox-caption-title" id="lightbox-caption-text"></span>
-        <span class="tech-badge orange">Reva Phoenix Archive</span>
+        <div class="lightbox-caption-main">
+          <span class="lightbox-caption-title" id="lightbox-caption-text"></span>
+          <span class="lightbox-counter-pill" id="lightbox-counter">1 / 1</span>
+        </div>
+        <div class="lightbox-actions-right">
+          <span class="lightbox-tip-hint">Click image or press right arrow</span>
+          <span class="tech-badge orange">Reva Phoenix Archive</span>
+        </div>
       </div>
     </div>
   </div>

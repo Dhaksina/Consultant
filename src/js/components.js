@@ -1061,11 +1061,16 @@ function renderGallery(cms) {
     </div>
   `).join("");
 
-  container.querySelectorAll(".gallery-item").forEach(item => {
+  const galleryPlaylist = gallery.map(item => ({
+    src: item.src,
+    title: `${item.title} • ${item.category}`
+  }));
+
+  container.querySelectorAll(".gallery-item").forEach((item, index) => {
     item.addEventListener("click", () => {
       const src = item.getAttribute("data-src");
       const title = item.getAttribute("data-title");
-      openLightbox(src, title);
+      openLightbox(src, title, galleryPlaylist, index);
     });
   });
 

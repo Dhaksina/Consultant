@@ -75,8 +75,20 @@ export function initCorporateGalleryModal() {
       if (mini) {
         e.stopPropagation();
         const fullSrc = mini.getAttribute('data-full-src');
-        const title = mini.getAttribute('data-title');
-        openLightbox(fullSrc, title);
+        const card = mini.closest('.cgm-event-card');
+        const id = card ? parseInt(card.getAttribute('data-event-id'), 10) : null;
+        const ev = id ? CORPORATE_GALLERY_EVENTS.find(x => x.id === id) : null;
+
+        if (ev && ev.images && ev.images.length > 0) {
+          const playlist = ev.images.map((img, i) => ({
+            src: img,
+            title: `${ev.title} (Photo ${i + 1} of ${ev.images.length})`
+          }));
+          const startIndex = Math.max(0, ev.images.indexOf(fullSrc));
+          openLightbox(fullSrc, playlist[startIndex]?.title || ev.title, playlist, startIndex);
+        } else {
+          openLightbox(fullSrc, mini.getAttribute('data-title') || 'Reva Phoenix Archival Event');
+        }
         return;
       }
 
@@ -86,7 +98,27 @@ export function initCorporateGalleryModal() {
         const id = parseInt(card.getAttribute('data-event-id'), 10);
         const ev = CORPORATE_GALLERY_EVENTS.find(x => x.id === id);
         if (ev) {
-          openLightbox(ev.thumbnail, ev.title);
+          let playlist;
+          let startIndex = 0;
+
+          if (ev.images && ev.images.length > 1) {
+            playlist = ev.images.map((img, i) => ({
+              src: img,
+              title: `${ev.title} (Photo ${i + 1} of ${ev.images.length})`
+            }));
+            startIndex = 0;
+          } else {
+            // For single-photo events, cycle across all events currently in view
+            const activeEvents = getFilteredEvents();
+            playlist = activeEvents.map(eItem => ({
+              src: eItem.thumbnail,
+              title: `${eItem.title} (${eItem.year})`
+            }));
+            startIndex = Math.max(0, activeEvents.findIndex(eItem => eItem.id === ev.id));
+          }
+
+          const currentItem = playlist[startIndex] || { src: ev.thumbnail, title: ev.title };
+          openLightbox(currentItem.src, currentItem.title, playlist, startIndex);
         }
       }
     });
@@ -121,12 +153,8 @@ export function closeCorporateGalleryModal() {
   resumeScroll();
 }
 
-function renderGalleryEvents() {
-  const grid = document.getElementById('cgm-events-grid');
-  const countEl = document.getElementById('cgm-results-count');
-  if (!grid) return;
-
-  const filtered = CORPORATE_GALLERY_EVENTS.filter(event => {
+function getFilteredEvents() {
+  return CORPORATE_GALLERY_EVENTS.filter(event => {
     // Category match
     const catMatch = activeCategory === 'all' || event.category === activeCategory;
     if (!catMatch) return false;
@@ -138,6 +166,14 @@ function renderGalleryEvents() {
     }
     return true;
   });
+}
+
+function renderGalleryEvents() {
+  const grid = document.getElementById('cgm-events-grid');
+  const countEl = document.getElementById('cgm-results-count');
+  if (!grid) return;
+
+  const filtered = getFilteredEvents();
 
   if (countEl) {
     countEl.textContent = `Showing ${filtered.length} Events`;

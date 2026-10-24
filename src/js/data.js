@@ -1308,7 +1308,7 @@ export const CAREERS = [
     submissionEmail: "info@revaphoenix.com"
   },
   {
-    title: "Customer Support Executive | Business Development Executive",
+    title: "Customer Support | Business Development",
     experience: "2 to 10 years in Customer Support / Business Development (NABL lab exp. preferred)",
     qualification: "Graduate with fluent professional communication skills",
     location: "Chennai HQ",

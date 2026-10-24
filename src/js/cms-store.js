@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v9';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v10';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -376,6 +376,16 @@ function ensureGoogleReviews(data) {
     data.statistics = STATISTICS;
   }
 
+  // Ensure careers job title is fresh (Customer Support | Business Development)
+  const jobsList = data.careers?.jobs || data.careers;
+  if (Array.isArray(jobsList)) {
+    jobsList.forEach(job => {
+      if (job && job.title && job.title.includes('Customer Support Executive')) {
+        job.title = 'Customer Support | Business Development';
+      }
+    });
+  }
+
   return data;
 }
 
@@ -393,6 +403,7 @@ export function getCmsData() {
     localStorage.removeItem('reva_phoenix_cms_store_v6');
     localStorage.removeItem('reva_phoenix_cms_store_v7');
     localStorage.removeItem('reva_phoenix_cms_store_v8');
+    localStorage.removeItem('reva_phoenix_cms_store_v9');
   } catch (e) {}
 
   try {

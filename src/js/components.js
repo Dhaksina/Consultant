@@ -372,7 +372,8 @@ function renderApiServices(cms) {
         <div class="api-blueprint-corner bl"></div>
         <div class="api-blueprint-corner br"></div>
         <img src="${prog.image || 'assets/api/api-spec-q1-inspection.jpg'}" 
-             alt="${prog.title}" class="api-visual-img" loading="lazy" />
+             alt="${prog.title}" class="api-visual-img" loading="lazy"
+             onerror="this.onerror=null; this.src='assets/industries/oil-and-gas-facility.jpg';" />
       </div>
     </div>
   `).join("");

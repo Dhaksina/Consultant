@@ -1213,6 +1213,8 @@ export const INFRASTRUCTURE_DATA = {
   ]
 };
 
+export const EVENT_GALLERY_URL = "https://revaphoenix.com/event-gallery/";
+
 export const GALLERY_ITEMS = [
   { id: 1, src: "assets/gallery/training-session-group.jpg", title: "API Spec Q1 / Q2 Master Training Cohort", category: "Training" },
   { id: 2, src: "assets/gallery/gallery-event-1.jpg", title: "Executive Management Review & Certification Audit", category: "Audit" },

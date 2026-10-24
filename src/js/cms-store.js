@@ -18,6 +18,7 @@ import {
   CLIENTS,
   TESTIMONIALS,
   GOOGLE_REVIEWS_URL,
+  EVENT_GALLERY_URL,
   INFRASTRUCTURE_DATA,
   GALLERY_ITEMS,
   VIDEOS,
@@ -201,6 +202,7 @@ export const DEFAULT_CMS_DATA = {
     galleryTitleLine3: "GALLERY",
     galleryDescription: "Live photographic documentation of auditor masterclasses, industrial training cohorts, and corporate felicitation milestones.",
     gallery: GALLERY_ITEMS,
+    eventGalleryUrl: EVENT_GALLERY_URL,
 
     videosSubtitle: "Media Center",
     videosTitleLine1: "OFFICIAL",
@@ -349,6 +351,7 @@ function ensureGoogleReviews(data) {
   if (!data) return data;
   if (!data.portfolio) data.portfolio = {};
   data.portfolio.googleReviewsUrl = GOOGLE_REVIEWS_URL;
+  data.portfolio.eventGalleryUrl = EVENT_GALLERY_URL;
   if (!data.portfolio.testimonials || !data.portfolio.testimonials[0]?.googleReviewUrl) {
     data.portfolio.testimonials = TESTIMONIALS;
   }

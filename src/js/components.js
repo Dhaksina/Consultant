@@ -1068,6 +1068,23 @@ function renderGallery(cms) {
       openLightbox(src, title);
     });
   });
+
+  // Ensure bottom Gallery Explore CTA button exists
+  let ctaWrap = document.getElementById("gallery-explore-cta");
+  if (!ctaWrap) {
+    ctaWrap = document.createElement("div");
+    ctaWrap.id = "gallery-explore-cta";
+    ctaWrap.className = "gallery-cta-wrap";
+    container.after(ctaWrap);
+  }
+
+  const galleryUrl = cms.portfolio?.eventGalleryUrl || "https://revaphoenix.com/event-gallery/";
+  ctaWrap.innerHTML = `
+    <a href="${galleryUrl}" target="_blank" rel="noopener noreferrer" class="gallery-explore-btn" title="Explore Complete Corporate Event Gallery (63 Archival Photos)">
+      <span>EXPLORE COMPLETE CORPORATE GALLERY (63 ARCHIVAL PHOTOS)</span>
+      <span class="arrow-icon">→</span>
+    </a>
+  `;
 }
 
 /**

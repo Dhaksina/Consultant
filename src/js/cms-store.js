@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v5';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v7';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -351,7 +351,13 @@ function ensureGoogleReviews(data) {
   if (!data.portfolio) data.portfolio = {};
   data.portfolio.googleReviewsUrl = GOOGLE_REVIEWS_URL;
   data.portfolio.eventGalleryUrl = EVENT_GALLERY_URL;
-  if (!data.portfolio.testimonials || !data.portfolio.testimonials[0]?.googleReviewUrl) {
+
+  // Purge any stale calibration reviews (e.g. Anbu Sekar, Rahini S., Muthu Kumar)
+  const isCalibrationReview = Array.isArray(data.portfolio.testimonials) && data.portfolio.testimonials.some(t => 
+    t.author === 'ANBU SEKAR' || t.author === 'RAHINI S.' || t.company?.includes('Emerson Process') || t.company?.includes('Metrology Infrastructure')
+  );
+
+  if (!data.portfolio.testimonials || !data.portfolio.testimonials[0]?.googleReviewUrl || isCalibrationReview) {
     data.portfolio.testimonials = TESTIMONIALS;
   }
   return data;
@@ -364,6 +370,12 @@ export function getCmsData() {
   if (cachedCmsData) {
     return ensureGoogleReviews(cachedCmsData);
   }
+
+  // Clear legacy cache keys
+  try {
+    localStorage.removeItem('reva_phoenix_cms_store_v5');
+    localStorage.removeItem('reva_phoenix_cms_store_v6');
+  } catch (e) {}
 
   try {
     const raw = localStorage.getItem(CMS_STORAGE_KEY);

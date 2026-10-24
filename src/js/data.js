@@ -16,7 +16,7 @@ export const COMPANY_INFO = {
     line2: "Rajarajeswari Nagar, Madipakkam",
     city: "Chennai",
     postalCode: "600 091",
-    state: "Tamilnadu",
+    state: "Tamil Nadu",
     country: "India"
   },
   tax: {

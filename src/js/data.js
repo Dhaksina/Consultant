@@ -251,7 +251,7 @@ export const API_SERVICES = {
       title: "API Auditing, Second-Party & Mock Assessments",
       badge: "Audit Precision",
       overview: "Reva Phoenix Labs & Consultants Pvt. Ltd. Consulting Division offers best-in-class second party & mock assessment services preparing organizations for final API Certification and annual surveillance audits. Our comprehensive product, process, and system audit methodology imparts robustness to your quality management systems.",
-      image: "assets/uploads/Gemini_Generated_Image_izl10sizl10sizl1_1792845980.png",
+      image: "assets/uploads/Gemini_Generated_Image_izl10sizl10sizl1_1792847187.png",
       pillars: [
         { name: "Mock API Audits", desc: "Rigorous pre-assessment simulating official API audits to uncover hidden variances and ensure auditor approval." },
         { name: "Supplier Audits", desc: "Independent second-party and third-party supplier audits assessing technical capacity, systems, and contractual conformance." },

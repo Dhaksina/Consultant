@@ -1156,6 +1156,42 @@ export const TESTIMONIALS = [
     rating: 5.0,
     tag: "SPECIFICATION INTERPRETATION & API Q1",
     googleReviewUrl: GOOGLE_REVIEWS_URL
+  },
+  {
+    quote: "A wonderful training on API Q1, API 5L, API 5CT. I will take away lots of things that I can quickly and easily apply.",
+    author: "VIVEK GAHLOT",
+    initials: "VG",
+    company: "3 reviews · Quality & Manufacturing Engineering",
+    rating: 5.0,
+    tag: "API Q1, API 5L & API 5CT TRAINING",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
+  },
+  {
+    quote: "Attended internal auditor training on API Spec Q1. The session was very informative. Dr. Manikandan sir explained quality management system concepts clearly, making them easy to understand.",
+    author: "ANIKET BEHERA",
+    initials: "AB",
+    company: "3 reviews · 13 photos · Quality Systems",
+    rating: 5.0,
+    tag: "API SPEC Q1 INTERNAL AUDITOR TRAINING",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
+  },
+  {
+    quote: "Reva Phoenix provided outstanding guidance for our API 6A licensing. His deep knowledge, clear direction, and constant push beyond limits helped us achieve strong compliance and audit readiness. Highly recommended.",
+    author: "GURPREET SINGH",
+    initials: "GS",
+    company: "4 reviews · API Monogram Licensing Client",
+    rating: 5.0,
+    tag: "API 6A LICENSING & AUDIT READINESS",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
+  },
+  {
+    quote: "One of the best and most knowledgeable consultancy company globally. Professional, reliable, and highly experienced 👍",
+    author: "JOBANSINGH MALHI",
+    initials: "JM",
+    company: "4 reviews · 2 photos · Global Client",
+    rating: 5.0,
+    tag: "GLOBAL MANAGEMENT & TECHNICAL CONSULTANCY",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
   }
 ];
 

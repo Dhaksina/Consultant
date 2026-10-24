@@ -140,7 +140,7 @@ function renderGalleryEvents() {
   });
 
   if (countEl) {
-    countEl.textContent = `Showing ${filtered.length} of ${CORPORATE_GALLERY_EVENTS.length} Events`;
+    countEl.textContent = `Showing ${filtered.length} Events`;
   }
 
   if (filtered.length === 0) {

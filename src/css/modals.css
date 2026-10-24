@@ -255,12 +255,22 @@
   max-height: 90vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.modal-container.extra-large .modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  margin: 0;
+  z-index: 100;
 }
 
 .cgm-header {
   border-bottom: 1px solid var(--border-medium);
   padding-bottom: 1.25rem;
   margin-bottom: 1.25rem;
+  padding-right: 3.5rem;
 }
 
 .cgm-subtitle {
@@ -346,10 +356,13 @@
 
 .cgm-events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
   overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
   padding-right: 0.5rem;
+  padding-bottom: 2rem;
   max-height: calc(90vh - 220px);
 }
 
@@ -360,6 +373,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 380px;
+  height: auto;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
 }
@@ -367,21 +382,24 @@
 .cgm-event-card:hover {
   transform: translateY(-4px);
   border-color: var(--orange-primary);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), 0 0 12px rgba(255, 107, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), 0 0 12px rgba(255, 107, 0, 0.25);
 }
 
 .cgm-thumb-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 200px;
+  min-height: 200px;
   background: #000;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .cgm-thumb-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
 }
 
@@ -442,10 +460,12 @@
 }
 
 .cgm-card-body {
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-height: 160px;
+  background: #111;
 }
 
 .cgm-card-cat {
@@ -458,9 +478,10 @@
 .cgm-card-title {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #fff;
-  line-height: 1.35;
+  color: #FFFFFF !important;
+  line-height: 1.4;
   margin-bottom: 0.75rem;
+  display: block;
 }
 
 .cgm-mini-gallery {

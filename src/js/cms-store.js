@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v11';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v12';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -397,6 +397,24 @@ function ensureGoogleReviews(data) {
     });
   }
 
+  // Ensure all 8 API service programs use fresh images
+  if (data.apiServices && Array.isArray(data.apiServices.programs)) {
+    data.apiServices.programs.forEach(prog => {
+      const freshProg = API_SERVICES.programs.find(p => p.id === prog.id);
+      if (freshProg && freshProg.image) {
+        if (!prog.image || 
+            prog.image.includes('oil-and-gas-facility') || 
+            prog.image.includes('training-classroom') || 
+            prog.image.includes('auditing-precision') || 
+            prog.image.includes('api-spec-q1-inspection') || 
+            prog.image.includes('api-monogram-spec') ||
+            prog.image.includes('training-session-group')) {
+          prog.image = freshProg.image;
+        }
+      }
+    });
+  }
+
   return data;
 }
 
@@ -416,6 +434,7 @@ export function getCmsData() {
     localStorage.removeItem('reva_phoenix_cms_store_v8');
     localStorage.removeItem('reva_phoenix_cms_store_v9');
     localStorage.removeItem('reva_phoenix_cms_store_v10');
+    localStorage.removeItem('reva_phoenix_cms_store_v11');
   } catch (e) {}
 
   try {

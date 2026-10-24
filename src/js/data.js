@@ -1113,84 +1113,84 @@ export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=Reva+Phoenix+
 
 export const TESTIMONIALS = [
   {
-    quote: "One of the best calibration lab with advanced technology. Customer service is really good. Lab and office area 5S well maintained. Workmanship and customer focus are upto the mark. Keep it up all and All the best to the team!",
-    author: "ANBU SEKAR",
-    initials: "AS",
-    company: "Emerson Process Management",
-    rating: 5.0,
-    tag: "INSTRUMENTATION & PROCESS CALIBRATION",
-    googleReviewUrl: GOOGLE_REVIEWS_URL
-  },
-  {
-    quote: "Well equipped testing and calibration center with availability of both offsite and on-site equipment calibration as per customer requirements, at reasonable price. NABL certified test reports was given. Excellent customer handling team for their immediate response.",
-    author: "RAHINI S.",
-    initials: "RS",
-    company: "Manufacturing & Industrial Testing",
-    rating: 4.9,
-    tag: "ON-SITE & PERMANENT LAB CALIBRATION",
-    googleReviewUrl: GOOGLE_REVIEWS_URL
-  },
-  {
-    quote: "One of the Best and Biggest Metrology Lab in the City... High Class Calibrating Equipments are used for Calibration... Excellent 3C 5S Practices being followed... They are striving to Exceed Customer Expectations!",
-    author: "MUTHU KUMAR",
-    initials: "MK",
-    company: "Metrology Infrastructure Auditor",
-    rating: 5.0,
-    tag: "PRECISION DIMENSIONAL CALIBRATION",
-    googleReviewUrl: GOOGLE_REVIEWS_URL
-  },
-  {
-    quote: "The calibration of Reva team service is wonderful and special thanks for the coordination and support from Ms. Manasi, operations executive. Prompt delivery and high metrological accuracy across all equipment.",
-    author: "VIJAYAKUMAR KANDHASAMY",
+    quote: "I have attended IMS internal audit certification. It was great experience to gain knowledge. Great owner that cares about their consulting company's Business excellence process, metrics, Executive management program process. They provide great and excellent consulting service and knowledge transfer.",
+    author: "VINODH KUMAR",
     initials: "VK",
-    company: "Industrial Operations Division",
+    company: "Manufacturing Operations Division",
     rating: 5.0,
-    tag: "THERMAL & ELECTROTECHNICAL TESTING",
+    tag: "IMS INTERNAL AUDIT & CONSULTING",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "Training session was very good and much informative. He was very patient to explain all our queries effectively. I was wondering on seeing your Laboratory with neat and clean way. Going forward will always suggest your lab for training and testing. Awaiting to meet you again to gain more knowledge.",
-    author: "KARTHICK S.",
-    initials: "KS",
-    company: "Engineering & Quality Assurance",
+    quote: "API requirement is well explained. From this training we got clear idea on API standards. This is beneficial to me and my organization. Training went on well and appreciated the trainer for taking entire team along with him and responded to all queries.",
+    author: "KOLI PADMANABHAN",
+    initials: "KP",
+    company: "Oil & Gas Industrial Valves",
     rating: 5.0,
-    tag: "LABORATORY CALIBRATION & TRAINING",
+    tag: "API SPECIFICATION TRAINING",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "I visited JRPM for training purpose on dimensional calibration. I was trained by Mr. Karthick Ganapathy, his explanation has a high level of clarity and easily understandable. Lab and office area 5S maintenance is extremely good. Outstanding experience.",
-    author: "THEJASHWINI C.",
-    initials: "TC",
-    company: "Aerospace & Precision Metrology",
-    rating: 4.9,
-    tag: "DIMENSIONAL METROLOGY & CMM",
+    quote: "The training program for understanding API specifications was a class apart and made us know where we stand and what needs to be done. The consulting and training program was informative, interactive, and well appreciated by our management team.",
+    author: "SURESH BABU",
+    initials: "SB",
+    company: "Precision Flow Control Engineering",
+    rating: 5.0,
+    tag: "API AUDITING & IMPLEMENTATION",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "Great learning experience, Dr. Manikandan is very seasoned and experienced professional trainer, really enjoyed the training with his practical examples and in-depth knowledge on API specifications, pressure calibration, and ISO/IEC 17025 standards.",
+    quote: "As I came through my journey, I had seen the most vibrant auditor / mentor with ultimate knowledge and a great inspirational attitude which made me thinking big and achieving in a least possible time. Thanks for the influence and unimaginable opportunities provided to excel.",
+    author: "BALAJI VENKAT",
+    initials: "BV",
+    company: "Corporate Quality Systems Lead",
+    rating: 5.0,
+    tag: "EXECUTIVE AUDIT MENTORSHIP",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
+  },
+  {
+    quote: "I attended training for INTERNAL AUDITOR COURSE for API Q1 9th edition, 5DP, 5CT & 5L spec & ISO 9001:2015. It was an intensive 4-day training course & I enjoyed it lot & learned a lot. Outstanding corporate quality consulting program.",
+    author: "FAISAL KARIM",
+    initials: "FK",
+    company: "Petroleum & Tubular Equipment",
+    rating: 5.0,
+    tag: "API Q1, 5CT, 5L & ISO 9001:2015",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
+  },
+  {
+    quote: "Great learning experience, Dr. Manikandan is very seasoned and experienced professional trainer, really enjoyed the training with his practical examples and in-depth knowledge on API specifications, quality management systems, and compliance standards.",
     author: "KESAVARAM K.",
     initials: "KK",
     company: "API & Flow Control Engineering",
-    rating: 4.8,
-    tag: "API SPEC Q1 & PRESSURE STANDARDS",
+    rating: 5.0,
+    tag: "API SPEC Q1 & QUALITY CONSULTING",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "We had a very good experience in the calibration training course as per ISO/IEC 17025. Overall it was like a technical institution for the knowledge seekers. Highly recommend Reva Phoenix for calibration standards and compliance.",
-    author: "GOKUL KRISHNAN",
-    initials: "GK",
-    company: "Quality Management Systems",
-    rating: 4.9,
-    tag: "ISO/IEC 17025 COMPLIANCE",
+    quote: "As a quality month celebration, our team really enjoyed the internal auditor training session conducted by Mr. Manikandan Venkatesan. Really impressed by the way of teaching, guidance, and practical consulting knowledge transfer. Excellent learning!",
+    author: "JOANNA FOXX",
+    initials: "JF",
+    company: "Acetech Group of Companies",
+    rating: 5.0,
+    tag: "CORPORATE QUALITY TRAINING",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   },
   {
-    quote: "Excellent Laboratory for Calibration and Testing. Metrological Calibration Laboratory is one of the best in Chennai. Strict 5S standards, high-precision reference calibrators, and very professional team. Great experience during calibration!",
-    author: "MUTHU GANESAN",
-    initials: "MG",
-    company: "Mechanical & Metrology Testing",
-    rating: 4.9,
-    tag: "NABL ACCREDITED CALIBRATION",
+    quote: "Very good interactive session. Dr. Manikandan Venkatesan has in-depth knowledge on various consulting subjects and helps the industrial teams connect the dots of the process and achieve seamless compliance.",
+    author: "JAYANTH VENKATESH",
+    initials: "JV",
+    company: "Engineering Process Advisory",
+    rating: 5.0,
+    tag: "PROCESS MAPPING & ADVISORY",
+    googleReviewUrl: GOOGLE_REVIEWS_URL
+  },
+  {
+    quote: "The consulting and training was excellent. The explanation part for each ISO and API clause was wonderful by adding real-world industry case studies. It gave our team actionable tools to implement immediate quality improvements.",
+    author: "PRAFUL NEEMA",
+    initials: "PN",
+    company: "Supply Chain & Quality Assurance",
+    rating: 5.0,
+    tag: "QUALITY MANAGEMENT & CLAUSE ANALYSIS",
     googleReviewUrl: GOOGLE_REVIEWS_URL
   }
 ];

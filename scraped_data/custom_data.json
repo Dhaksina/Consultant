@@ -11,7 +11,7 @@
     "lastUpdated": "2026-10-13T17:29:02.452Z"
   },
   "seo": {
-    "pageTitle": "Reva Phoenix Labs & Consultants | Consulting Division \u2013 Industrial Quality, API & IMS Engineering",
+    "pageTitle": "Reva Phoenix Labs & Consultants | Consulting Division – Industrial Quality, API & IMS Engineering",
     "metaDescription": "Reva Phoenix Labs & Consultants Pvt. Ltd. Consulting Division provides world-class Training, Consulting, Implementation, Auditing and API Spec Q1, Q2, Monogram and ISO management systems certification for Automotive, Aerospace, and Oil & Gas industries worldwide.",
     "metaKeywords": "Reva Phoenix, API Spec Q1, API Spec Q2, API Monogram, ISO 9001:2015, IATF 16949, AS 9100, ISO 17025, Management Systems Consulting, Industrial Engineering, Oil and Gas Consulting, Automotive Consulting, Chennai Consulting, Quality Auditing",
     "ogTitle": "Reva Phoenix Labs & Consultants | Consulting Division",
@@ -22,7 +22,7 @@
   "header": {
     "topBarEmail": "info@revaphoenix.com",
     "topBarPhone": "+91 99405 64261",
-    "labBadgeText": "Laboratory Division: revacalibration.com \u2197",
+    "labBadgeText": "Laboratory Division: revacalibration.com ↗",
     "labBadgeUrl": "https://www.revacalibration.com/",
     "logo": "assets/logo/reva-phoenix-logo.png",
     "brandName": "REVA PHOENIX",
@@ -98,27 +98,27 @@
             "label": "Training Academy",
             "targetTab": "training",
             "subtext": "API, ISO 9001, Automotive Core Tools & Lean",
-            "icon": "\ud83c\udf93",
+            "icon": "🎓",
             "badge": "10 Tracks"
           },
           {
             "label": "Consulting Advisory",
             "targetTab": "consulting",
             "subtext": "Clause 4-10 Diagnostics & QMS Architecture",
-            "icon": "\ud83d\udca1"
+            "icon": "💡"
           },
           {
             "label": "Turnkey Implementation",
             "targetTab": "implementation",
             "subtext": "6-Stage Roadmap to Guaranteed Certification",
-            "icon": "\ud83d\ude80",
+            "icon": "🚀",
             "badge": "100% Pass"
           },
           {
             "label": "Surgical Auditing",
             "targetTab": "auditing",
             "subtext": "Outsourced Internal Audits & Mock Dry Runs",
-            "icon": "\ud83d\udee1\ufe0f"
+            "icon": "🛡️"
           }
         ]
       },
@@ -203,7 +203,7 @@
     "headingWord1": "ABOUT",
     "headingWord2": "REVA",
     "headingWord3": "PHOENIX",
-    "leadText": "It is the endeavor of <strong>Reva Phoenix Labs &amp; Consultants Pvt. Ltd. Consulting Division</strong> to add value to our Customer\u2019s Business &amp; Management Systems through Training, Consultation, Implementation and other Value-added services.",
+    "leadText": "It is the endeavor of <strong>Reva Phoenix Labs &amp; Consultants Pvt. Ltd. Consulting Division</strong> to add value to our Customer’s Business &amp; Management Systems through Training, Consultation, Implementation and other Value-added services.",
     "bodyText": "It has been nearly 2 decades since we started Reva Phoenix, as a modest organization. We have grown to become one of the leading service providers in the Industry.",
     "tributeQuote": "Our growth is attributed to the blessings of <strong>Smt. Revathi Venkatesan</strong>, Our Founder Director, Cancer warrior &amp; Survivor and the inspiration behind this Organization;",
     "founderImage": "assets/about/dr-manikandan-venkatesan-md.jpg",
@@ -215,8 +215,8 @@
       "title": "MESSAGE FROM MANAGING DIRECTOR",
       "tagline": "Together We Grow!",
       "author": "Dr. Manikandan Venkatesan",
-      "designation": "Managing Director \u2022 Reva Phoenix Labs & Consultants Pvt. Ltd.",
-      "motto": "Remind you \u2013 Quality is our way of life and we shall commit to remain so!",
+      "designation": "Managing Director • Reva Phoenix Labs & Consultants Pvt. Ltd.",
+      "motto": "Remind you – Quality is our way of life and we shall commit to remain so!",
       "paragraphs": [
         "It is the endeavor of Reva Phoenix Labs & Consultants Pvt. Ltd. Consulting Division to add value to our Customer's Business & Management Systems through Training, Consultation, Implementation and other Value-added services.",
         "It has been nearly 2 decades since we started Reva Phoenix, as a modest organization. We have grown to become one of the leading service providers in the Industry.",
@@ -323,10 +323,10 @@
       "description": "We fully assist organizations in Management System certification, starting from Initial System Study, Gap Analysis, Documentation, Training, Implementation, Internal Audit, and Management Review until final certification audit closure.",
       "image": "assets/services/implementation-methodology.jpg",
       "deliverables": [
-        "Level 01 \u2013 Documented Information: Quality & Operations Manuals",
-        "Level 02 \u2013 Documented Information: Standard Operating Procedures",
-        "Level 03 \u2013 Documented Information: SOPs, Work Instructions, Process Protocols",
-        "Level 04 \u2013 Documented Information: Controlled Forms, Formats & Records",
+        "Level 01 – Documented Information: Quality & Operations Manuals",
+        "Level 02 – Documented Information: Standard Operating Procedures",
+        "Level 03 – Documented Information: SOPs, Work Instructions, Process Protocols",
+        "Level 04 – Documented Information: Controlled Forms, Formats & Records",
         "Hands-on shop-floor coaching and live process run-throughs"
       ]
     },
@@ -354,10 +354,10 @@
       "image": "assets/api/api-spec-q1-inspection.jpg",
       "deliverables": [
         "API Design Review & Complete API Design Packages",
-        "Special Process \u2013 Validated Welding Documentation (WPS/PQR)",
-        "Special Process \u2013 ASNT SNT TC 1A Approved Level 03 NDE Procedures",
-        "Special Process \u2013 Validated Heat Treatment Packages",
-        "Special Process \u2013 Coating, Plating & Surface Treatment Documentation"
+        "Special Process – Validated Welding Documentation (WPS/PQR)",
+        "Special Process – ASNT SNT TC 1A Approved Level 03 NDE Procedures",
+        "Special Process – Validated Heat Treatment Packages",
+        "Special Process – Coating, Plating & Surface Treatment Documentation"
       ]
     },
     {
@@ -468,7 +468,7 @@
         "edition": "Turnkey Implementation",
         "title": "Turnkey API Spec Q1 10th Edition Consulting & Licensing",
         "badge": "100% Success Rate",
-        "overview": "Reva Phoenix offers a one-stop solution for API Certification and API Monogram programs. Serving 500+ clients across 40 countries, our specialists manage every stage from initial gap analysis and Level 1\u20134 documentation development to mock audit closure and API auditor defense.",
+        "overview": "Reva Phoenix offers a one-stop solution for API Certification and API Monogram programs. Serving 500+ clients across 40 countries, our specialists manage every stage from initial gap analysis and Level 1–4 documentation development to mock audit closure and API auditor defense.",
         "image": "assets/api/api-spec-q1-inspection.jpg",
         "pillars": [
           {
@@ -698,7 +698,7 @@
       {
         "id": "iso-14064",
         "code": "ISO 14064-1:2018",
-        "name": "Greenhouse Gas (GHG) \u2014 All 3 Parts",
+        "name": "Greenhouse Gas (GHG) — All 3 Parts",
         "category": "Certification",
         "focus": "GHG quantification, monitoring, reporting, verification, and carbon neutrality programs."
       },
@@ -714,7 +714,7 @@
         "code": "Quality Core Tools",
         "name": "Quality Core Tools",
         "category": "Training Program",
-        "focus": "APQP, FMEA (AIAG-VDA), MSA, SPC, PPAP \u2014 automotive and manufacturing quality essentials."
+        "focus": "APQP, FMEA (AIAG-VDA), MSA, SPC, PPAP — automotive and manufacturing quality essentials."
       },
       {
         "id": "lean-six-sigma",
@@ -737,37 +737,37 @@
         "name": "5S / 6S Workplace Organization",
         "tagline": "Visual Management, Safety Standards & Disciplined Shop Floors",
         "badge": "Visual Control",
-        "icon": "\ud83e\uddf9",
-        "desc": "Sort, Set in order, Shine, Standardize, Sustain, Safety \u2013 establishing world-class visual shop floors.",
+        "icon": "🧹",
+        "desc": "Sort, Set in order, Shine, Standardize, Sustain, Safety – establishing world-class visual shop floors.",
         "overview": "5S / 6S is a foundational Lean methodology engineered to organize, clean, standardize, and sustain a high-performance workplace environment. Reva Phoenix assists manufacturing plants and engineering facilities in executing full-scale 5S/6S transformations that eliminate waste, optimize ergonomics, and instill a disciplined culture of zero clutter and maximum safety across production lines and warehouses.",
         "pillars": [
           {
-            "title": "1S \u2013 Seiri (Sort)",
+            "title": "1S – Seiri (Sort)",
             "text": "Identify essential vs non-essential items using systematic red-tag campaigns. Eliminate scrap, obsolete tooling, and excess WIP from shop floors."
           },
           {
-            "title": "2S \u2013 Seiton (Set In Order)",
+            "title": "2S – Seiton (Set In Order)",
             "text": "Establish a designated place for everything and everything in its place. Implement shadow boards, visual floor striping, color-coded boundaries, and ergonomic tool placements."
           },
           {
-            "title": "3S \u2013 Seiso (Shine)",
+            "title": "3S – Seiso (Shine)",
             "text": "Clean and inspect machinery during cleaning. Identify root causes of leaks, dust, and contamination, turning daily cleaning into preventative maintenance inspection."
           },
           {
-            "title": "4S \u2013 Seiketsu (Standardize)",
+            "title": "4S – Seiketsu (Standardize)",
             "text": "Create visual standard operating procedures (SOPs), 5S schedules, color-coding standards, and clear ownership matrices across shifts."
           },
           {
-            "title": "5S \u2013 Shitsuke (Sustain)",
+            "title": "5S – Shitsuke (Sustain)",
             "text": "Establish daily gemba walks, tiered audit scorecards, visual 5S radar charts, and recognition programs to cement long-term operational habits."
           },
           {
-            "title": "6S \u2013 Safety (The 6th S)",
+            "title": "6S – Safety (The 6th S)",
             "text": "Embed proactive hazard identification, emergency egress clearance, PPE demarcation, and ergonomics into every daily operational routine."
           }
         ],
         "benefits": [
-          "30%\u201345% reduction in operator tool and material search time",
+          "30%–45% reduction in operator tool and material search time",
           "Drastic reduction in workplace slips, trips, and safety incidents",
           "Rapid identification of machine leaks, defects, and fluid anomalies",
           "Audit-ready visual appeal for customer audits and OEM inspections"
@@ -784,7 +784,7 @@
         "name": "Total Productive Maintenance (TPM)",
         "tagline": "Zero Breakdowns, Zero Stoppages & Maximum OEE Performance",
         "badge": "Asset Reliability",
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "desc": "Autonomous maintenance, planned maintenance, and zero unplanned downtime strategies.",
         "overview": "Total Productive Maintenance (TPM) is an organization-wide physical asset management strategy focused on maximizing Overall Equipment Effectiveness (OEE) while striving for zero unplanned breakdowns, zero minor stops, and zero defects. Originated by JIPM, TPM empowers operators to take co-ownership of machine health through structured maintenance pillars.",
         "pillars": [
@@ -829,7 +829,7 @@
         ],
         "deliverables": [
           "Plant-wide OEE Measurement & Loss Tree Classification System",
-          "Autonomous Maintenance (JH) Step 1\u2013Step 7 Rollout Roadmap",
+          "Autonomous Maintenance (JH) Step 1–Step 7 Rollout Roadmap",
           "Preventative & Predictive Maintenance (PPM) Master Calendar",
           "Autonomous Maintenance Inspection Checklists & Tagging Systems"
         ]
@@ -839,9 +839,9 @@
         "name": "Total Quality Management (TQM)",
         "tagline": "Company-Wide Continuous Improvement & Customer-Centric Culture",
         "badge": "Quality Governance",
-        "icon": "\ud83c\udfc6",
+        "icon": "🏆",
         "desc": "Organization-wide continuous improvement culture engaging all hierarchical levels.",
-        "overview": "Total Quality Management (TQM) is a holistic management philosophy focused on integrating all organizational functions\u2014from executive leadership and design to manufacturing and sales\u2014around the relentless pursuit of customer satisfaction and continuous process improvement. Reva Phoenix builds resilient quality cultures based on Deming, Juran, and Crosby methodologies.",
+        "overview": "Total Quality Management (TQM) is a holistic management philosophy focused on integrating all organizational functions—from executive leadership and design to manufacturing and sales—around the relentless pursuit of customer satisfaction and continuous process improvement. Reva Phoenix builds resilient quality cultures based on Deming, Juran, and Crosby methodologies.",
         "pillars": [
           {
             "title": "Customer-Focused Quality",
@@ -886,7 +886,7 @@
         "name": "Lean Manufacturing & Value Stream Mapping",
         "tagline": "Elimination of the 7 Wastes (Muda) & Seamless Flow Optimization",
         "badge": "Waste Elimination",
-        "icon": "\u26a1",
+        "icon": "⚡",
         "desc": "Elimination of 7 wastes (Muda), Value Stream Mapping (VSM), Kanban, Kaizen implementation.",
         "overview": "Lean Manufacturing is centered on the relentless elimination of non-value-adding activities (Muda) to create smooth, rapid flow from raw material receipt to finished goods delivery. Utilizing Value Stream Mapping (VSM), Kanban pull mechanisms, and Single-Minute Exchange of Die (SMED), Reva Phoenix accelerates production velocity and unleashes trapped working capital.",
         "pillars": [
@@ -916,8 +916,8 @@
           }
         ],
         "benefits": [
-          "40%\u201360% reduction in total order-to-delivery lead times",
-          "30%\u201350% decrease in Work-in-Progress (WIP) and warehouse inventory",
+          "40%–60% reduction in total order-to-delivery lead times",
+          "30%–50% decrease in Work-in-Progress (WIP) and warehouse inventory",
           "Up to 25% reclaim of usable factory floor space through cellular redesign",
           "Agile responsiveness to fluctuating customer order sizes and mix"
         ],
@@ -933,8 +933,8 @@
         "name": "Six Sigma (DMAIC Methodology)",
         "tagline": "Statistical Defect Reduction, Process Capability & Rigorous Governance",
         "badge": "Statistical Rigor",
-        "icon": "\ud83c\udfaf",
-        "desc": "Define, Measure, Analyze, Improve, Control \u2013 statistical defect minimization and process capability.",
+        "icon": "🎯",
+        "desc": "Define, Measure, Analyze, Improve, Control – statistical defect minimization and process capability.",
         "overview": "Six Sigma is a disciplined, data-driven methodology designed to virtually eliminate defects and process variability, achieving less than 3.4 Defects Per Million Opportunities (DPMO). Reva Phoenix deploys certified Master Black Belts and Black Belts to guide engineering teams through high-impact DMAIC projects that deliver auditable bottom-line financial savings.",
         "pillars": [
           {
@@ -976,7 +976,7 @@
         "name": "Supplier Development & Quality Management",
         "tagline": "Supply Chain Resilience, Capability Audits & Vendor Quality Partnerships",
         "badge": "Supply Chain",
-        "icon": "\ud83e\udd1d",
+        "icon": "🤝",
         "desc": "Supplier evaluation, capability auditing, quality enhancement, and vendor partnership programs.",
         "overview": "In today's complex manufacturing and energy ecosystems, overall product quality is fundamentally bounded by supplier performance. Reva Phoenix acts as an extension of your procurement and quality teams to evaluate, audit, coach, and elevate tier-1 and tier-2 vendor capabilities to meet stringent ISO, IATF 16949, and API Q1 supply chain benchmarks.",
         "pillars": [
@@ -986,7 +986,7 @@
           },
           {
             "title": "PPAP & FAI Verification",
-            "text": "Validate Production Part Approval Process (PPAP Level 1\u20135) and First Article Inspection (AS9102 / API) submissions."
+            "text": "Validate Production Part Approval Process (PPAP Level 1–5) and First Article Inspection (AS9102 / API) submissions."
           },
           {
             "title": "Supplier Quality Improvement Plans (SQIP)",
@@ -1023,7 +1023,7 @@
         "name": "Third Party Inspection (TPI)",
         "tagline": "Impartial Stage Witness, Pre-Shipment Inspection & Compliance Certification",
         "badge": "Independent QA",
-        "icon": "\ud83d\udd0d",
+        "icon": "🔍",
         "desc": "Impartial inspection, stage witness, expediting, and compliance verification across manufacturing plants.",
         "overview": "Third Party Inspection (TPI) provides impartial, globally recognized quality assurance and compliance verification for critical industrial, energy, and engineering components. Reva Phoenix certified inspectors (ASNT / ISO 9712 / API) witness crucial fabrication stages, review mill test certificates, and ensure unyielding conformity prior to dispatch.",
         "pillars": [
@@ -1070,7 +1070,7 @@
         "name": "Quality Improvement Tools & Shop Floor Workshops",
         "tagline": "7 QC Tools, Global 8D, Root Cause Problem Solving & COPQ Elimination",
         "badge": "Shop Floor Mastery",
-        "icon": "\ud83c\udfaf",
+        "icon": "🎯",
         "desc": "Practical shop floor program covering 7 QC tools, 8D problem solving, root cause analysis (5-Why, Ishikawa), CAPA systems, and COPQ reduction.",
         "overview": "Quality Improvement Tools & Shop Floor Workshops provide hands-on, practical problem-solving capabilities directly on the manufacturing shop floor. Reva Phoenix trains operators, engineers, and plant leadership in JUSE 7 QC tools, Global 8D methodology, root cause analysis (5-Why & Ishikawa), Cost of Poor Quality (COPQ) quantification, and zero-defect execution through live Gemba workshops.",
         "pillars": [
@@ -1117,7 +1117,7 @@
         "name": "Leadership & Executive Soft Skills",
         "tagline": "Transformational Leadership, 7 Habits, TTT Mastery & Quality Culture",
         "badge": "People & Culture",
-        "icon": "\ud83d\udc65",
+        "icon": "👥",
         "desc": "Executive leadership masterclass covering 7 Habits, Train the Trainer (TTT), conflict resolution, managerial skills, and culture transformation.",
         "overview": "Leadership & Executive Soft Skills is an executive coaching and managerial capability development program engineered to transform technical managers into inspiring organizational leaders. Reva Phoenix bridges the gap between technical quality systems and human performance, cultivating visionary leaders capable of leading cultural change, driving accountability, and sustaining operational excellence.",
         "pillars": [
@@ -1360,7 +1360,7 @@
               {
                 "sno": "1",
                 "topic": "Core Tools Combined (APQP, FMEA, MSA, SPC, PPAP)",
-                "awareness": "\u2014",
+                "awareness": "—",
                 "detailed": "3 Days"
               },
               {
@@ -1505,7 +1505,7 @@
               },
               {
                 "sno": "9",
-                "topic": "6 Sigma \u2013 Green Belt Certification",
+                "topic": "6 Sigma – Green Belt Certification",
                 "awareness": "1 Day",
                 "detailed": "5 Days"
               },
@@ -1523,7 +1523,7 @@
               },
               {
                 "sno": "12",
-                "topic": "Total Quality Management (TQM \u2013 Deming Framework)",
+                "topic": "Total Quality Management (TQM – Deming Framework)",
                 "awareness": "1 Day",
                 "detailed": "3 Days"
               },
@@ -1575,7 +1575,7 @@
             "rows": [
               {
                 "sno": "1",
-                "topic": "Total Productive Maintenance (TPM \u2013 8 Pillars & OEE)",
+                "topic": "Total Productive Maintenance (TPM – 8 Pillars & OEE)",
                 "awareness": "1 Day",
                 "detailed": "3 Days"
               },
@@ -1590,28 +1590,28 @@
         ],
         "courseCategories": [
           {
-            "category": "Quality Management System \u2013 ISO 9001",
+            "category": "Quality Management System – ISO 9001",
             "modules": [
-              "ISO 9001:2015 \u2013 Internal Auditor Training",
-              "ISO 9001:2015 \u2013 Lead Auditor Training (IRCA Registered)",
-              "ISO 9001:2015 \u2013 Implementers Training Course"
+              "ISO 9001:2015 – Internal Auditor Training",
+              "ISO 9001:2015 – Lead Auditor Training (IRCA Registered)",
+              "ISO 9001:2015 – Implementers Training Course"
             ]
           },
           {
-            "category": "API QMS Training \u2013 API Spec Q1 & API Spec Q2",
+            "category": "API QMS Training – API Spec Q1 & API Spec Q2",
             "modules": [
-              "Internal Auditor Course \u2013 API Spec Q1 (10th Edition)",
-              "Internal Auditor Course \u2013 API Spec Q2 (2nd Edition)",
-              "Practitioner Course \u2013 API Spec Q1 with Supply Chain Management (SCM)",
-              "Practitioner Course \u2013 API Spec Q2 with Service Quality Plan (SQP)",
-              "Lead Auditor Course \u2013 ISO 9001:2015 & API Spec Q1 Requirements",
+              "Internal Auditor Course – API Spec Q1 (10th Edition)",
+              "Internal Auditor Course – API Spec Q2 (2nd Edition)",
+              "Practitioner Course – API Spec Q1 with Supply Chain Management (SCM)",
+              "Practitioner Course – API Spec Q2 with Service Quality Plan (SQP)",
+              "Lead Auditor Course – ISO 9001:2015 & API Spec Q1 Requirements",
               "API Monogram Specific Design Package Training & Product Auditing"
             ]
           },
           {
-            "category": "Automotive QMS & Core Tools \u2013 IATF 16949",
+            "category": "Automotive QMS & Core Tools – IATF 16949",
             "modules": [
-              "IATF 16949:2016 \u2013 Lead Auditor & Internal Auditor Training",
+              "IATF 16949:2016 – Lead Auditor & Internal Auditor Training",
               "VDA 6.3 Process Audit Masterclass",
               "Automotive Six Pack: APQP, FMEA (DFMEA/PFMEA/MFMEA), Control Plan, PPAP, MSA & SPC",
               "Dynamic Control Planning (DCP) & Process Flow Charting Methodology",
@@ -1619,10 +1619,10 @@
             ]
           },
           {
-            "category": "Environmental & Safety \u2013 ISO 14001 & ISO 45001",
+            "category": "Environmental & Safety – ISO 14001 & ISO 45001",
             "modules": [
-              "ISO 14001:2015 \u2013 Environmental Management System (IRCA Lead Auditor)",
-              "ISO 45001:2018 \u2013 Occupational Health & Safety (Lead & Internal Auditor)",
+              "ISO 14001:2015 – Environmental Management System (IRCA Lead Auditor)",
+              "ISO 45001:2018 – Occupational Health & Safety (Lead & Internal Auditor)",
               "HIRA (Hazard Identification & Risk Assessment) Workshops"
             ]
           },
@@ -1634,9 +1634,9 @@
             ]
           },
           {
-            "category": "Laboratory Management \u2013 ISO/IEC 17025",
+            "category": "Laboratory Management – ISO/IEC 17025",
             "modules": [
-              "ISO/IEC 17025:2017 \u2013 Testing & Calibration Laboratory Competence",
+              "ISO/IEC 17025:2017 – Testing & Calibration Laboratory Competence",
               "Uncertainty of Measurement (MU) Calculation & NABL Audit Preparation"
             ]
           },
@@ -1644,17 +1644,17 @@
             "category": "Lean Manufacturing & Six Sigma",
             "modules": [
               "Six Sigma Green Belt & Black Belt Certification Programs",
-              "Master Black Belt Program \u2013 108 Tools of Lean Six Sigma",
+              "Master Black Belt Program – 108 Tools of Lean Six Sigma",
               "SMED (Single Minute Exchange of Dies) & Visual Factory Workshops",
-              "Value Stream Mapping (VSM \u2013 Current State & Future State)",
+              "Value Stream Mapping (VSM – Current State & Future State)",
               "Poka Yoke (Mistake Proofing) & Overall Equipment Effectiveness (OEE)"
             ]
           },
           {
             "category": "TQM & Total Productive Maintenance (TPM)",
             "modules": [
-              "Total Quality Management (TQM) \u2013 Deming Application Prize Roadmap",
-              "Hoshin Kanri \u2013 Policy Deployment & Daily Work Management",
+              "Total Quality Management (TQM) – Deming Application Prize Roadmap",
+              "Hoshin Kanri – Policy Deployment & Daily Work Management",
               "8 Pillars of TPM, TPM Kick Off & Shop Floor Model Machine Excellence"
             ]
           },
@@ -1688,7 +1688,7 @@
           {
             "title": "Business Improvement Assessments",
             "tag": "Profit & Cost Savings",
-            "icon": "\ud83d\udcc8",
+            "icon": "📈",
             "desc": "Improvement is the name of the game. Getting more using fewer resources. Providing a better product or service to reduce your costs and increase customer satisfaction and market share. Why wait for an economic downturn or for your customer to ask for a price decrease to find your profit leaks? Our toolbox includes Lean, Visual Factory, 5S, Poka Yoke, DMAIC, Root Cause Analysis, Data Collection & Analysis, Six Sigma, and Kaizen.",
             "deliverables": [
               "Profit Leak Identification Report",
@@ -1699,7 +1699,7 @@
           {
             "title": "Internal Audit Services (Outsourced / Augmented)",
             "tag": "Expert Assessment",
-            "icon": "\ud83d\udee1\ufe0f",
+            "icon": "🛡️",
             "desc": "Internal audits require a staff that is well trained in auditing techniques and knowledgeable in effective cost reduction methods. Most companies certified to QMS standards use internal auditors on an as-needed basis, leading to skill decay and turnover. Our full-time professional auditors undergo annual rigorous training, ensuring every audit delivers quantifiable improvement opportunities and risk reduction.",
             "deliverables": [
               "Independent Internal Auditing",
@@ -1710,8 +1710,8 @@
           {
             "title": "Best-in-Class Gap Assessments",
             "tag": "Diagnostic Review",
-            "icon": "\ud83d\udd0d",
-            "desc": "Before launching countless hours on trying to meet QMS standards\u2014including ISO 9001, ISO 14001, ISO 45001, AS 9100, IATF 16949, ISO 50001, ISO 17025, or Company/Customer Specific Requirements\u2014let us review your current business processes and practices to highlight exact compliance deltas.",
+            "icon": "🔍",
+            "desc": "Before launching countless hours on trying to meet QMS standards—including ISO 9001, ISO 14001, ISO 45001, AS 9100, IATF 16949, ISO 50001, ISO 17025, or Company/Customer Specific Requirements—let us review your current business processes and practices to highlight exact compliance deltas.",
             "deliverables": [
               "Clause-by-Clause Gap Matrix",
               "Resource Allocation Plan",
@@ -1721,7 +1721,7 @@
           {
             "title": "Management System Readiness Assessment / Audit",
             "tag": "Registrar Pre-Audit",
-            "icon": "\ud83d\udccb",
+            "icon": "📋",
             "desc": "Want to know if your Management system is ready for the Registrar, your customer, or regulatory agency? Our experienced staff provides an assessment of your implementation with a written report of strengths and weaknesses, including opportunities for improvements and preventive actions.",
             "deliverables": [
               "Comprehensive Readiness Dossier",
@@ -1732,7 +1732,7 @@
           {
             "title": "Supplier Assessment & Audits",
             "tag": "Supply Chain Assurance",
-            "icon": "\ud83e\udd1d",
+            "icon": "🤝",
             "desc": "Our Supplier Auditing / Assessment Services assist you in managing your supply chain to ensure low risk and high quality. We provide experienced auditors to visit your suppliers, freeing up your valuable resources. Every audit provides information on opportunities for improvements, corrective and preventive actions.",
             "deliverables": [
               "Onsite Supplier Audit Dossiers",
@@ -1743,7 +1743,7 @@
           {
             "title": "Online & On-Site Training Delivery",
             "tag": "Custom Workforce Upskilling",
-            "icon": "\ud83c\udf93",
+            "icon": "🎓",
             "desc": "Training is conducted online & at your site, tailored to your company, unique processes, and specific applications. Whether for 1 or 500+ employees, we teach how to conduct value-added audits, audit suppliers, develop effective Process Control Plans, author FMEAs, and lead Kaizen events.",
             "deliverables": [
               "Tailored Course Materials",
@@ -1754,7 +1754,7 @@
           {
             "title": "QMS Documentation Development, Refinement & Redevelopment",
             "tag": "Documentation Architecture",
-            "icon": "\ud83d\udcd1",
+            "icon": "📑",
             "desc": "We assist in authoring suitable and effective QMS documentation. When documentation doesn't spell out the process, we refine it for consistent quality. If your system became unwieldy and bloated over the years with multiple overlapping documents, we streamline and redevelop it to reduce documents while maximizing operational clarity.",
             "deliverables": [
               "Streamlined Lean Manuals",
@@ -1765,7 +1765,7 @@
           {
             "title": "QMS Improvement & Risk Mitigation",
             "tag": "Operational Mastery",
-            "icon": "\u26a1",
+            "icon": "⚡",
             "desc": "Developing effective Process Control Plans to ensure all key steps, verification hold-points, and acceptance criteria are locked down. Formulating FMEAs to systematically uncover and reduce underlying risks. Facilitating Kaizen sprint events to eliminate waste and recover Cost of Poor Quality (COPQ).",
             "deliverables": [
               "Dynamic Process Control Plans",
@@ -1776,7 +1776,7 @@
           {
             "title": "Greenfield Plant Setup & Quality Infrastructure",
             "tag": "Greenfield Deployment",
-            "icon": "\ud83c\udfed",
+            "icon": "🏭",
             "desc": "End-to-end plant layout planning, process flow optimization, quality testing lab setup, machinery calibration, and comprehensive ISO/API management system architecture for new greenfield manufacturing facilities across Asia and the Middle East.",
             "deliverables": [
               "Factory Floor Layout & Ergonomic Flow Planning",
@@ -2079,8 +2079,8 @@
     "infrastructureSubtitle": "Facility & Technology",
     "infrastructureTitleLine1": "WORLD CLASS",
     "infrastructureTitleLine2": "INFRASTRUCTURE",
-    "infrastructureDescription": "Operating from the Reva Phoenix Complex in Chennai with <strong>35+ integrated calibration laboratories</strong> under one roof \u2014 India's largest integrated calibration facility.",
-    "infrastructureLabLinkText": "Visit Calibration Division \u2197",
+    "infrastructureDescription": "Operating from the Reva Phoenix Complex in Chennai with <strong>35+ integrated calibration laboratories</strong> under one roof — India's largest integrated calibration facility.",
+    "infrastructureLabLinkText": "Visit Calibration Division ↗",
     "infrastructureLabLinkUrl": "https://www.revacalibration.com/",
     "infrastructureFeatures": [
       {
@@ -2251,84 +2251,84 @@
     "testimonialsDescription": "Authentic, unedited feedback from quality managers, technical leads, and corporate executives trained and mentored by Reva Phoenix.",
     "testimonials": [
       {
-        "quote": "One of the best calibration lab with advanced technology. Customer service is really good. Lab and office area 5S well maintained. Workmanship and customer focus are upto the mark. Keep it up all and All the best to the team!",
-        "author": "ANBU SEKAR",
-        "initials": "AS",
-        "company": "Emerson Process Management",
-        "rating": 5.0,
-        "tag": "INSTRUMENTATION & PROCESS CALIBRATION",
-        "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
-      },
-      {
-        "quote": "Well equipped testing and calibration center with availability of both offsite and on-site equipment calibration as per customer requirements, at reasonable price. NABL certified test reports was given. Excellent customer handling team for their immediate response.",
-        "author": "RAHINI S.",
-        "initials": "RS",
-        "company": "Manufacturing & Industrial Testing",
-        "rating": 4.9,
-        "tag": "ON-SITE & PERMANENT LAB CALIBRATION",
-        "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
-      },
-      {
-        "quote": "One of the Best and Biggest Metrology Lab in the City... High Class Calibrating Equipments are used for Calibration... Excellent 3C 5S Practices being followed... They are striving to Exceed Customer Expectations!",
-        "author": "MUTHU KUMAR",
-        "initials": "MK",
-        "company": "Metrology Infrastructure Auditor",
-        "rating": 5.0,
-        "tag": "PRECISION DIMENSIONAL CALIBRATION",
-        "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
-      },
-      {
-        "quote": "The calibration of Reva team service is wonderful and special thanks for the coordination and support from Ms. Manasi, operations executive. Prompt delivery and high metrological accuracy across all equipment.",
-        "author": "VIJAYAKUMAR KANDHASAMY",
+        "quote": "I have attended IMS internal audit certification. It was great experience to gain knowledge. Great owner that cares about their consulting company's Business excellence process, metrics, Executive management program process. They provide great and excellent consulting service and knowledge transfer.",
+        "author": "VINODH KUMAR",
         "initials": "VK",
-        "company": "Industrial Operations Division",
-        "rating": 5.0,
-        "tag": "THERMAL & ELECTROTECHNICAL TESTING",
+        "company": "Manufacturing Operations Division",
+        "rating": 5,
+        "tag": "IMS INTERNAL AUDIT & CONSULTING",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
-        "quote": "Training session was very good and much informative. He was very patient to explain all our queries effectively. I was wondering on seeing your Laboratory with neat and clean way. Going forward will always suggest your lab for training and testing. Awaiting to meet you again to gain more knowledge.",
-        "author": "KARTHICK S.",
-        "initials": "KS",
-        "company": "Engineering & Quality Assurance",
-        "rating": 5.0,
-        "tag": "LABORATORY CALIBRATION & TRAINING",
+        "quote": "API requirement is well explained. From this training we got clear idea on API standards. This is beneficial to me and my organization. Training went on well and appreciated the trainer for taking entire team along with him and responded to all queries.",
+        "author": "KOLI PADMANABHAN",
+        "initials": "KP",
+        "company": "Oil & Gas Industrial Valves",
+        "rating": 5,
+        "tag": "API SPECIFICATION TRAINING",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
-        "quote": "I visited JRPM for training purpose on dimensional calibration. I was trained by Mr. Karthick Ganapathy, his explanation has a high level of clarity and easily understandable. Lab and office area 5S maintenance is extremely good. Outstanding experience.",
-        "author": "THEJASHWINI C.",
-        "initials": "TC",
-        "company": "Aerospace & Precision Metrology",
-        "rating": 4.9,
-        "tag": "DIMENSIONAL METROLOGY & CMM",
+        "quote": "The training program for understanding API specifications was a class apart and made us know where we stand and what needs to be done. The consulting and training program was informative, interactive, and well appreciated by our management team.",
+        "author": "SURESH BABU",
+        "initials": "SB",
+        "company": "Precision Flow Control Engineering",
+        "rating": 5,
+        "tag": "API AUDITING & IMPLEMENTATION",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
-        "quote": "Great learning experience, Dr. Manikandan is very seasoned and experienced professional trainer, really enjoyed the training with his practical examples and in-depth knowledge on API specifications, pressure calibration, and ISO/IEC 17025 standards.",
+        "quote": "As I came through my journey, I had seen the most vibrant auditor / mentor with ultimate knowledge and a great inspirational attitude which made me thinking big and achieving in a least possible time. Thanks for the influence and unimaginable opportunities provided to excel.",
+        "author": "BALAJI VENKAT",
+        "initials": "BV",
+        "company": "Corporate Quality Systems Lead",
+        "rating": 5,
+        "tag": "EXECUTIVE AUDIT MENTORSHIP",
+        "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
+      },
+      {
+        "quote": "I attended training for INTERNAL AUDITOR COURSE for API Q1 9th edition, 5DP, 5CT & 5L spec & ISO 9001:2015. It was an intensive 4-day training course & I enjoyed it lot & learned a lot. Outstanding corporate quality consulting program.",
+        "author": "FAISAL KARIM",
+        "initials": "FK",
+        "company": "Petroleum & Tubular Equipment",
+        "rating": 5,
+        "tag": "API Q1, 5CT, 5L & ISO 9001:2015",
+        "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
+      },
+      {
+        "quote": "Great learning experience, Dr. Manikandan is very seasoned and experienced professional trainer, really enjoyed the training with his practical examples and in-depth knowledge on API specifications, quality management systems, and compliance standards.",
         "author": "KESAVARAM K.",
         "initials": "KK",
         "company": "API & Flow Control Engineering",
-        "rating": 4.8,
-        "tag": "API SPEC Q1 & PRESSURE STANDARDS",
+        "rating": 5,
+        "tag": "API SPEC Q1 & QUALITY CONSULTING",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
-        "quote": "We had a very good experience in the calibration training course as per ISO/IEC 17025. Overall it was like a technical institution for the knowledge seekers. Highly recommend Reva Phoenix for calibration standards and compliance.",
-        "author": "GOKUL KRISHNAN",
-        "initials": "GK",
-        "company": "Quality Management Systems",
-        "rating": 4.9,
-        "tag": "ISO/IEC 17025 COMPLIANCE",
+        "quote": "As a quality month celebration, our team really enjoyed the internal auditor training session conducted by Mr. Manikandan Venkatesan. Really impressed by the way of teaching, guidance, and practical consulting knowledge transfer. Excellent learning!",
+        "author": "JOANNA FOXX",
+        "initials": "JF",
+        "company": "Acetech Group of Companies",
+        "rating": 5,
+        "tag": "CORPORATE QUALITY TRAINING",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
-        "quote": "Excellent Laboratory for Calibration and Testing. Metrological Calibration Laboratory is one of the best in Chennai. Strict 5S standards, high-precision reference calibrators, and very professional team. Great experience during calibration!",
-        "author": "MUTHU GANESAN",
-        "initials": "MG",
-        "company": "Mechanical & Metrology Testing",
-        "rating": 4.9,
-        "tag": "NABL ACCREDITED CALIBRATION",
+        "quote": "Very good interactive session. Dr. Manikandan Venkatesan has in-depth knowledge on various consulting subjects and helps the industrial teams connect the dots of the process and achieve seamless compliance.",
+        "author": "JAYANTH VENKATESH",
+        "initials": "JV",
+        "company": "Engineering Process Advisory",
+        "rating": 5,
+        "tag": "PROCESS MAPPING & ADVISORY",
+        "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
+      },
+      {
+        "quote": "The consulting and training was excellent. The explanation part for each ISO and API clause was wonderful by adding real-world industry case studies. It gave our team actionable tools to implement immediate quality improvements.",
+        "author": "PRAFUL NEEMA",
+        "initials": "PN",
+        "company": "Supply Chain & Quality Assurance",
+        "rating": 5,
+        "tag": "QUALITY MANAGEMENT & CLAUSE ANALYSIS",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       }
     ],
@@ -2361,7 +2361,7 @@
       {
         "key": "all",
         "label": "All Albums",
-        "code": "\u2606 ALL SECTIONS",
+        "code": "☆ ALL SECTIONS",
         "title": "COMPLETE CONSULTING REPOSITORY",
         "description": "Explore the comprehensive visual archive of Reva Phoenix Consulting Division across turnkey projects, witness audits, infrastructure, delegations, awards, and technical conclaves."
       },
@@ -2369,7 +2369,7 @@
         "key": "projects",
         "category": "Projects & Achievements",
         "label": "Projects & Achievements",
-        "code": "\u2606 SECTION A",
+        "code": "☆ SECTION A",
         "title": "PROJECTS AND ACHIEVEMENTS",
         "description": "High-impact turnkey API Spec Q1/Q2 implementations, petroleum valves monogram consultancy, and ISO management systems deployments across global manufacturing facilities."
       },
@@ -2377,7 +2377,7 @@
         "key": "audits",
         "category": "Audits & Assessments",
         "label": "Audits & Assessments",
-        "code": "\u2606 SECTION B",
+        "code": "☆ SECTION B",
         "title": "AUDITS AND ASSESSMENTS",
         "description": "Rigorous on-site API witness audits, vendor quality qualification, internal compliance appraisals, and gap analyses conducted by certified lead auditors."
       },
@@ -2385,7 +2385,7 @@
         "key": "infrastructure",
         "category": "Infrastructure",
         "label": "Infrastructure",
-        "code": "\u2606 SECTION C",
+        "code": "☆ SECTION C",
         "title": "CONSULTING INFRASTRUCTURE",
         "description": "State-of-the-art consulting engineering chambers, technical standard documentation libraries, executive boardrooms, and training audit centers."
       },
@@ -2393,7 +2393,7 @@
         "key": "customer-visits",
         "category": "Customer Visits",
         "label": "Customer Visits",
-        "code": "\u2606 SECTION D",
+        "code": "☆ SECTION D",
         "title": "CUSTOMER VISITS & DELEGATIONS",
         "description": "Strategic corporate delegations, client site visits, and senior leadership meetings with global petroleum, aerospace, and energy industry clients."
       },
@@ -2401,7 +2401,7 @@
         "key": "awards",
         "category": "Awards & Appreciation",
         "label": "Awards & Appreciation",
-        "code": "\u2606 SECTION E",
+        "code": "☆ SECTION E",
         "title": "AWARDS AND APPRECIATION",
         "description": "National quality honors, international API excellence recognitions, and corporate milestones celebrating 25+ years of consulting dedication."
       },
@@ -2409,7 +2409,7 @@
         "key": "conclaves",
         "category": "Conclaves & Seminars",
         "label": "Conclaves & Seminars",
-        "code": "\u2606 SECTION F",
+        "code": "☆ SECTION F",
         "title": "CONCLAVES AND MASTERCLASSES",
         "description": "Master auditor training cohorts, API monogram technical symposiums, petroleum workshops, and lead auditor felicitations."
       }
@@ -2440,7 +2440,7 @@
       },
       {
         "title": "Graduate Trainee Engineer",
-        "experience": "Freshers can apply; 1\u20132 years in NABL lab is an added advantage",
+        "experience": "Freshers can apply; 1–2 years in NABL lab is an added advantage",
         "qualification": "B.E / B.Tech in Mechanical, Automobile, Mechatronics, EEE, ECE, ICE",
         "location": "Chennai HQ",
         "responsibilities": [
@@ -2498,7 +2498,7 @@
     "addressLines": [
       "Reva Phoenix Complex, No. 14, 4th Street",
       "Rajarajeswari Nagar, Madipakkam",
-      "Chennai \u2013 600 091, Tamilnadu, India."
+      "Chennai – 600 091, Tamilnadu, India."
     ],
     "registration": {
       "gstin": "33AAFCR4885G1Z6",
@@ -2544,8 +2544,8 @@
     "logo": "assets/logo/reva-phoenix-logo.png",
     "description": "Reva Phoenix Labs & Consultants Pvt. Ltd. Consulting Division is an international business solutions leader in quality engineering, API monogram licensing, and IMS management system certifications.",
     "motto": "QUALITY IS OUR WAY OF LIFE!",
-    "addressSummary": "Reva Phoenix Complex, No. 14, 4th Street, Rajarajeswari Nagar, Madipakkam, Chennai \u2013 600 091, India.",
-    "copyright": "\u00a9 2026 Reva Phoenix Labs & Consultants Pvt. Ltd. All rights reserved.",
+    "addressSummary": "Reva Phoenix Complex, No. 14, 4th Street, Rajarajeswari Nagar, Madipakkam, Chennai – 600 091, India.",
+    "copyright": "© 2026 Reva Phoenix Labs & Consultants Pvt. Ltd. All rights reserved.",
     "gst": "33AAFCR4885G1Z6",
     "sac": "998313"
   },

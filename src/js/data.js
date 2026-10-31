@@ -307,7 +307,7 @@ export const API_SERVICES = {
     {
       id: "api-q2-about",
       code: "ABOUT API SPEC Q2",
-      edition: "2nd Edition Standard",
+      edition: "3rd Edition Standard",
       title: "API Spec Q2 Quality Standard for Service Organizations",
       badge: "Upstream Services",
       overview: "API Spec Q2 from the American Petroleum Institute is the premier international quality management system standard designed specifically for oil and gas service supply organizations. It covers critical service execution, risk management, personnel competence, and contingency planning for upstream operations.",
@@ -323,7 +323,7 @@ export const API_SERVICES = {
       id: "api-q2-training",
       code: "API SPEC Q2 TRAINING",
       edition: "Service Lead Auditor",
-      title: "API Spec Q2 2nd Edition Service Quality Training",
+      title: "API Spec Q2 3rd Edition Service Quality Training",
       badge: "Field Competency",
       overview: "Specialized training program for upstream oilfield service suppliers, rig contractors, and service engineers. Explores service risk assessments, service design controls, supply chain evaluation, and evidence-driven compliance across field operations and offshore platforms.",
       image: "assets/uploads/Gemini_Generated_Image_9gmjai9gmjai9gmj_1792840744.png",
@@ -778,7 +778,7 @@ export const TRAINING_SERVICES_DATA = {
           category: "API QMS Training – API Spec Q1 & API Spec Q2",
           modules: [
             "Internal Auditor Course – API Spec Q1 (10th Edition)",
-            "Internal Auditor Course – API Spec Q2 (2nd Edition)",
+            "Internal Auditor Course – API Spec Q2 (3rd Edition)",
             "Practitioner Course – API Spec Q1 with Supply Chain Management (SCM)",
             "Practitioner Course – API Spec Q2 with Service Quality Plan (SQP)",
             "Lead Auditor Course – ISO 9001:2015 & API Spec Q1 Requirements",
@@ -1076,7 +1076,7 @@ export const INDUSTRIES = [
     title: "World-Class API Spec Q1, Q2 & Monogram Execution",
     image: "assets/industries/oil-and-gas-facility.jpg",
     description: "One of the undisputed leaders in API oil and gas quality management systems, assisting drilling, exploration, valve, and oil tool manufacturers across 40 countries.",
-    standards: ["API Spec Q1 (10th Edition)", "API Spec Q2 (2nd Edition)", "API Monogram Licensing", "API Master Gauge Calibration", "TPI Services"],
+    standards: ["API Spec Q1 (10th Edition)", "API Spec Q2 (3rd Edition)", "API Monogram Licensing", "API Master Gauge Calibration", "TPI Services"],
     highlights: "Global client engagements across India, UAE, Oman, Saudi Arabia, Kuwait, Qatar, Singapore, and USA."
   },
   {

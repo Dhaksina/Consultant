@@ -2,9 +2,9 @@
  * REVA PHOENIX — 18 Standards Comprehensive Service Tracks Dataset
  * Provides authentic, specialized, non-generic data for all 18 standards across:
  * 1. 🎓 GET TRAINED (Training Track - teal #00d4aa)
- * 2. 💼 GET CONSULTING (Consulting Track - blue #4a9eff)
- * 3. 🚀 GET IMPLEMENTATION (Implementation Track - purple #a855f7)
- * 4. 🔍 GET AUDITING (Auditing Track - orange #f59e0b)
+ * 2. 💼 GET CONSULTED (Consulting Track - blue #4a9eff)
+ * 3. 🚀 GET IMPLEMENTED (Implementation Track - purple #a855f7)
+ * 4. 🔍 GET AUDITED (Auditing Track - orange #f59e0b)
  */
 
 export const STANDARDS_TRACKS = {

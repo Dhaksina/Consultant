@@ -8,7 +8,7 @@
     "founderInspiration": "Smt. Revathi Venkatesan, Founder Director, Cancer warrior & Survivor and the inspiration behind this Organization",
     "primaryColor": "#F47A3C",
     "secondaryColor": "#0070F3",
-    "lastUpdated": "2026-10-24T13:06:29.353Z"
+    "lastUpdated": "2026-10-28T15:49:34.315Z"
   },
   "seo": {
     "pageTitle": "Reva Phoenix Labs & Consultants | Consulting Division – Industrial Quality, API & IMS Engineering",
@@ -24,7 +24,7 @@
     "topBarPhone": "+91 99405 64261",
     "labBadgeText": "Laboratory Division: revacalibration.com ↗",
     "labBadgeUrl": "https://www.revacalibration.com/",
-    "logo": "assets/uploads/WhatsAppImage2026-09-27at102848PM1_1792837890.jpeg",
+    "logo": "assets/logo/reva-phoenix-logo.png",
     "brandName": "REVA PHOENIX",
     "brandSub": "Consulting Division",
     "quoteButtonText": "Get A Quote",
@@ -260,27 +260,27 @@
   },
   "statistics": [
     {
+      "label": "Customers Worldwide",
       "value": 2500,
       "suffix": "+",
-      "label": "Customers Worldwide",
       "subtext": "Across major multinational manufacturing & oil & gas leaders"
     },
     {
+      "label": "Countries Served",
       "value": 50,
       "suffix": "+",
-      "label": "Countries Served",
       "subtext": "Across India, the Middle East, Asia & the US"
     },
     {
+      "label": "Years Domain Expertise",
       "value": 25,
       "suffix": "+",
-      "label": "Years Domain Expertise",
       "subtext": "Continuous leadership in industrial quality & engineering"
     },
     {
+      "label": "Success Rate",
       "value": 95,
       "suffix": "%",
-      "label": "Success Rate",
       "subtext": "For committed management system & certification projects"
     }
   ],
@@ -495,7 +495,7 @@
         "badge": "Upstream Services",
         "image": "assets/uploads/Gemini_Generated_Image_ruc2kzruc2kzruc2_1792840683.png",
         "title": "API Spec Q2 Quality Standard for Service Organizations",
-        "edition": "2nd Edition Standard",
+        "edition": "3rd Edition Standard",
         "pillars": [
           {
             "desc": "Structured controls for onshore and offshore well-site operations, drilling services, and equipment handling.",
@@ -520,8 +520,8 @@
         "id": "api-q2-training",
         "code": "API SPEC Q2 TRAINING",
         "badge": "Field Competency",
-        "image": "assets/uploads/Gemini_Generated_Image_9gmjai9gmjai9gmj_1792840744.png",
-        "title": "API Spec Q2 2nd Edition Service Quality Training",
+        "image": "assets/uploads/Gemini_Generated_Image_mdll0imdll0imdll_1793202390.png",
+        "title": "API Spec Q2 3rd Edition Service Quality Training",
         "edition": "Service Lead Auditor",
         "pillars": [
           {
@@ -1600,7 +1600,7 @@
           {
             "modules": [
               "Internal Auditor Course – API Spec Q1 (10th Edition)",
-              "Internal Auditor Course – API Spec Q2 (2nd Edition)",
+              "Internal Auditor Course – API Spec Q2 (3rd Edition)",
               "Practitioner Course – API Spec Q1 with Supply Chain Management (SCM)",
               "Practitioner Course – API Spec Q2 with Service Quality Plan (SQP)",
               "Lead Auditor Course – ISO 9001:2015 & API Spec Q1 Requirements",
@@ -1955,7 +1955,7 @@
         "title": "World-Class API Spec Q1, Q2 & Monogram Execution",
         "standards": [
           "API Spec Q1 (10th Edition)",
-          "API Spec Q2 (2nd Edition)",
+          "API Spec Q2 (3rd Edition)",
           "API Monogram Licensing",
           "API Master Gauge Calibration",
           "TPI Services"
@@ -2151,7 +2151,7 @@
       },
       {
         "id": 8,
-        "src": "assets/infrastructure/reva-calibration-lab-3.jpg",
+        "src": "assets/uploads/WhatsAppImage2026-10-17at32749PM1_1793202572.jpeg",
         "date": "Metrology Audit",
         "title": "High-Precision Thread Gauge & Calibration Witness Assessment",
         "category": "Audits & Assessments"
@@ -2217,84 +2217,84 @@
     "testimonialsDescription": "Authentic, unedited feedback from quality managers, technical leads, and corporate executives trained and mentored by Reva Phoenix.",
     "testimonials": [
       {
+        "tag": "API SPEQ Q1 & API 5L 47TH EDITION",
         "quote": "Very good training in my life never before.Very very good session from 05/10/26 to 10/10/26 of API Speq Q1 and API 5L 47th edition and essential normative refrance",
         "author": "NIKHIL GOSWAMI",
-        "initials": "NG",
-        "company": "Sandeep Gauswami · Man Industries India Limited",
         "rating": 5,
-        "tag": "API SPEQ Q1 & API 5L 47TH EDITION",
+        "company": "Sandeep Gauswami · Man Industries India Limited",
+        "initials": "NG",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "EXCELLENCE IN QUALITY TRAINING",
         "quote": "Dr. Mani sir is one of the best faculty.",
         "author": "JAGARAPU CHANDRASEKHAR",
-        "initials": "JC",
-        "company": "Lead Auditor & Quality Engineering Programs",
         "rating": 5,
-        "tag": "EXCELLENCE IN QUALITY TRAINING",
+        "company": "Lead Auditor & Quality Engineering Programs",
+        "initials": "JC",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "API Q1 CLAUSES WITH PRACTICAL EXAMPLES",
         "quote": "Training is very good, explained clearly API Q1 Clauses with practical examples. Thanks",
         "author": "MANGESH KAMBALE",
-        "initials": "MK",
-        "company": "Quality Assurance & Compliance",
         "rating": 5,
-        "tag": "API Q1 CLAUSES WITH PRACTICAL EXAMPLES",
+        "company": "Quality Assurance & Compliance",
+        "initials": "MK",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "API Q1 AUDIT REQUIREMENTS",
         "quote": "Clear and practical API Q1 training by Manikandan Sir. Improved understanding of audit requirements.",
         "author": "MOHAN SINGH",
-        "initials": "MS",
-        "company": "Local Guide · 56 reviews",
         "rating": 5,
-        "tag": "API Q1 AUDIT REQUIREMENTS",
+        "company": "Local Guide · 56 reviews",
+        "initials": "MS",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "SPECIFICATION INTERPRETATION & API Q1",
         "quote": "Training provided by Dr. Manikandan Venkatesan Sir help me to upgrade my knowledge and enhanced my understanding how to interpret specification and co related to others",
         "author": "MOHAMMAD ALI KHAN",
-        "initials": "MA",
-        "company": "4 reviews · Technical Standards",
         "rating": 5,
-        "tag": "SPECIFICATION INTERPRETATION & API Q1",
+        "company": "4 reviews · Technical Standards",
+        "initials": "MA",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "API Q1, API 5L & API 5CT TRAINING",
         "quote": "A wonderful training on API Q1, API 5L, API 5CT. I will take away lots of things that I can quickly and easily apply.",
         "author": "VIVEK GAHLOT",
-        "initials": "VG",
-        "company": "3 reviews · Quality & Manufacturing Engineering",
         "rating": 5,
-        "tag": "API Q1, API 5L & API 5CT TRAINING",
+        "company": "3 reviews · Quality & Manufacturing Engineering",
+        "initials": "VG",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "API SPEC Q1 INTERNAL AUDITOR TRAINING",
         "quote": "Attended internal auditor training on API Spec Q1. The session was very informative. Dr. Manikandan sir explained quality management system concepts clearly, making them easy to understand.",
         "author": "ANIKET BEHERA",
-        "initials": "AB",
-        "company": "3 reviews · 13 photos · Quality Systems",
         "rating": 5,
-        "tag": "API SPEC Q1 INTERNAL AUDITOR TRAINING",
+        "company": "3 reviews · 13 photos · Quality Systems",
+        "initials": "AB",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "API 6A LICENSING & AUDIT READINESS",
         "quote": "Reva Phoenix provided outstanding guidance for our API 6A licensing. His deep knowledge, clear direction, and constant push beyond limits helped us achieve strong compliance and audit readiness. Highly recommended.",
         "author": "GURPREET SINGH",
-        "initials": "GS",
-        "company": "4 reviews · API Monogram Licensing Client",
         "rating": 5,
-        "tag": "API 6A LICENSING & AUDIT READINESS",
+        "company": "4 reviews · API Monogram Licensing Client",
+        "initials": "GS",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       },
       {
+        "tag": "GLOBAL MANAGEMENT & TECHNICAL CONSULTANCY",
         "quote": "One of the best and most knowledgeable consultancy company globally. Professional, reliable, and highly experienced 👍",
         "author": "JOBANSINGH MALHI",
-        "initials": "JM",
-        "company": "4 reviews · 2 photos · Global Client",
         "rating": 5,
-        "tag": "GLOBAL MANAGEMENT & TECHNICAL CONSULTANCY",
+        "company": "4 reviews · 2 photos · Global Client",
+        "initials": "JM",
         "googleReviewUrl": "https://www.google.com/search?q=Reva+Phoenix+Labs+%26+Consultants+Private+Limited+Reviews"
       }
     ],
@@ -2519,20 +2519,28 @@
   },
   "mediaLibrary": [
     {
-      "name": "Gemini_Generated_Image_izl10sizl10sizl1.png",
-      "url": "assets/uploads/Gemini_Generated_Image_izl10sizl10sizl1_1792847187.png",
-      "type": "image/png",
-      "size": "8596 KB",
-      "uploadedAt": "2026-10-24T13:06:27.654Z",
+      "name": "WhatsApp Image 2026-10-17 at 3.27.49 PM (1).jpeg",
+      "url": "assets/uploads/WhatsAppImage2026-10-17at32749PM1_1793202572.jpeg",
+      "type": "image/jpeg",
+      "size": "231 KB",
+      "uploadedAt": "2026-10-28T15:49:32.541Z",
       "tag": "Images"
     },
     {
-      "name": "Gemini_Generated_Image_8wj2se8wj2se8wj2.png",
-      "url": "assets/uploads/Gemini_Generated_Image_8wj2se8wj2se8wj2_1792846232.png",
+      "tag": "Images",
+      "url": "assets/uploads/Gemini_Generated_Image_izl10sizl10sizl1_1792847187.png",
+      "name": "Gemini_Generated_Image_izl10sizl10sizl1.png",
+      "size": "8596 KB",
       "type": "image/png",
+      "uploadedAt": "2026-10-24T13:06:27.654Z"
+    },
+    {
+      "tag": "Images",
+      "url": "assets/uploads/Gemini_Generated_Image_8wj2se8wj2se8wj2_1792846232.png",
+      "name": "Gemini_Generated_Image_8wj2se8wj2se8wj2.png",
       "size": "8807 KB",
-      "uploadedAt": "2026-10-24T12:50:32.087Z",
-      "tag": "Images"
+      "type": "image/png",
+      "uploadedAt": "2026-10-24T12:50:32.087Z"
     },
     {
       "tag": "Images",

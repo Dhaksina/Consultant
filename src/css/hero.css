@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   padding: clamp(2rem, 3.5vw, 4rem) 0 clamp(2rem, 3vw, 3.5rem);
-  background-color: #000000;
+  background: transparent;
   overflow: hidden;
 }
 
@@ -29,19 +29,19 @@
 }
 
 .orb-orange {
-  width: clamp(380px, 42vw, 620px);
-  height: clamp(380px, 42vw, 620px);
-  background: radial-gradient(circle, rgba(245, 182, 66, 0.3) 0%, rgba(244, 122, 60, 0.08) 50%, transparent 75%);
-  right: -5%;
-  top: 5%;
+  width: clamp(380px, 46vw, 680px);
+  height: clamp(380px, 46vw, 680px);
+  background: radial-gradient(circle, rgba(240, 104, 48, 0.35) 0%, rgba(180, 75, 30, 0.14) 50%, transparent 75%);
+  left: -8%;
+  top: 25%;
 }
 
 .orb-blue {
-  width: clamp(320px, 35vw, 520px);
-  height: clamp(320px, 35vw, 520px);
-  background: radial-gradient(circle, rgba(22, 131, 255, 0.2) 0%, rgba(22, 131, 255, 0.03) 60%, transparent 75%);
-  left: -8%;
-  bottom: 0%;
+  width: clamp(380px, 46vw, 680px);
+  height: clamp(380px, 46vw, 680px);
+  background: radial-gradient(circle, rgba(35, 95, 175, 0.40) 0%, rgba(22, 60, 125, 0.14) 55%, transparent 75%);
+  right: -8%;
+  top: 2%;
 }
 
 /* Main Hero Grid Layout */

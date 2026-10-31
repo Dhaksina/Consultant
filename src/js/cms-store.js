@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v12';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v15';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -75,7 +75,7 @@ export const DEFAULT_CMS_DATA = {
     quoteButtonService: "General Consultation",
     navItems: [
       { id: "nav-home", label: "Home", link: "#home", isDropdown: false },
-      { id: "nav-about", label: "About", link: "#about", isDropdown: false },
+      { id: "nav-about", label: "About Us", link: "#about", isDropdown: false },
       {
         id: "nav-api",
         label: "API Services",
@@ -92,7 +92,7 @@ export const DEFAULT_CMS_DATA = {
           { label: "API Monogram", targetTab: "api-monogram" }
         ]
       },
-      { id: "nav-ims", label: "MSS", link: "#ims-services", isDropdown: false },
+      { id: "nav-ims", label: "MGT SYSTEM", link: "#ims-services", isDropdown: false },
       {
         id: "nav-training",
         label: "Training",
@@ -114,12 +114,10 @@ export const DEFAULT_CMS_DATA = {
         dropdownItems: [
           { label: "Our Clients", link: "#clients" },
           { label: "Event Gallery", link: "#gallery" },
-          { label: "Video Center", link: "#videos" },
           { label: "Testimonials", link: "#testimonials" },
           { label: "Downloads", link: "#downloads" }
         ]
       },
-      { id: "nav-careers", label: "Careers", link: "#careers", isDropdown: false },
       { id: "nav-contact", label: "Contact", link: "#contact", isDropdown: false }
     ]
   },
@@ -348,6 +346,13 @@ function deepMerge(target, source) {
 
 function ensureGoogleReviews(data) {
   if (!data) return data;
+  if (!data.header) data.header = {};
+  if (!data.header.logo || data.header.logo.includes('WhatsAppImage') || data.header.logo.includes('cropped')) {
+    data.header.logo = 'assets/logo/reva-phoenix-logo.png';
+  }
+  if (data.footer && (!data.footer.logo || data.footer.logo.includes('WhatsAppImage'))) {
+    data.footer.logo = 'assets/logo/reva-phoenix-logo.png';
+  }
   if (!data.portfolio) data.portfolio = {};
   data.portfolio.googleReviewsUrl = GOOGLE_REVIEWS_URL;
   data.portfolio.eventGalleryUrl = EVENT_GALLERY_URL;
@@ -397,9 +402,15 @@ function ensureGoogleReviews(data) {
     });
   }
 
-  // Ensure all 8 API service programs use fresh images
+  // Ensure all 8 API service programs use fresh images and 3rd Edition titles
   if (data.apiServices && Array.isArray(data.apiServices.programs)) {
     data.apiServices.programs.forEach(prog => {
+      if (prog.id === 'api-q2-training') {
+        prog.title = 'API Spec Q2 3rd Edition Service Quality Training';
+      }
+      if (prog.id === 'api-q2-about') {
+        prog.edition = '3rd Edition Standard';
+      }
       const freshProg = API_SERVICES.programs.find(p => p.id === prog.id);
       if (freshProg && freshProg.image) {
         if (!prog.image || 
@@ -435,6 +446,9 @@ export function getCmsData() {
     localStorage.removeItem('reva_phoenix_cms_store_v9');
     localStorage.removeItem('reva_phoenix_cms_store_v10');
     localStorage.removeItem('reva_phoenix_cms_store_v11');
+    localStorage.removeItem('reva_phoenix_cms_store_v12');
+    localStorage.removeItem('reva_phoenix_cms_store_v13');
+    localStorage.removeItem('reva_phoenix_cms_store_v14');
   } catch (e) {}
 
   try {

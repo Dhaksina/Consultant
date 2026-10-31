@@ -8,7 +8,8 @@
 
 html {
   font-size: 16px;
-  background-color: var(--bg-primary);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,7 +39,8 @@ html.lenis body {
 
 body {
   font-family: var(--font-main);
-  background-color: var(--bg-primary);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -51,11 +53,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #040404;
+  background: #0b0c14;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #222222;
+  background: #1e2235;
   border-radius: 4px;
 }
 

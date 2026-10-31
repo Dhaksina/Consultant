@@ -1,6 +1,6 @@
 /* Top Utility Bar */
 .top-utility-bar {
-  background-color: #030303;
+  background-color: rgba(9, 10, 18, 0.97);
   border-bottom: 1px solid var(--border-subtle);
   font-size: 0.78rem;
   font-family: var(--font-mono);
@@ -35,6 +35,23 @@
   color: var(--blue-light);
 }
 
+.utility-whatsapp {
+  text-decoration: none;
+}
+
+.utility-whatsapp svg {
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.utility-whatsapp:hover {
+  color: #FFFFFF;
+}
+
+.utility-whatsapp:hover svg {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 6px rgba(37, 211, 102, 0.7));
+}
+
 .utility-lab-badge {
   display: inline-flex;
   align-items: center;
@@ -63,17 +80,17 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.88);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: rgba(11, 12, 20, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   transition: all var(--transition-med);
 }
 
 .site-header.scrolled {
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: rgba(10, 11, 18, 0.97);
   border-bottom-color: var(--border-medium);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
 .header-inner {
@@ -92,10 +109,12 @@
 }
 
 .site-logo {
-  height: 64px;
-  max-height: 64px;
+  height: 52px;
+  max-height: 52px;
   width: auto;
+  max-width: 200px;
   object-fit: contain;
+  object-position: left center;
   transition: transform var(--transition-fast);
 }
 
@@ -205,7 +224,7 @@
   transform: translateX(-50%) translateY(8px);
   min-width: 250px;
   white-space: nowrap;
-  background: rgba(10, 10, 14, 0.98);
+  background: rgba(11, 12, 20, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -225,7 +244,7 @@
   min-width: 390px;
   white-space: normal;
   padding: 0.6rem;
-  background: linear-gradient(175deg, rgba(14, 14, 22, 0.98) 0%, rgba(8, 8, 14, 0.99) 100%);
+  background: linear-gradient(175deg, rgba(14, 16, 26, 0.98) 0%, rgba(9, 10, 17, 0.99) 100%);
   border: 1px solid rgba(255, 106, 0, 0.25);
   border-top: 3px solid var(--orange-primary);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.95), 0 0 35px rgba(255, 106, 0, 0.18);
@@ -518,7 +537,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(180deg, rgba(8, 8, 12, 0.98) 0%, rgba(3, 3, 5, 0.99) 100%);
+  background: linear-gradient(180deg, rgba(10, 11, 18, 0.99) 0%, rgba(8, 9, 16, 0.99) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 999;

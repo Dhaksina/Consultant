@@ -564,13 +564,13 @@ export function openExcellenceModal(item) {
             <span class="ims-btn-icon">🎓</span> <span class="ims-btn-text">GET TRAINED</span>
           </button>
           <button type="button" class="ims-action-btn ims-btn-consult ${currentTrack === 'consulting' ? 'active' : ''}" data-nav-track="consulting" style="flex: 1; min-width: 130px; justify-content: center; ${currentTrack === 'consulting' ? 'box-shadow: 0 0 14px rgba(74, 158, 255, 0.4);' : ''}">
-            <span class="ims-btn-icon">💼</span> <span class="ims-btn-text">GET CONSULTING</span>
+            <span class="ims-btn-icon">💼</span> <span class="ims-btn-text">GET CONSULTED</span>
           </button>
           <button type="button" class="ims-action-btn ims-btn-implement ${currentTrack === 'implementation' ? 'active' : ''}" data-nav-track="implementation" style="flex: 1; min-width: 130px; justify-content: center; ${currentTrack === 'implementation' ? 'box-shadow: 0 0 14px rgba(168, 85, 247, 0.4);' : ''}">
-            <span class="ims-btn-icon">🚀</span> <span class="ims-btn-text">GET IMPLEMENTATION</span>
+            <span class="ims-btn-icon">🚀</span> <span class="ims-btn-text">GET IMPLEMENTED</span>
           </button>
           <button type="button" class="ims-action-btn ims-btn-audit ${currentTrack === 'auditing' ? 'active' : ''}" data-nav-track="auditing" style="flex: 1; min-width: 130px; justify-content: center; ${currentTrack === 'auditing' ? 'box-shadow: 0 0 14px rgba(245, 158, 11, 0.4);' : ''}">
-            <span class="ims-btn-icon">🔍</span> <span class="ims-btn-text">GET AUDITING</span>
+            <span class="ims-btn-icon">🔍</span> <span class="ims-btn-text">GET AUDITED</span>
           </button>
         </div>
 

@@ -37,7 +37,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="src/css/variables.css?v=7.0" />
   <link rel="stylesheet" href="src/css/base.css?v=6.0" />
-  <link rel="stylesheet" href="src/css/header.css?v=8.0" />
+  <link rel="stylesheet" href="src/css/header.css?v=9.0" />
   <link rel="stylesheet" href="src/css/hero.css?v=12.0" />
   <link rel="stylesheet" href="src/css/sections.css?v=8.0" />
   <link rel="stylesheet" href="src/css/standard-detail.css?v=6.0" />
@@ -115,16 +115,22 @@
   <!-- Sticky Minimal Header -->
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <!-- Brand Logo & Core Capabilities -->
+      <!-- Brand Logo & Dynamic Rotating Capabilities -->
       <a href="#home" class="site-brand" aria-label="Reva Phoenix Home">
         <img src="assets/logo/reva-phoenix-logo.png?v=2" alt="Reva Phoenix Labs &amp; Consultants Logo" class="site-logo"
           width="200" height="110" />
-        <div class="brand-divider" aria-hidden="true"></div>
-        <div class="brand-tagline-pillars" aria-label="Consulting, Training, Engineering, Auditing">
-          <span class="pillar-word pillar-consulting">CONSULTING<span class="pillar-dot">.</span></span>
-          <span class="pillar-word pillar-training">TRAINING<span class="pillar-dot">.</span></span>
-          <span class="pillar-word pillar-engineering">ENGINEERING<span class="pillar-dot">.</span></span>
-          <span class="pillar-word pillar-auditing">AUDITING<span class="pillar-dot">.</span></span>
+        <div class="brand-ticker-divider" aria-hidden="true"></div>
+        <div class="brand-ticker-container" aria-label="Core Capabilities: Consulting, Training, Engineering, Auditing">
+          <span class="ticker-pulse-dot" aria-hidden="true"></span>
+          <div class="brand-ticker-viewport">
+            <div class="brand-ticker-reel">
+              <span class="ticker-word ticker-consulting">CONSULTING.</span>
+              <span class="ticker-word ticker-training">TRAINING.</span>
+              <span class="ticker-word ticker-engineering">ENGINEERING.</span>
+              <span class="ticker-word ticker-auditing">AUDITING.</span>
+              <span class="ticker-word ticker-consulting">CONSULTING.</span>
+            </div>
+          </div>
         </div>
       </a>
 

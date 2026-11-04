@@ -123,143 +123,163 @@
   transform: scale(1.02);
 }
 
-/* Sleek High-Tech Vertical Divider */
-.brand-divider {
+/* Sleek Subtle Vertical Divider */
+.brand-ticker-divider {
   width: 1px;
-  height: 34px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(244, 122, 60, 0.7) 40%,
-    rgba(21, 131, 255, 0.7) 80%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(244, 122, 60, 0.35);
+  height: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.22) 50%, rgba(255, 255, 255, 0.04) 100%);
+  margin: 0 0.5rem 0 0.25rem;
   flex-shrink: 0;
 }
 
-/* 4 Capabilities Pillars Container */
-.brand-tagline-pillars {
+/* Dynamic Rotating Ticker Container */
+.brand-ticker-container {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  font-family: var(--font-main), 'Plus Jakarta Sans', system-ui, sans-serif;
-  font-weight: 800;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  white-space: nowrap;
+  gap: 0.5rem;
   user-select: none;
-  padding: 0.42rem 0.85rem;
-  background: rgba(12, 16, 26, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  position: relative;
+}
+
+/* Glowing Pulsing Capability Dot (color synced to active word) */
+.ticker-pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.9), 0 0 14px rgba(255, 255, 255, 0.5);
+  animation: tickerDotGlow 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  flex-shrink: 0;
+}
+
+@keyframes tickerDotGlow {
+  0%, 20%, 100% {
+    background: #FFFFFF;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.9), 0 0 14px rgba(255, 255, 255, 0.5);
+  }
+  25%, 45% {
+    background: #1583FF;
+    box-shadow: 0 0 8px rgba(21, 131, 255, 0.9), 0 0 14px rgba(21, 131, 255, 0.5);
+  }
+  50%, 70% {
+    background: #F47A3C;
+    box-shadow: 0 0 8px rgba(244, 122, 60, 0.9), 0 0 14px rgba(244, 122, 60, 0.5);
+  }
+  75%, 95% {
+    background: #1583FF;
+    box-shadow: 0 0 8px rgba(21, 131, 255, 0.9), 0 0 14px rgba(21, 131, 255, 0.5);
+  }
+}
+
+/* Viewport for smooth vertical ticker rotation */
+.brand-ticker-viewport {
+  height: 26px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  transition: all var(--transition-med);
+  position: relative;
+  display: inline-block;
+  line-height: 26px;
 }
 
-/* High-tech animated light sheen on hover */
-.brand-tagline-pillars::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -130%;
-  width: 75%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.12) 50%,
-    transparent 100%
-  );
-  transition: left 0.75s cubic-bezier(0.16, 1, 0.3, 1);
-  pointer-events: none;
+/* Vertical Reel of 5 items (4 items + 1 clone of first) */
+.brand-ticker-reel {
+  display: flex;
+  flex-direction: column;
+  animation: brandTickerRoll 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 }
 
-.site-brand:hover .brand-tagline-pillars::before {
-  left: 140%;
+.site-brand:hover .brand-ticker-reel,
+.site-brand:hover .ticker-pulse-dot {
+  animation-play-state: paused;
 }
 
-.site-brand:hover .brand-tagline-pillars {
-  border-color: rgba(244, 122, 60, 0.35);
-  background: rgba(18, 22, 36, 0.82);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(21, 131, 255, 0.2), 0 0 10px rgba(244, 122, 60, 0.15);
+@keyframes brandTickerRoll {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-26px);
+  }
+  50%, 70% {
+    transform: translateY(-52px);
+  }
+  75%, 95% {
+    transform: translateY(-78px);
+  }
+  100% {
+    transform: translateY(-104px);
+  }
 }
 
 /* Individual Words */
+.ticker-word {
+  height: 26px;
+  line-height: 26px;
+  font-family: var(--font-main), 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  display: block;
+  text-transform: uppercase;
+  transition: filter 0.2s ease, text-shadow 0.2s ease;
+}
+
+.ticker-consulting {
+  color: #FFFFFF;
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.25);
+}
+
+.ticker-training {
+  color: #1583FF;
+  text-shadow: 0 0 14px rgba(21, 131, 255, 0.4);
+}
+
+.ticker-engineering {
+  color: #F47A3C;
+  text-shadow: 0 0 14px rgba(244, 122, 60, 0.4);
+}
+
+.ticker-auditing {
+  color: #1583FF;
+  text-shadow: 0 0 14px rgba(21, 131, 255, 0.4);
+}
+
+/* Footer & Static Brand Tagline Pillars */
+.brand-tagline-pillars {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-main), 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 .pillar-word {
   display: inline-block;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
-              filter 0.2s ease,
-              text-shadow 0.2s ease;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
 }
 
-.pillar-consulting {
-  color: #FFFFFF;
-}
+.pillar-consulting { color: #FFFFFF; }
+.pillar-training { color: #1583FF; }
+.pillar-engineering { color: #F47A3C; }
+.pillar-auditing { color: #1583FF; }
 
-.pillar-training {
-  color: #1583FF;
-}
-
-.pillar-engineering {
-  color: #F47A3C;
-}
-
-.pillar-auditing {
-  color: #1583FF;
-}
-
-/* Dots */
 .pillar-dot {
   display: inline-block;
   opacity: 0.9;
-  transition: transform 0.2s ease;
 }
 
-/* Hover glow states on individual words */
-.pillar-consulting:hover {
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
-  transform: translateY(-1px);
-}
-
-.pillar-training:hover {
-  text-shadow: 0 0 12px rgba(21, 131, 255, 0.95);
-  transform: translateY(-1px);
-}
-
-.pillar-engineering:hover {
-  text-shadow: 0 0 12px rgba(244, 122, 60, 0.95);
-  transform: translateY(-1px);
-}
-
-.pillar-auditing:hover {
-  text-shadow: 0 0 12px rgba(21, 131, 255, 0.95);
-  transform: translateY(-1px);
-}
-
-/* Responsive adjustments */
-@media (max-width: 1400px) and (min-width: 1101px) {
-  .brand-tagline-pillars {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0.2rem 0.55rem;
-    font-size: 0.68rem;
-    padding: 0.3rem 0.65rem;
-    letter-spacing: 0.05em;
-  }
-}
-
-@media (max-width: 680px) {
-  .brand-divider {
-    display: none;
-  }
-  .brand-tagline-pillars {
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .brand-ticker-divider,
+  .brand-ticker-container {
     display: none;
   }
 }

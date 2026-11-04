@@ -37,7 +37,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="src/css/variables.css?v=7.0" />
   <link rel="stylesheet" href="src/css/base.css?v=6.0" />
-  <link rel="stylesheet" href="src/css/header.css?v=7.0" />
+  <link rel="stylesheet" href="src/css/header.css?v=8.0" />
   <link rel="stylesheet" href="src/css/hero.css?v=12.0" />
   <link rel="stylesheet" href="src/css/sections.css?v=8.0" />
   <link rel="stylesheet" href="src/css/standard-detail.css?v=6.0" />
@@ -115,10 +115,17 @@
   <!-- Sticky Minimal Header -->
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <!-- Brand Logo -->
+      <!-- Brand Logo & Core Capabilities -->
       <a href="#home" class="site-brand" aria-label="Reva Phoenix Home">
         <img src="assets/logo/reva-phoenix-logo.png?v=2" alt="Reva Phoenix Labs &amp; Consultants Logo" class="site-logo"
           width="200" height="110" />
+        <div class="brand-divider" aria-hidden="true"></div>
+        <div class="brand-tagline-pillars" aria-label="Consulting, Training, Engineering, Auditing">
+          <span class="pillar-word pillar-consulting">CONSULTING<span class="pillar-dot">.</span></span>
+          <span class="pillar-word pillar-training">TRAINING<span class="pillar-dot">.</span></span>
+          <span class="pillar-word pillar-engineering">ENGINEERING<span class="pillar-dot">.</span></span>
+          <span class="pillar-word pillar-auditing">AUDITING<span class="pillar-dot">.</span></span>
+        </div>
       </a>
 
       <!-- Desktop Navigation Menu -->
@@ -175,6 +182,14 @@
 
   <!-- Fullscreen Animated Mobile Menu Drawer -->
   <div class="mobile-drawer" id="mobile-nav-drawer" aria-hidden="true" data-lenis-prevent>
+    <div class="mobile-drawer-brand" style="margin-bottom: 1.5rem;">
+      <div class="brand-tagline-pillars" aria-label="Consulting, Training, Engineering, Auditing" style="display: inline-flex; font-size: 0.72rem; padding: 0.35rem 0.65rem;">
+        <span class="pillar-word pillar-consulting">CONSULTING<span class="pillar-dot">.</span></span>
+        <span class="pillar-word pillar-training">TRAINING<span class="pillar-dot">.</span></span>
+        <span class="pillar-word pillar-engineering">ENGINEERING<span class="pillar-dot">.</span></span>
+        <span class="pillar-word pillar-auditing">AUDITING<span class="pillar-dot">.</span></span>
+      </div>
+    </div>
     <ul class="mobile-nav-links">
       <li><a href="#home" class="mobile-nav-link">01 — Home</a></li>
       <li><a href="#about" class="mobile-nav-link">02 — About Us</a></li>
@@ -796,6 +811,12 @@
         <div class="footer-col-brand">
           <img src="assets/logo/reva-phoenix-logo.png?v=2" alt="Reva Phoenix Logo"
             style="height: 72px; width: auto; max-width: 160px; object-fit: contain; margin-bottom: 0.75rem;" />
+          <div class="brand-tagline-pillars" aria-label="Consulting, Training, Engineering, Auditing" style="margin-bottom: 0.65rem; width: fit-content;">
+            <span class="pillar-word pillar-consulting">CONSULTING<span class="pillar-dot">.</span></span>
+            <span class="pillar-word pillar-training">TRAINING<span class="pillar-dot">.</span></span>
+            <span class="pillar-word pillar-engineering">ENGINEERING<span class="pillar-dot">.</span></span>
+            <span class="pillar-word pillar-auditing">AUDITING<span class="pillar-dot">.</span></span>
+          </div>
           <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
             Reva Phoenix Labs &amp; Consultants Pvt. Ltd. Consulting Division is an international business solutions
             leader in quality engineering, API monogram licensing, and IMS management system certifications.

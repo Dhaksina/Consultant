@@ -8,6 +8,7 @@ import { initAnimations } from './animations.js';
 import { initNavigation } from './navigation.js';
 import { initModals, showToast } from './modals.js';
 import { initCorporateGalleryModal, openCorporateGalleryModal } from './corporate-gallery-modal.js';
+import { initFeedbackBook, openFeedbackBook } from './feedback-book.js';
 import { initSmoothScroll, scrollToTarget } from './smooth-scroll.js';
 
 function bootApp() {
@@ -30,6 +31,10 @@ function bootApp() {
   // 4b. Initialize Corporate Archival Gallery Modal & Browser
   initCorporateGalleryModal();
   window.openCorporateGalleryModal = openCorporateGalleryModal;
+
+  // 4c. Initialize Customer Feedback Book Interactive Viewer (40 Pages)
+  initFeedbackBook();
+  window.openFeedbackBook = openFeedbackBook;
 
   // 5. Initialize GSAP & ScrollTrigger Animations
   initAnimations();

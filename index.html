@@ -143,7 +143,8 @@
             <ul class="dropdown-menu" aria-label="About Us Submenu">
               <li class="dropdown-item"><a href="#about">About Us</a></li>
               <li class="dropdown-item"><a href="#about" class="trigger-open-md">Message from MD</a></li>
-              <li class="dropdown-item"><a href="#about" class="trigger-open-feedback">Customer Feedback</a></li>
+              <li class="dropdown-item"><a href="#about" class="trigger-open-book" data-book-page="1">Customer Feedback Book 📖</a></li>
+              <li class="dropdown-item"><a href="#about" class="trigger-open-feedback">Customer Desk &amp; Escalations</a></li>
               <li class="dropdown-item"><a href="#about" class="trigger-open-values">Core Values</a></li>
             </ul>
           </li>
@@ -210,8 +211,9 @@
         <a href="#about" class="mobile-nav-link">02 — About Us</a>
         <div class="mobile-sublinks" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0.4rem 0 0.85rem 1rem;">
           <a href="#about" class="trigger-open-md" style="font-size: 0.8rem; color: var(--orange-primary); text-decoration: none; font-weight: 600;">Message from MD ↗</a>
-          <a href="#about" class="trigger-open-feedback" style="font-size: 0.8rem; color: var(--blue-light); text-decoration: none; font-weight: 600;">Customer Feedback ↗</a>
-          <a href="#about" class="trigger-open-values" style="font-size: 0.8rem; color: #FFFFFF; text-decoration: none; font-weight: 600;">Core Values ↗</a>
+          <a href="#about" class="trigger-open-book" data-book-page="1" style="font-size: 0.8rem; color: #FFFFFF; text-decoration: none; font-weight: 600;">Feedback Book (40p) 📖</a>
+          <a href="#about" class="trigger-open-feedback" style="font-size: 0.8rem; color: var(--blue-light); text-decoration: none; font-weight: 600;">Customer Desk ↗</a>
+          <a href="#about" class="trigger-open-values" style="font-size: 0.8rem; color: #a1a1aa; text-decoration: none; font-weight: 600;">Core Values ↗</a>
         </div>
       </li>
       <li><a href="#api-services" class="mobile-nav-link">03 — API Services</a></li>
@@ -461,10 +463,54 @@
             </div>
             <div class="about-feedback-quote-author">— Mahatma Gandhi</div>
           </div>
-          <div>
-            <button class="btn btn-secondary-blue btn-sm trigger-open-feedback">
-              Customer Feedback &amp; Contact Desk <span class="arrow-icon">→</span>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary-orange btn-sm trigger-open-book" data-book-page="1">
+              Open Feedback Book (40p) 📖
             </button>
+            <button class="btn btn-secondary-blue btn-sm trigger-open-feedback">
+              Feedback &amp; Contact Desk <span class="arrow-icon">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Customer Feedback Book Showcase (40-Page Verification Dossier) -->
+        <div class="about-book-showcase">
+          <div class="about-book-preview-wrap">
+            <div class="about-book-card-3d trigger-open-book" data-book-page="1" title="Click to open interactive 40-page flipbook">
+              <img src="assets/documents/customer-feedback-book/page-01.jpg" alt="Reva Phoenix Customer Feedback Book Cover" loading="lazy" />
+              <div class="about-book-spine"></div>
+              <div class="about-book-badge-overlay">40 PAGES • DOSSIER</div>
+            </div>
+          </div>
+          <div class="about-book-info">
+            <div class="subtitle-mono orange">Accreditation &amp; Client Testimonials</div>
+            <h3 class="about-book-title">Customer Feedback Book</h3>
+            <p class="about-book-desc">
+              Explore our full <strong>40-page verified client endorsement dossier</strong> compiled from international corporate audits, API monogram certifications, and technical consulting projects across <strong>Oil &amp; Gas, Aerospace, Automotive and Heavy Engineering</strong>.
+            </p>
+            <div class="about-book-pills">
+              <span class="about-book-pill">✔ API Spec Q1 &amp; Q2 Audits</span>
+              <span class="about-book-pill">✔ ISO 9001 / 14001 / 45001</span>
+              <span class="about-book-pill">✔ Global Client Testimonials</span>
+              <span class="about-book-pill">✔ Official Verification Letters</span>
+            </div>
+            <div class="about-book-ctas">
+              <button class="btn btn-primary-orange trigger-open-book" data-book-page="1">
+                Browse Interactive Flipbook 📖
+              </button>
+              <a href="assets/documents/Reva-Phoenix-Customer-Feedback-Book.pdf" download="Reva-Phoenix-Customer-Feedback-Book.pdf" class="btn btn-secondary-blue">
+                Download PDF Dossier (12.3 MB) 📥
+              </a>
+            </div>
+            <div class="about-book-page-shortcuts">
+              <span>Quick Jump:</span>
+              <button class="book-chip-link trigger-open-book" data-book-page="1">Cover</button>
+              <button class="book-chip-link trigger-open-book" data-book-page="5">Page 05</button>
+              <button class="book-chip-link trigger-open-book" data-book-page="10">Page 10</button>
+              <button class="book-chip-link trigger-open-book" data-book-page="20">Page 20</button>
+              <button class="book-chip-link trigger-open-book" data-book-page="30">Page 30</button>
+              <button class="book-chip-link trigger-open-book" data-book-page="40">Page 40</button>
+            </div>
           </div>
         </div>
       </div>
@@ -1240,6 +1286,61 @@
           </svg>
           Book This Course on WhatsApp →
         </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOMER FEEDBACK BOOK INTERACTIVE MODAL (40 PAGES) -->
+  <div class="modal-overlay book-viewer-modal" id="modal-feedback-book" role="dialog" aria-modal="true" aria-labelledby="fb-book-title" data-lenis-prevent>
+    <div class="modal-container book-viewer-container" data-lenis-prevent>
+      <!-- Header -->
+      <div class="book-modal-header">
+        <div class="book-header-left">
+          <div class="book-header-badge">Accreditation Dossier</div>
+          <h3 class="book-header-title" id="fb-book-title">Customer Feedback Book</h3>
+        </div>
+        <div class="book-header-actions">
+          <button type="button" class="book-btn-tool" id="fb-book-fs-btn" aria-label="Toggle Fullscreen">
+            ⛶ Fullscreen
+          </button>
+          <a href="assets/documents/Reva-Phoenix-Customer-Feedback-Book.pdf" download="Reva-Phoenix-Customer-Feedback-Book.pdf" class="book-btn-tool" target="_blank" rel="noopener noreferrer">
+            📥 PDF (12.3 MB)
+          </a>
+          <button type="button" class="book-modal-close fb-book-close-trigger" aria-label="Close Book">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Stage Area with Large Chevron Nav Arrows and Page Image -->
+      <div class="book-stage-area">
+        <button type="button" class="book-nav-arrow book-arrow-left" id="fb-book-arrow-prev" aria-label="Previous Page">
+          ‹
+        </button>
+        <div class="book-page-viewport">
+          <img id="fb-book-img" class="book-page-image" src="assets/documents/customer-feedback-book/page-01.jpg" alt="Customer Feedback Book Page" />
+        </div>
+        <button type="button" class="book-nav-arrow book-arrow-right" id="fb-book-arrow-next" aria-label="Next Page">
+          ›
+        </button>
+      </div>
+
+      <!-- Controls Bar at Bottom -->
+      <div class="book-controls-bar">
+        <div class="book-nav-buttons">
+          <button type="button" class="book-icon-btn" id="fb-book-first-btn" title="First Page">|◀</button>
+          <button type="button" class="book-icon-btn" id="fb-book-prev-btn" title="Previous Page">◀</button>
+        </div>
+        <div class="book-scrubber-wrap">
+          <input type="range" class="book-scrubber-slider" id="fb-book-scrubber" min="1" max="40" value="1" aria-label="Jump to page" />
+          <div class="book-page-indicator">
+            Page <span id="fb-book-current-page" style="color: var(--orange-primary);">1</span> <span class="total-pages">/ 40</span>
+          </div>
+        </div>
+        <div class="book-nav-buttons">
+          <button type="button" class="book-icon-btn" id="fb-book-next-btn" title="Next Page">▶</button>
+          <button type="button" class="book-icon-btn" id="fb-book-last-btn" title="Last Page">▶|</button>
+        </div>
       </div>
     </div>
   </div>

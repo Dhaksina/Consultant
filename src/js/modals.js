@@ -409,6 +409,21 @@ export function openFeedbackModal() {
           — Mahatma Gandhi
         </div>
       </div>
+      <div style="margin-bottom: 2rem; padding: 1.25rem 1.5rem; background: rgba(244, 122, 60, 0.08); border: 1px solid rgba(244, 122, 60, 0.3); border-radius: 6px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--orange-primary); font-weight: 700; text-transform: uppercase;">Verified Client Dossier</div>
+          <div style="font-size: 1.05rem; font-weight: 800; color: #FFFFFF;">Customer Feedback Book (40 Pages)</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.2rem;">Complete collection of client feedback, testimonials &amp; audit letters.</div>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button type="button" class="btn btn-primary-orange btn-sm trigger-open-book" data-book-page="1">
+            Open Flipbook 📖
+          </button>
+          <a href="assets/documents/Reva-Phoenix-Customer-Feedback-Book.pdf" download="Reva-Phoenix-Customer-Feedback-Book.pdf" class="btn btn-secondary-blue btn-sm">
+            Download PDF 📥
+          </a>
+        </div>
+      </div>
       <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.75rem;">
         Reva Phoenix is dedicated to total customer satisfaction, rapid response, and transparent quality communications. Connect directly with our operational departments below:
       </p>

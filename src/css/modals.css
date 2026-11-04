@@ -632,3 +632,311 @@
   border-radius: 4px;
 }
 
+/* ============================================================
+   CUSTOMER FEEDBACK BOOK (40-PAGE INTERACTIVE DOSSIER)
+   ============================================================ */
+.book-viewer-modal {
+  z-index: 10150;
+  padding: clamp(0.5rem, 1.5vw, 1.5rem);
+}
+
+.book-viewer-container {
+  background: radial-gradient(circle at 50% 20%, #151821 0%, #0a0c10 100%);
+  border: 1px solid rgba(244, 122, 60, 0.35);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1100px;
+  height: 94vh;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 40px rgba(244, 122, 60, 0.15);
+  position: relative;
+  padding: 0;
+}
+
+.book-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: rgba(10, 12, 16, 0.95);
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.book-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book-header-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--orange-primary);
+  background: rgba(244, 122, 60, 0.12);
+  border: 1px solid rgba(244, 122, 60, 0.3);
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.book-header-title {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.book-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.book-btn-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.book-btn-tool:hover {
+  background: var(--orange-primary);
+  border-color: var(--orange-primary);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.book-modal-close {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.book-modal-close:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+  transform: rotate(90deg);
+}
+
+/* Stage Area (Image + Big Nav Arrows) */
+.book-stage-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 4.5rem;
+  overflow: hidden;
+  background: #11141b;
+}
+
+.book-page-viewport {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-page-image {
+  max-height: calc(94vh - 150px);
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.85), 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  user-select: none;
+}
+
+/* Floating Large Side Chevrons */
+.book-nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  background: rgba(15, 18, 25, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-fast);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.book-nav-arrow:hover:not(:disabled) {
+  background: var(--orange-primary);
+  border-color: var(--orange-primary);
+  color: #FFFFFF;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.book-nav-arrow:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.book-arrow-left {
+  left: 1.25rem;
+}
+
+.book-arrow-right {
+  right: 1.25rem;
+}
+
+/* Controls Bar at Bottom */
+.book-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: rgba(10, 12, 16, 0.95);
+  border-top: 1px solid var(--border-subtle);
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.book-nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.book-icon-btn {
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.book-icon-btn:hover:not(:disabled) {
+  background: var(--orange-primary);
+  border-color: var(--orange-primary);
+}
+
+.book-icon-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.book-scrubber-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.book-scrubber-slider {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.book-scrubber-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--orange-primary);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(244, 122, 60, 0.6);
+  border: 2px solid #FFFFFF;
+  transition: transform 0.1s ease;
+}
+
+.book-scrubber-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.book-page-indicator {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.book-page-indicator .total-pages {
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .book-stage-area {
+    padding: 0.5rem 2.5rem;
+  }
+  .book-arrow-left {
+    left: 0.5rem;
+  }
+  .book-arrow-right {
+    right: 0.5rem;
+  }
+  .book-nav-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.15rem;
+  }
+  .book-header-title {
+    font-size: 0.95rem;
+  }
+  .book-controls-bar {
+    padding: 0.5rem 1rem;
+    gap: 0.75rem;
+  }
+  .book-scrubber-wrap {
+    max-width: none;
+  }
+}
+
+

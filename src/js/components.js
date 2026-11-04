@@ -106,7 +106,7 @@ function renderHeaderAndNavigation(cms) {
   // Brand logo & name
   const logoImg = document.querySelector('.site-brand .site-logo');
   if (logoImg && header.logo) {
-    logoImg.src = header.logo;
+    logoImg.src = header.logo.includes('?') ? header.logo : `${header.logo}?v=2`;
   }
   const brandName = document.querySelector('.site-brand .brand-name');
   if (brandName && header.brandName) {
@@ -1305,6 +1305,11 @@ function renderFooter(cms) {
   const settings = cms.siteSettings || {};
   const footer = cms.footer || {};
   const contact = cms.contact || {};
+
+  const footerLogoEl = document.querySelector('.footer-col-brand img');
+  if (footerLogoEl && footer.logo) {
+    footerLogoEl.src = footer.logo.includes('?') ? footer.logo : `${footer.logo}?v=2`;
+  }
 
   const brandEl = document.querySelector('#site-footer .brand-name');
   if (brandEl && (footer.brandName || settings.siteName)) {

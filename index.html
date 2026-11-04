@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="src/css/base.css?v=6.0" />
   <link rel="stylesheet" href="src/css/header.css?v=9.0" />
   <link rel="stylesheet" href="src/css/hero.css?v=12.0" />
-  <link rel="stylesheet" href="src/css/sections.css?v=8.0" />
+  <link rel="stylesheet" href="src/css/sections.css?v=9.0" />
   <link rel="stylesheet" href="src/css/standard-detail.css?v=6.0" />
   <link rel="stylesheet" href="src/css/modals.css?v=8.0" />
   <link rel="stylesheet" href="src/css/responsive.css?v=8.0" />
@@ -138,7 +138,15 @@
       <nav class="nav-desktop" aria-label="Main Navigation">
         <ul class="nav-links">
           <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item nav-item-dropdown">
+            <a href="#about" class="nav-link">About Us ▾</a>
+            <ul class="dropdown-menu" aria-label="About Us Submenu">
+              <li class="dropdown-item"><a href="#about">About Us</a></li>
+              <li class="dropdown-item"><a href="#about" class="trigger-open-md">Message from MD</a></li>
+              <li class="dropdown-item"><a href="#about" class="trigger-open-feedback">Customer Feedback</a></li>
+              <li class="dropdown-item"><a href="#about" class="trigger-open-values">Core Values</a></li>
+            </ul>
+          </li>
           <li class="nav-item nav-item-dropdown">
             <a href="#api-services" class="nav-link">API Services ▾</a>
             <ul class="dropdown-menu" aria-label="API Services Submenu">
@@ -198,7 +206,14 @@
     </div>
     <ul class="mobile-nav-links">
       <li><a href="#home" class="mobile-nav-link">01 — Home</a></li>
-      <li><a href="#about" class="mobile-nav-link">02 — About Us</a></li>
+      <li>
+        <a href="#about" class="mobile-nav-link">02 — About Us</a>
+        <div class="mobile-sublinks" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0.4rem 0 0.85rem 1rem;">
+          <a href="#about" class="trigger-open-md" style="font-size: 0.8rem; color: var(--orange-primary); text-decoration: none; font-weight: 600;">Message from MD ↗</a>
+          <a href="#about" class="trigger-open-feedback" style="font-size: 0.8rem; color: var(--blue-light); text-decoration: none; font-weight: 600;">Customer Feedback ↗</a>
+          <a href="#about" class="trigger-open-values" style="font-size: 0.8rem; color: #FFFFFF; text-decoration: none; font-weight: 600;">Core Values ↗</a>
+        </div>
+      </li>
       <li><a href="#api-services" class="mobile-nav-link">03 — API Services</a></li>
       <li><a href="#ims-services" class="mobile-nav-link">04 — MGT SYSTEM</a></li>
       <li><a href="#industries" class="mobile-nav-link">05 — Industries</a></li>
@@ -324,52 +339,131 @@
 
     <!-- 2. ABOUT SECTION -->
     <section class="section about-section" id="about">
-      <div class="container about-grid">
-        <!-- Founder Portrait & Badge -->
-        <div class="about-image-wrapper">
-          <div class="about-portrait-card">
-            <img src="assets/about/dr-manikandan-venkatesan-md.jpg"
-              alt="Dr. Manikandan Venkatesan - Founder and Managing Director" class="about-portrait-img"
-              loading="lazy" />
-            <div class="about-founder-badge">
-              <div class="founder-name">Dr. Manikandan Venkatesan</div>
-              <div class="founder-title">Founder &amp; Managing Director</div>
+      <div class="container">
+        <div class="about-grid">
+          <!-- Founder Portrait & Badge -->
+          <div class="about-image-wrapper">
+            <div class="about-portrait-card">
+              <img src="assets/about/dr-manikandan-venkatesan-md.jpg"
+                alt="Dr. Manikandan Venkatesan - Founder and Managing Director" class="about-portrait-img"
+                loading="lazy" />
+              <div class="about-founder-badge">
+                <div class="founder-name">Dr. Manikandan Venkatesan</div>
+                <div class="founder-title">Founder &amp; Managing Director</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial About Content -->
+          <div class="about-text-content">
+            <div class="subtitle-mono orange">Together We Grow! • Since 2005</div>
+            <h2 class="about-heading">
+              <span class="word-orange">ABOUT</span>
+              <span class="word-white">REVA</span>
+              <span class="word-blue">PHOENIX</span>
+            </h2>
+
+            <p class="about-lead">
+              With its humble origin in <strong>2005</strong>, Reva Phoenix was founded by <strong>Dr. Manikandan Venkatesan</strong> as a proprietary training &amp; consultancy organization. Over the last 2 decades, given our technical deliverables and dedicated client support, Reva Phoenix has progressively grown into an international powerhouse — serving <strong>500+ Clients across 40+ countries</strong> worldwide.
+            </p>
+
+            <p class="about-body-text">
+              Today, Reva Phoenix is one of the largest Management System Certification Consulting organizations for the API Oil &amp; Gas Industry (API Spec Q1, API Spec Q2 &amp; API Monograms) and Integrated Management Systems (ISO 9001, AS 9100, ISO 14001, ISO 45001 &amp; ISO 17025) with premier client footprints across India, USA, Oman, UAE, Saudi Arabia, Qatar, Kuwait &amp; Singapore.
+            </p>
+
+            <!-- Founder Tribute Box -->
+            <div class="about-tribute-box">
+              "Our growth is attributed to the blessings of <strong>Smt. Revathi Venkatesan</strong>, Our Founder Director, Cancer warrior &amp; Survivor and the inspiration behind this Organization;"
+            </div>
+
+            <!-- Quick Action Triggers -->
+            <div class="about-actions">
+              <button class="btn btn-primary-orange btn-sm" id="trigger-md-message">
+                Message From MD <span class="arrow-icon">→</span>
+              </button>
+              <button class="btn btn-secondary-blue btn-sm" id="trigger-customer-feedback">
+                Customer Feedback <span class="arrow-icon">→</span>
+              </button>
+              <button class="btn btn-outline-white btn-sm" id="trigger-core-values">
+                Our Core Values <span class="arrow-icon">→</span>
+              </button>
             </div>
           </div>
         </div>
 
-        <!-- Editorial About Content -->
-        <div class="about-text-content">
-          <div class="subtitle-mono orange">Together We Grow!</div>
-          <h2 class="about-heading">
-            <span class="word-orange">ABOUT</span>
-            <span class="word-white">REVA</span>
-            <span class="word-blue">PHOENIX</span>
-          </h2>
-
-          <p class="about-lead">
-            It is the endeavor of <strong>Reva Phoenix Labs &amp; Consultants Pvt. Ltd. Consulting Division</strong> to
-            add value to our Customer’s Business &amp; Management Systems through Training, Consultation, Implementation
-            and other Value-added services.
+        <!-- 4-Level Documented Information Framework -->
+        <div class="about-doc-framework">
+          <div class="subtitle-mono blue">Comprehensive Documentation Architecture</div>
+          <h3 class="about-doc-title">4-Level Documented Information Framework</h3>
+          <p class="about-doc-subtitle">
+            We fully assist organizations in end-to-end Management System certification — starting from Initial System Study, Gap Analysis, Documentation, Training, Implementation, Internal Audit and Management Review till final Accreditation:
           </p>
 
-          <p class="about-body-text">
-            It has been nearly 2 decades since we started Reva Phoenix, as a modest organization. We have grown to
-            become one of the leading service providers in the Industry.
-          </p>
+          <div class="about-doc-grid">
+            <div class="about-doc-card">
+              <div class="about-doc-card-badge">Level 01 // Manuals</div>
+              <h4 class="about-doc-card-title">Corporate Quality &amp; Operations Manuals</h4>
+              <p class="about-doc-card-desc">
+                High-level governance manuals defining corporate quality policy, scope, leadership responsibilities, and management system architecture.
+              </p>
+            </div>
 
-          <!-- Founder Tribute Box -->
-          <div class="about-tribute-box">
-            "Our growth is attributed to the blessings of <strong>Smt. Revathi Venkatesan</strong>, Our Founder
-            Director, Cancer warrior &amp; Survivor and the inspiration behind this Organization;"
+            <div class="about-doc-card">
+              <div class="about-doc-card-badge">Level 02 // Procedures</div>
+              <h4 class="about-doc-card-title">Documented Procedures &amp; Workflows</h4>
+              <p class="about-doc-card-desc">
+                Standard operating procedures, inter-departmental workflows, risk assessments, contingency plans, and management review protocols.
+              </p>
+            </div>
+
+            <div class="about-doc-card">
+              <div class="about-doc-card-badge">Level 03 // Technical SOPs</div>
+              <h4 class="about-doc-card-title">SOPs, Work Instructions &amp; Process Procedures</h4>
+              <p class="about-doc-card-desc">
+                Granular work instructions, equipment operating procedures, calibration instructions, and process parameters for shop floor execution.
+              </p>
+            </div>
+
+            <div class="about-doc-card">
+              <div class="about-doc-card-badge">Level 04 // Records</div>
+              <h4 class="about-doc-card-title">Forms, Formats, Checklists &amp; Records</h4>
+              <p class="about-doc-card-desc">
+                Standardized verification templates, audit checklists, non-conformance trackers, inspection logs, and retention-compliant quality records.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div class="about-actions">
-            <button class="btn btn-primary-orange btn-sm" id="trigger-md-message">
-              Message From MD <span class="arrow-icon">→</span>
-            </button>
-            <button class="btn btn-secondary-blue btn-sm" id="trigger-core-values">
-              Our Core Values <span class="arrow-icon">→</span>
+        <!-- Customized Engineering Solutions -->
+        <div class="about-solutions-wrap">
+          <div class="subtitle-mono orange">Specialized Industrial Solutions</div>
+          <h3 class="about-doc-title" style="font-size: 1.45rem;">Customized Engineering &amp; Validation Packages</h3>
+          <p class="about-doc-subtitle" style="margin-bottom: 1rem;">
+            Reva Phoenix delivers specialized process validation, engineering design review, and audit defense packages to satisfy demanding international audit standards:
+          </p>
+          <div class="about-solutions-tags">
+            <div class="about-solution-tag"><span>📐</span> API Design Review &amp; API Design Packages</div>
+            <div class="about-solution-tag"><span>🔥</span> Special Process — Validated Welding Documentation</div>
+            <div class="about-solution-tag"><span>🔍</span> Validated NDE Packages &amp; ASNT SNT-TC-1A Level 03 Procedures</div>
+            <div class="about-solution-tag"><span>⚡</span> Special Process — Validated Heat Treatment Packages</div>
+            <div class="about-solution-tag"><span>🛡️</span> Special Process — Validated Coating &amp; Plating Packages</div>
+            <div class="about-solution-tag"><span>🎯</span> Technical &amp; System Support for Closing API Audit NCs</div>
+            <div class="about-solution-tag"><span>🤝</span> Supplier Assessment, Supplier Development &amp; Qualification</div>
+            <div class="about-solution-tag"><span>👥</span> Personnel Competency Training &amp; Implementation Mentorship</div>
+          </div>
+        </div>
+
+        <!-- Customer Feedback & Direct Escalation Banner -->
+        <div class="about-feedback-strip">
+          <div>
+            <div class="about-feedback-quote">
+              “A customer is the most important visitor in our premises. He is not dependent on us, we are dependent on him.”
+            </div>
+            <div class="about-feedback-quote-author">— Mahatma Gandhi</div>
+          </div>
+          <div>
+            <button class="btn btn-secondary-blue btn-sm trigger-open-feedback">
+              Customer Feedback &amp; Contact Desk <span class="arrow-icon">→</span>
             </button>
           </div>
         </div>

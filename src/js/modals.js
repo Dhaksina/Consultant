@@ -104,23 +104,29 @@ export function initModals() {
     });
   });
 
-  // MD Message trigger
-  const mdBtn = document.getElementById("trigger-md-message");
-  if (mdBtn) {
-    mdBtn.addEventListener("click", (e) => {
+  // MD Message triggers
+  document.querySelectorAll("#trigger-md-message, .trigger-open-md").forEach(btn => {
+    btn.addEventListener("click", (e) => {
       e.preventDefault();
       openMdMessageModal();
     });
-  }
+  });
 
-  // Core Values trigger
-  const valuesBtn = document.getElementById("trigger-core-values");
-  if (valuesBtn) {
-    valuesBtn.addEventListener("click", (e) => {
+  // Core Values triggers
+  document.querySelectorAll("#trigger-core-values, .trigger-open-values").forEach(btn => {
+    btn.addEventListener("click", (e) => {
       e.preventDefault();
       openCoreValuesModal();
     });
-  }
+  });
+
+  // Customer Feedback triggers
+  document.querySelectorAll("#trigger-customer-feedback, .trigger-open-feedback").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      openFeedbackModal();
+    });
+  });
 
   // Handle quote modal submission
   const quoteForm = document.getElementById("quote-modal-form");
@@ -381,6 +387,80 @@ export function openCoreValuesModal() {
   document.body.style.overflow = "hidden";
   const cvContainer = textModal.querySelector('.modal-container');
   if (cvContainer) cvContainer.scrollTop = 0;
+}
+
+export function openFeedbackModal() {
+  if (!textModal) return;
+  pauseScroll();
+
+  const tagEl = document.getElementById("modal-text-tag");
+  const titleEl = document.getElementById("modal-text-title");
+  const bodyEl = document.getElementById("modal-text-body");
+
+  if (tagEl) tagEl.innerText = "DIRECT SUPPORT & SERVICE ESCALATION";
+  if (titleEl) titleEl.innerText = "Customer Feedback & Direct Inquiries";
+  if (bodyEl) {
+    bodyEl.innerHTML = `
+      <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(22, 131, 255, 0.08); border-left: 4px solid var(--blue-primary); border-radius: 4px;">
+        <div style="font-family: var(--font-main); font-size: 1.05rem; color: #FFFFFF; font-style: italic; line-height: 1.6; font-weight: 500;">
+          “A customer is the most important visitor in our premises. He is not dependent on us, we are dependent on him.”
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--orange-primary); font-weight: 700; margin-top: 0.6rem; text-align: right;">
+          — Mahatma Gandhi
+        </div>
+      </div>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.75rem;">
+        Reva Phoenix is dedicated to total customer satisfaction, rapid response, and transparent quality communications. Connect directly with our operational departments below:
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 2rem;">
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 1.25rem 1.5rem; border-radius: 6px; border-left: 3px solid var(--orange-primary);">
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--orange-primary); text-transform: uppercase; font-weight: 700; margin-bottom: 0.4rem; letter-spacing: 0.05em;">01 // Enquiry & Quote</div>
+          <div style="font-size: 1.05rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.25rem;">
+            <a href="tel:+919840672352" style="color: inherit; text-decoration: none;">+91 98406 72352</a>
+          </div>
+          <div style="font-size: 0.84rem; color: var(--blue-light);">
+            <a href="mailto:enquiry@revaphoenix.com" style="color: inherit; text-decoration: none;">enquiry@revaphoenix.com</a>
+          </div>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 1.25rem 1.5rem; border-radius: 6px; border-left: 3px solid #25D366;">
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: #25D366; text-transform: uppercase; font-weight: 700; margin-bottom: 0.4rem; letter-spacing: 0.05em;">02 // Feedback & Complaints</div>
+          <div style="font-size: 1.05rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.25rem;">
+            <a href="tel:+919940564261" style="color: inherit; text-decoration: none;">+91 99405 64261</a>
+          </div>
+          <div style="font-size: 0.84rem; color: var(--blue-light);">
+            <a href="mailto:mani.venkatesh@revaphoenix.com" style="color: inherit; text-decoration: none;">mani.venkatesh@revaphoenix.com</a>
+          </div>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 1.25rem 1.5rem; border-radius: 6px; border-left: 3px solid var(--blue-primary);">
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--blue-primary); text-transform: uppercase; font-weight: 700; margin-bottom: 0.4rem; letter-spacing: 0.05em;">03 // Collection & Delivery</div>
+          <div style="font-size: 1.05rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.25rem;">
+            <a href="tel:+919840296996" style="color: inherit; text-decoration: none;">+91 98402 96996</a>
+          </div>
+          <div style="font-size: 0.84rem; color: var(--blue-light);">
+            <a href="mailto:reception@revaphoenix.com" style="color: inherit; text-decoration: none;">reception@revaphoenix.com</a>
+          </div>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 1.25rem 1.5rem; border-radius: 6px; border-left: 3px solid #a855f7;">
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: #a855f7; text-transform: uppercase; font-weight: 700; margin-bottom: 0.4rem; letter-spacing: 0.05em;">04 // Accounts & Invoice</div>
+          <div style="font-size: 1.05rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.25rem;">
+            <a href="tel:+919500032931" style="color: inherit; text-decoration: none;">+91 95000 32931</a>
+          </div>
+          <div style="font-size: 0.84rem; color: var(--blue-light);">
+            <a href="mailto:accounts@revaphoenix.com" style="color: inherit; text-decoration: none;">accounts@revaphoenix.com</a>
+          </div>
+        </div>
+      </div>
+      <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; line-height: 1.6;">
+        <strong>Corporate Headquarters:</strong> Reva Phoenix Complex, No. 14, 4th St, Rajarajeswari Nagar, Madipakkam, Chennai – 600 091, Tamil Nadu, India.<br />
+        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">GSTIN: 33AAFCR4885G1Z6 | SAC: 998313</span>
+      </div>
+    `;
+  }
+
+  textModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+  const fbContainer = textModal.querySelector('.modal-container');
+  if (fbContainer) fbContainer.scrollTop = 0;
 }
 
 export function openExcellenceModal(item) {
@@ -659,6 +739,9 @@ export function openExcellenceModal(item) {
 }
 
 window.openExcellenceModal = openExcellenceModal;
+window.openFeedbackModal = openFeedbackModal;
+window.openMdMessageModal = openMdMessageModal;
+window.openCoreValuesModal = openCoreValuesModal;
 
 export function showToast(message) {
   if (!toastElement) return;

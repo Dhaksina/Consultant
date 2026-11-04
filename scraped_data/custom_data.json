@@ -39,8 +39,26 @@
       {
         "id": "nav-about",
         "link": "#about",
-        "label": "About",
-        "isDropdown": false
+        "label": "About Us",
+        "isDropdown": true,
+        "dropdownItems": [
+          {
+            "label": "About Us",
+            "link": "#about"
+          },
+          {
+            "label": "Message from MD",
+            "action": "openMdMessageModal"
+          },
+          {
+            "label": "Customer Feedback",
+            "action": "openFeedbackModal"
+          },
+          {
+            "label": "Core Values",
+            "action": "openCoreValuesModal"
+          }
+        ]
       },
       {
         "id": "nav-api",
@@ -199,12 +217,12 @@
     "capabilitiesDescription": "Comprehensive six-pillar service architecture delivering end-to-end organizational transformation, accreditation compliance, and measurable cost reductions."
   },
   "about": {
-    "subtitle": "Together We Grow!",
+    "subtitle": "Together We Grow! • Since 2005",
     "headingWord1": "ABOUT",
     "headingWord2": "REVA",
     "headingWord3": "PHOENIX",
-    "leadText": "It is the endeavor of <strong>Reva Phoenix Labs &amp; Consultants Pvt. Ltd. Consulting Division</strong> to add value to our Customer’s Business &amp; Management Systems through Training, Consultation, Implementation and other Value-added services.",
-    "bodyText": "It has been nearly 2 decades since we started Reva Phoenix, as a modest organization. We have grown to become one of the leading service providers in the Industry.",
+    "leadText": "With its humble origin in <strong>2005</strong>, Reva Phoenix was founded by <strong>Dr. Manikandan Venkatesan</strong> as a proprietary training &amp; consultancy organization. Over the last 2 decades, given our technical deliverables and dedicated client support, Reva Phoenix has progressively grown into an international powerhouse — serving <strong>500+ Clients across 40+ countries</strong> worldwide.",
+    "bodyText": "Today, Reva Phoenix is one of the largest Management System Certification Consulting organizations for the API Oil &amp; Gas Industry (API Spec Q1, API Spec Q2 &amp; API Monograms) and Integrated Management Systems (ISO 9001, AS 9100, ISO 14001, ISO 45001 &amp; ISO 17025) with premier client footprints across India, USA, Oman, UAE, Saudi Arabia, Qatar, Kuwait &amp; Singapore.",
     "tributeQuote": "Our growth is attributed to the blessings of <strong>Smt. Revathi Venkatesan</strong>, Our Founder Director, Cancer warrior &amp; Survivor and the inspiration behind this Organization;",
     "founderImage": "assets/about/dr-manikandan-venkatesan-md.jpg",
     "founderName": "Dr. Manikandan Venkatesan",
@@ -255,6 +273,64 @@
         "title": "Excellence at Work",
         "number": "05",
         "description": "Relentless commitment to surpass client expectations and elevate industrial benchmarks worldwide."
+      }
+    ],
+    "documentationLevels": [
+      {
+        "level": "Level 01",
+        "category": "Manuals",
+        "title": "Corporate Quality & Operations Manuals",
+        "description": "High-level governance manuals defining corporate quality policy, scope, leadership responsibilities, and management system architecture."
+      },
+      {
+        "level": "Level 02",
+        "category": "Procedures",
+        "title": "Documented Procedures & Workflows",
+        "description": "Standard operating procedures, inter-departmental workflows, risk assessments, contingency plans, and management review protocols."
+      },
+      {
+        "level": "Level 03",
+        "category": "Technical SOPs",
+        "title": "SOPs, Work Instructions & Process Procedures",
+        "description": "Granular work instructions, equipment operating procedures, calibration instructions, and process parameters for shop floor execution."
+      },
+      {
+        "level": "Level 04",
+        "category": "Records",
+        "title": "Forms, Formats, Checklists & Records",
+        "description": "Standardized verification templates, audit checklists, non-conformance trackers, inspection logs, and retention-compliant quality records."
+      }
+    ],
+    "specializedSolutions": [
+      "API Design Review & API Design Packages",
+      "Special Process — Validated Welding Documentation",
+      "Validated NDE Packages & ASNT SNT-TC-1A Level 03 Procedures",
+      "Special Process — Validated Heat Treatment Packages",
+      "Special Process — Validated Coating & Plating Packages",
+      "Technical & System Support for Closing API Audit NCs",
+      "Supplier Assessment, Supplier Development & Qualification",
+      "Personnel Competency Training & Implementation Mentorship"
+    ],
+    "customerFeedbackChannels": [
+      {
+        "department": "Enquiry & Quote",
+        "phone": "+91 98406 72352",
+        "email": "enquiry@revaphoenix.com"
+      },
+      {
+        "department": "Feedback & Complaints",
+        "phone": "+91 99405 64261",
+        "email": "mani.venkatesh@revaphoenix.com"
+      },
+      {
+        "department": "Collection & Delivery",
+        "phone": "+91 98402 96996",
+        "email": "reception@revaphoenix.com"
+      },
+      {
+        "department": "Accounts & Invoice",
+        "phone": "+91 95000 32931",
+        "email": "accounts@revaphoenix.com"
       }
     ]
   },

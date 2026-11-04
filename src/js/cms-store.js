@@ -36,7 +36,7 @@ import {
   syncAllToFirestore
 } from './firebase-firestore.js';
 
-export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v15';
+export const CMS_STORAGE_KEY = 'reva_phoenix_cms_store_v16';
 export const CMS_SESSION_KEY = 'reva_admin_session';
 
 // Complete, curated default CMS dataset matching the current live site
@@ -449,6 +449,7 @@ export function getCmsData() {
     localStorage.removeItem('reva_phoenix_cms_store_v12');
     localStorage.removeItem('reva_phoenix_cms_store_v13');
     localStorage.removeItem('reva_phoenix_cms_store_v14');
+    localStorage.removeItem('reva_phoenix_cms_store_v15');
   } catch (e) {}
 
   try {

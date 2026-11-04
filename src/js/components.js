@@ -238,6 +238,11 @@ function renderAbout(cms) {
     mdBtn.innerHTML = `${about.mdButtonText} <span class="arrow-icon">→</span>`;
   }
 
+  const fbBtn = document.getElementById('trigger-customer-feedback');
+  if (fbBtn && about.feedbackButtonText) {
+    fbBtn.innerHTML = `${about.feedbackButtonText} <span class="arrow-icon">→</span>`;
+  }
+
   const coreBtn = document.getElementById('trigger-core-values');
   if (coreBtn && about.coreValuesButtonText) {
     coreBtn.innerHTML = `${about.coreValuesButtonText} <span class="arrow-icon">→</span>`;

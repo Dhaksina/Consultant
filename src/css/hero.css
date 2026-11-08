@@ -129,16 +129,25 @@
   font-family: var(--font-main);
   font-weight: 800;
   font-size: clamp(1.85rem, 3.2vw, 3.5rem);
-  line-height: 1.08;
+  line-height: 1.12;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 1.15rem;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 .hero-title-line {
   display: block;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  max-width: 100%;
 }
 
 .title-gradient {
@@ -147,6 +156,9 @@
   -webkit-text-fill-color: transparent;
   display: block;
   text-shadow: 0 0 40px rgba(244, 122, 60, 0.25);
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Domain Pillars Ribbon */
@@ -154,7 +166,7 @@
   font-family: var(--font-main);
   font-weight: 800;
   font-size: clamp(0.95rem, 1.4vw, 1.35rem);
-  line-height: 1.25;
+  line-height: 1.35;
   letter-spacing: -0.015em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -162,6 +174,9 @@
   flex-wrap: wrap;
   gap: clamp(0.4rem, 0.9vw, 0.85rem);
   align-items: center;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .word-white { color: #FFFFFF; }
@@ -172,10 +187,14 @@
 .hero-desc {
   font-size: clamp(0.95rem, 1.1vw, 1.12rem);
   color: #B3B7BE;
-  max-width: 680px;
-  line-height: 1.65;
+  max-width: 100%;
+  line-height: 1.7;
   margin-bottom: 1.85rem;
   font-weight: 400;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .hero-desc strong {
@@ -423,34 +442,36 @@
   .hero-container {
     grid-template-columns: 1fr;
     gap: 3.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .hero-content {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .hero-tech-kicker {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .hero-tagline-split {
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .hero-desc {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
   }
 
   .hero-cta-group {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .hero-quick-metrics {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .hero-showcase-wrapper {

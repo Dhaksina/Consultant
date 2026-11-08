@@ -139,12 +139,14 @@
         <ul class="nav-links">
           <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
           <li class="nav-item nav-item-dropdown">
-            <a href="#about" class="nav-link">About Us ▾</a>
+            <a href="about-us.html" class="nav-link">About Us ▾</a>
             <ul class="dropdown-menu" aria-label="About Us Submenu">
-              <li class="dropdown-item"><a href="#about">About Us</a></li>
+              <li class="dropdown-item"><a href="about-us.html">About Us &amp; Framework</a></li>
+              <li class="dropdown-item"><a href="about-us.html#doc-framework">4-Level Framework</a></li>
+              <li class="dropdown-item"><a href="about-us.html#specialized-packages">Specialized Packages</a></li>
+              <li class="dropdown-item"><a href="about-us.html#feedback-book">Customer Feedback Book 📖</a></li>
+              <li class="dropdown-item"><a href="about-us.html#escalations">Customer Desk &amp; Escalations</a></li>
               <li class="dropdown-item"><a href="#about" class="trigger-open-md">Message from MD</a></li>
-              <li class="dropdown-item"><a href="#about" class="trigger-open-book" data-book-page="1">Customer Feedback Book 📖</a></li>
-              <li class="dropdown-item"><a href="#about" class="trigger-open-feedback">Customer Desk &amp; Escalations</a></li>
               <li class="dropdown-item"><a href="#about" class="trigger-open-values">Core Values</a></li>
             </ul>
           </li>
@@ -208,12 +210,12 @@
     <ul class="mobile-nav-links">
       <li><a href="#home" class="mobile-nav-link">01 — Home</a></li>
       <li>
-        <a href="#about" class="mobile-nav-link">02 — About Us</a>
+        <a href="about-us.html" class="mobile-nav-link">02 — About Us</a>
         <div class="mobile-sublinks" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0.4rem 0 0.85rem 1rem;">
-          <a href="#about" class="trigger-open-md" style="font-size: 0.8rem; color: var(--orange-primary); text-decoration: none; font-weight: 600;">Message from MD ↗</a>
-          <a href="#about" class="trigger-open-book" data-book-page="1" style="font-size: 0.8rem; color: #FFFFFF; text-decoration: none; font-weight: 600;">Feedback Book (40p) 📖</a>
-          <a href="#about" class="trigger-open-feedback" style="font-size: 0.8rem; color: var(--blue-light); text-decoration: none; font-weight: 600;">Customer Desk ↗</a>
-          <a href="#about" class="trigger-open-values" style="font-size: 0.8rem; color: #a1a1aa; text-decoration: none; font-weight: 600;">Core Values ↗</a>
+          <a href="about-us.html" style="font-size: 0.8rem; color: var(--orange-primary); text-decoration: none; font-weight: 600;">Framework &amp; Solutions ↗</a>
+          <a href="about-us.html#feedback-book" style="font-size: 0.8rem; color: #FFFFFF; text-decoration: none; font-weight: 600;">Feedback Book (40p) 📖</a>
+          <a href="about-us.html#escalations" style="font-size: 0.8rem; color: var(--blue-light); text-decoration: none; font-weight: 600;">Customer Desk ↗</a>
+          <a href="#about" class="trigger-open-md" style="font-size: 0.8rem; color: #a1a1aa; text-decoration: none; font-weight: 600;">Message from MD</a>
         </div>
       </li>
       <li><a href="#api-services" class="mobile-nav-link">03 — API Services</a></li>
@@ -383,133 +385,12 @@
               <button class="btn btn-primary-orange btn-sm" id="trigger-md-message">
                 Message From MD <span class="arrow-icon">→</span>
               </button>
-              <button class="btn btn-secondary-blue btn-sm" id="trigger-customer-feedback">
-                Customer Feedback <span class="arrow-icon">→</span>
-              </button>
+              <a href="about-us.html" class="btn btn-secondary-blue btn-sm">
+                Framework &amp; Accreditations <span class="arrow-icon">→</span>
+              </a>
               <button class="btn btn-outline-white btn-sm" id="trigger-core-values">
                 Our Core Values <span class="arrow-icon">→</span>
               </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4-Level Documented Information Framework -->
-        <div class="about-doc-framework">
-          <div class="subtitle-mono blue">Comprehensive Documentation Architecture</div>
-          <h3 class="about-doc-title">4-Level Documented Information Framework</h3>
-          <p class="about-doc-subtitle">
-            We fully assist organizations in end-to-end Management System certification — starting from Initial System Study, Gap Analysis, Documentation, Training, Implementation, Internal Audit and Management Review till final Accreditation:
-          </p>
-
-          <div class="about-doc-grid">
-            <div class="about-doc-card">
-              <div class="about-doc-card-badge">Level 01 // Manuals</div>
-              <h4 class="about-doc-card-title">Corporate Quality &amp; Operations Manuals</h4>
-              <p class="about-doc-card-desc">
-                High-level governance manuals defining corporate quality policy, scope, leadership responsibilities, and management system architecture.
-              </p>
-            </div>
-
-            <div class="about-doc-card">
-              <div class="about-doc-card-badge">Level 02 // Procedures</div>
-              <h4 class="about-doc-card-title">Documented Procedures &amp; Workflows</h4>
-              <p class="about-doc-card-desc">
-                Standard operating procedures, inter-departmental workflows, risk assessments, contingency plans, and management review protocols.
-              </p>
-            </div>
-
-            <div class="about-doc-card">
-              <div class="about-doc-card-badge">Level 03 // Technical SOPs</div>
-              <h4 class="about-doc-card-title">SOPs, Work Instructions &amp; Process Procedures</h4>
-              <p class="about-doc-card-desc">
-                Granular work instructions, equipment operating procedures, calibration instructions, and process parameters for shop floor execution.
-              </p>
-            </div>
-
-            <div class="about-doc-card">
-              <div class="about-doc-card-badge">Level 04 // Records</div>
-              <h4 class="about-doc-card-title">Forms, Formats, Checklists &amp; Records</h4>
-              <p class="about-doc-card-desc">
-                Standardized verification templates, audit checklists, non-conformance trackers, inspection logs, and retention-compliant quality records.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Customized Engineering Solutions -->
-        <div class="about-solutions-wrap">
-          <div class="subtitle-mono orange">Specialized Industrial Solutions</div>
-          <h3 class="about-doc-title" style="font-size: 1.45rem;">Customized Engineering &amp; Validation Packages</h3>
-          <p class="about-doc-subtitle" style="margin-bottom: 1rem;">
-            Reva Phoenix delivers specialized process validation, engineering design review, and audit defense packages to satisfy demanding international audit standards:
-          </p>
-          <div class="about-solutions-tags">
-            <div class="about-solution-tag"><span>📐</span> API Design Review &amp; API Design Packages</div>
-            <div class="about-solution-tag"><span>🔥</span> Special Process — Validated Welding Documentation</div>
-            <div class="about-solution-tag"><span>🔍</span> Validated NDE Packages &amp; ASNT SNT-TC-1A Level 03 Procedures</div>
-            <div class="about-solution-tag"><span>⚡</span> Special Process — Validated Heat Treatment Packages</div>
-            <div class="about-solution-tag"><span>🛡️</span> Special Process — Validated Coating &amp; Plating Packages</div>
-            <div class="about-solution-tag"><span>🎯</span> Technical &amp; System Support for Closing API Audit NCs</div>
-            <div class="about-solution-tag"><span>🤝</span> Supplier Assessment, Supplier Development &amp; Qualification</div>
-            <div class="about-solution-tag"><span>👥</span> Personnel Competency Training &amp; Implementation Mentorship</div>
-          </div>
-        </div>
-
-        <!-- Customer Feedback & Direct Escalation Banner -->
-        <div class="about-feedback-strip">
-          <div>
-            <div class="about-feedback-quote">
-              “A customer is the most important visitor in our premises. He is not dependent on us, we are dependent on him.”
-            </div>
-            <div class="about-feedback-quote-author">— Mahatma Gandhi</div>
-          </div>
-          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <button class="btn btn-primary-orange btn-sm trigger-open-book" data-book-page="1">
-              Open Feedback Book (40p) 📖
-            </button>
-            <button class="btn btn-secondary-blue btn-sm trigger-open-feedback">
-              Feedback &amp; Contact Desk <span class="arrow-icon">→</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Customer Feedback Book Showcase (40-Page Verification Dossier) -->
-        <div class="about-book-showcase">
-          <div class="about-book-preview-wrap">
-            <div class="about-book-card-3d trigger-open-book" data-book-page="1" title="Click to open interactive 40-page flipbook">
-              <img src="assets/documents/customer-feedback-book/page-01.jpg" alt="Reva Phoenix Customer Feedback Book Cover" loading="lazy" />
-              <div class="about-book-spine"></div>
-              <div class="about-book-badge-overlay">40 PAGES • DOSSIER</div>
-            </div>
-          </div>
-          <div class="about-book-info">
-            <div class="subtitle-mono orange">Accreditation &amp; Client Testimonials</div>
-            <h3 class="about-book-title">Customer Feedback Book</h3>
-            <p class="about-book-desc">
-              Explore our full <strong>40-page verified client endorsement dossier</strong> compiled from international corporate audits, API monogram certifications, and technical consulting projects across <strong>Oil &amp; Gas, Aerospace, Automotive and Heavy Engineering</strong>.
-            </p>
-            <div class="about-book-pills">
-              <span class="about-book-pill">✔ API Spec Q1 &amp; Q2 Audits</span>
-              <span class="about-book-pill">✔ ISO 9001 / 14001 / 45001</span>
-              <span class="about-book-pill">✔ Global Client Testimonials</span>
-              <span class="about-book-pill">✔ Official Verification Letters</span>
-            </div>
-            <div class="about-book-ctas">
-              <button class="btn btn-primary-orange trigger-open-book" data-book-page="1">
-                Browse Interactive Flipbook 📖
-              </button>
-              <a href="assets/documents/Reva-Phoenix-Customer-Feedback-Book.pdf" download="Reva-Phoenix-Customer-Feedback-Book.pdf" class="btn btn-secondary-blue">
-                Download PDF Dossier (12.3 MB) 📥
-              </a>
-            </div>
-            <div class="about-book-page-shortcuts">
-              <span>Quick Jump:</span>
-              <button class="book-chip-link trigger-open-book" data-book-page="1">Cover</button>
-              <button class="book-chip-link trigger-open-book" data-book-page="5">Page 05</button>
-              <button class="book-chip-link trigger-open-book" data-book-page="10">Page 10</button>
-              <button class="book-chip-link trigger-open-book" data-book-page="20">Page 20</button>
-              <button class="book-chip-link trigger-open-book" data-book-page="30">Page 30</button>
-              <button class="book-chip-link trigger-open-book" data-book-page="40">Page 40</button>
             </div>
           </div>
         </div>

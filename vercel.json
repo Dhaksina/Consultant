@@ -4,7 +4,11 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/admin", "destination": "/admin/index.html" },
-    { "source": "/admin/(.*)", "destination": "/admin/index.html" }
+    { "source": "/admin/(.*)", "destination": "/admin/index.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
+    { "source": "/about", "destination": "/about-us.html" },
+    { "source": "/accreditations", "destination": "/accreditations.html" },
+    { "source": "/customer-feedback", "destination": "/accreditations.html" }
   ],
   "headers": [
     {

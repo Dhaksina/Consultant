@@ -50,6 +50,16 @@ class RevaCMSRequestHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=WORKSPACE_DIR, **kwargs)
 
+    def translate_path(self, path):
+        clean_path = path.split('?')[0].rstrip('/')
+        if clean_path in ('/about-us', '/about'):
+            return os.path.join(WORKSPACE_DIR, 'about-us.html')
+        if clean_path in ('/accreditations', '/customer-feedback'):
+            return os.path.join(WORKSPACE_DIR, 'accreditations.html')
+        if clean_path in ('/admin', '/admin.html'):
+            return os.path.join(WORKSPACE_DIR, 'admin', 'index.html')
+        return super().translate_path(path)
+
     def end_headers(self):
         # Prevent caching for live development
         self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
@@ -73,6 +83,29 @@ class RevaCMSRequestHandler(SimpleHTTPRequestHandler):
                 self.send_header('Content-Type', 'text/html; charset=utf-8')
                 self.end_headers()
                 with open(admin_index, 'rb') as f:
+                    self.wfile.write(f.read())
+                return
+
+        # Route /about-us, /about to about-us.html
+        clean_path = self.path.split('?')[0].rstrip('/')
+        if clean_path in ('/about-us', '/about', '/about.html'):
+            about_html = os.path.join(WORKSPACE_DIR, 'about-us.html')
+            if os.path.exists(about_html):
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/html; charset=utf-8')
+                self.end_headers()
+                with open(about_html, 'rb') as f:
+                    self.wfile.write(f.read())
+                return
+
+        # Route /accreditations, /customer-feedback to accreditations.html
+        if clean_path in ('/accreditations', '/accreditations.html', '/customer-feedback'):
+            acc_html = os.path.join(WORKSPACE_DIR, 'accreditations.html')
+            if os.path.exists(acc_html):
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/html; charset=utf-8')
+                self.end_headers()
+                with open(acc_html, 'rb') as f:
                     self.wfile.write(f.read())
                 return
 

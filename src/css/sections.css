@@ -802,11 +802,42 @@
 .services-header-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   margin-bottom: 3.5rem;
-  flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   width: 100%;
+  flex-wrap: nowrap;
+}
+
+.services-header-title-col {
+  flex: 0 1 auto;
+  min-width: 280px;
+  max-width: 520px;
+}
+
+.services-header-row .section-title {
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  line-height: 1.06;
+}
+
+.services-header-desc {
+  flex: 0 1 660px;
+  max-width: 660px;
+  min-width: 0;
+  line-height: 1.68;
+  text-align: left;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.api-section .services-header-row {
+  gap: 1.5rem;
+}
+
+.api-section .services-header-desc {
+  flex: 0 1 820px;
+  max-width: 820px;
 }
 
 .service-editorial-list {

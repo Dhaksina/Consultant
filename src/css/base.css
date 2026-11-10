@@ -157,23 +157,13 @@ select {
 }
 
 .services-header-desc {
-  flex: 1 1 380px;
-  max-width: 850px;
+  flex: 0 1 660px;
+  max-width: 660px;
   min-width: 0;
   line-height: 1.68;
   text-align: left;
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-
-/* Allow headings with existing <br> to flow naturally without premature breaks */
-.section-title br,
-.reveal-heading br,
-.hero-brand-title br,
-.about-heading br,
-.contact-main-title br {
-  display: inline;
-  content: ' ';
 }
 
 .section {

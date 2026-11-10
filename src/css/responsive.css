@@ -88,6 +88,13 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .services-header-title-col,
+  .services-header-desc,
+  .api-section .services-header-desc {
+    max-width: 100%;
+    flex: 1 1 auto;
   }
   .hero-trust-bar {
     grid-template-columns: 1fr 1fr;

@@ -157,8 +157,8 @@ select {
 }
 
 .services-header-desc {
-  flex: 1 1 360px;
-  max-width: 580px;
+  flex: 1 1 380px;
+  max-width: 850px;
   min-width: 0;
   line-height: 1.68;
   text-align: left;

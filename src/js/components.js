@@ -277,9 +277,8 @@ function renderServices(cms) {
   const sTitle = document.querySelector('#services .section-title');
   if (sTitle && (home.capabilitiesTitleLine1 || home.capabilitiesTitleLine2 || home.capabilitiesTitleLine3)) {
     sTitle.innerHTML = `
-      <span class="word-white">${home.capabilitiesTitleLine1 || 'ENGINEERING'}</span><br />
-      <span class="word-blue">${home.capabilitiesTitleLine2 || 'THAT MOVES'}</span><br />
-      <span class="word-orange">${home.capabilitiesTitleLine3 || 'INDUSTRIES.'}</span>
+      <span class="nowrap-line"><span class="word-white">${home.capabilitiesTitleLine1 || 'ENGINEERING'}</span> <span class="word-blue">${home.capabilitiesTitleLine2 || 'THAT MOVES'}</span></span><br />
+      <span class="nowrap-line"><span class="word-orange">${home.capabilitiesTitleLine3 || 'INDUSTRIES.'}</span></span>
     `;
   }
   const sDesc = document.querySelector('#services .section-desc-lead');

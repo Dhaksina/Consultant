@@ -142,7 +142,7 @@ function renderHero(cms) {
   if (brandTitle && (hero.titleLine1 || hero.titleLine2)) {
     brandTitle.innerHTML = `
       <span class="hero-title-line">${hero.titleLine1 || 'REVA PHOENIX'}</span>
-      <span class="hero-title-line">${hero.titleLine2 || 'LABS &amp; CONSULTANTS'}</span>
+      <span class="hero-title-line title-gradient">${hero.titleLine2 || 'LABS &amp; CONSULTANTS'}</span>
     `;
   }
 
